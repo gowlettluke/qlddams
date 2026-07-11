@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T07:42:39+00:00",
+  "generated_at": "2026-07-11T07:44:59+00:00",
   "total_dashboard_dams": 45,
   "officially_listed_plans": 44,
   "reviewed_rules": 44,
@@ -12,5 +12,5 @@
   "records_with_exact_live_elevation": 0,
   "records_missing_exact_live_elevation": 28,
   "rules_currently_assessable": 0,
-  "rules_indeterminate_due_non_public_conditions": 16
+  "rules_indeterminate_due_non_public_conditions": 17
 }

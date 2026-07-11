@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-11T07:42:39+00:00",
+  "generated_at": "2026-07-11T07:44:59+00:00",
   "counts": {
-    "input_unavailable": 25,
-    "indeterminate": 16,
+    "input_unavailable": 24,
+    "indeterminate": 17,
     "change_review_required": 1,
     "document_expired": 1,
     "document_conflict": 1,
@@ -14,7 +14,7 @@
   "dams": [
     {
       "dam_id": "atkinson-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:58+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2028-07-01",
@@ -29,12 +29,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:50:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:50:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 72.3,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:50:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:50:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -742,7 +742,7 @@
     },
     {
       "dam_id": "baroon-pocket-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:58+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2028-07-01",
@@ -757,12 +757,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T13:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:47:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 99.6,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T13:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:47:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -1470,7 +1470,7 @@
     },
     {
       "dam_id": "bill-gunn-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:58+00:00",
       "document_status": "current",
       "version": "11",
       "expiry_date": "2030-07-01",
@@ -2198,7 +2198,7 @@
     },
     {
       "dam_id": "bjelke-petersen-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:58+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-10-01",
@@ -2213,12 +2213,12 @@
       "observed_inputs": {
         "storage_level_m": 307.194,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 98.29,
       "storage_level_m": 307.194,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -2846,7 +2846,7 @@
     },
     {
       "dam_id": "boondooma-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:58+00:00",
       "document_status": "current",
       "version": "9.2",
       "expiry_date": "2028-04-01",
@@ -2861,12 +2861,12 @@
       "observed_inputs": {
         "storage_level_m": 279.825,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 95.1,
       "storage_level_m": 279.825,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -3492,7 +3492,7 @@
     },
     {
       "dam_id": "borumba-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:58+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-06-01",
@@ -3507,12 +3507,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T12:39:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:39:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 99.9,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T12:39:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:39:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -4220,7 +4220,7 @@
     },
     {
       "dam_id": "burdekin-falls-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:58+00:00",
       "document_status": "current",
       "version": "9.4",
       "expiry_date": "2027-05-01",
@@ -4233,14 +4233,14 @@
       "formal_activation_status": "not_confirmed",
       "formal_activation": "not_confirmed",
       "observed_inputs": {
-        "storage_level_m": 153.704,
+        "storage_level_m": 153.71,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 96.59,
-      "storage_level_m": 153.704,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "current_percent_full": 96.66,
+      "storage_level_m": 153.71,
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -4283,7 +4283,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 153.9,
-              "actual": 153.704,
+              "actual": 153.71,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -4335,7 +4335,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 154.0,
-              "actual": 153.704,
+              "actual": 153.71,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -4375,7 +4375,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 157.0,
-              "actual": 153.704,
+              "actual": 153.71,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -4415,7 +4415,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 160.85,
-              "actual": 153.704,
+              "actual": 153.71,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -4455,7 +4455,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 162.0,
-              "actual": 153.704,
+              "actual": 153.71,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -4504,7 +4504,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 171.0,
-              "actual": 153.704,
+              "actual": 153.71,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -4613,7 +4613,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": "<=",
               "expected": 154.3,
-              "actual": 153.704,
+              "actual": 153.71,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -4932,7 +4932,7 @@
     },
     {
       "dam_id": "callide-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:58+00:00",
       "document_status": "change_review_required",
       "version": "9.0",
       "expiry_date": null,
@@ -6177,7 +6177,7 @@
     },
     {
       "dam_id": "cania-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.0",
       "expiry_date": "2029-04-01",
@@ -6192,12 +6192,12 @@
       "observed_inputs": {
         "storage_level_m": 318.476,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 27.61,
       "storage_level_m": 318.476,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -6665,7 +6665,7 @@
     },
     {
       "dam_id": "cedar-pocket-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.1",
       "expiry_date": "2029-07-01",
@@ -6680,12 +6680,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:36:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 100.0,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:36:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -7457,7 +7457,7 @@
     },
     {
       "dam_id": "clarendon-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-06-01",
@@ -7472,12 +7472,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 81.5,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -8185,7 +8185,7 @@
     },
     {
       "dam_id": "coolmunda-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "9.1",
       "expiry_date": "2029-07-01",
@@ -8200,12 +8200,12 @@
       "observed_inputs": {
         "storage_level_m": 312.215,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 59.12,
       "storage_level_m": 312.215,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -8993,7 +8993,7 @@
     },
     {
       "dam_id": "cooloolabin-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2028-05-01",
@@ -9008,12 +9008,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 96.3,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -9787,7 +9787,7 @@
     },
     {
       "dam_id": "e-j-beardmore-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "9.2",
       "expiry_date": "2026-08-01",
@@ -9800,14 +9800,14 @@
       "formal_activation_status": "not_confirmed",
       "formal_activation": "not_confirmed",
       "observed_inputs": {
-        "storage_level_m": 206.569,
+        "storage_level_m": 206.567,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 82.9,
-      "storage_level_m": 206.569,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "current_percent_full": 82.85,
+      "storage_level_m": 206.567,
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -9850,7 +9850,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 207.02,
-              "actual": 206.569,
+              "actual": 206.567,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -9902,7 +9902,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 207.12,
-              "actual": 206.569,
+              "actual": 206.567,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -9942,7 +9942,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 207.87,
-              "actual": 206.569,
+              "actual": 206.567,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -9982,7 +9982,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 208.32,
-              "actual": 206.569,
+              "actual": 206.567,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -10031,7 +10031,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 208.65,
-              "actual": 206.569,
+              "actual": 206.567,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -10140,7 +10140,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": "<=",
               "expected": 207.12,
-              "actual": 206.569,
+              "actual": 206.567,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -10437,7 +10437,7 @@
     },
     {
       "dam_id": "enoggera-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.3",
       "expiry_date": "2027-07-01",
@@ -10452,12 +10452,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:50:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 100.3,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:50:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -11118,7 +11118,7 @@
     },
     {
       "dam_id": "eungella-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "9.0",
       "expiry_date": "2029-03-01",
@@ -11602,7 +11602,7 @@
     },
     {
       "dam_id": "ewen-maddock-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "expired",
       "version": "11.5",
       "expiry_date": "2026-06-30",
@@ -12334,7 +12334,7 @@
     },
     {
       "dam_id": "fairbairn-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2028-03-14",
@@ -12347,14 +12347,14 @@
       "formal_activation_status": "not_confirmed",
       "formal_activation": "not_confirmed",
       "observed_inputs": {
-        "storage_level_m": 196.516,
+        "storage_level_m": 196.522,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 32.37,
-      "storage_level_m": 196.516,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "current_percent_full": 32.41,
+      "storage_level_m": 196.522,
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -12397,7 +12397,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 204.13,
-              "actual": 196.516,
+              "actual": 196.522,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -12449,7 +12449,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 204.23,
-              "actual": 196.516,
+              "actual": 196.522,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -12489,7 +12489,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 207.73,
-              "actual": 196.516,
+              "actual": 196.522,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -12529,7 +12529,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 209.8,
-              "actual": 196.516,
+              "actual": 196.522,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -12578,7 +12578,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 217.39,
-              "actual": 196.516,
+              "actual": 196.522,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -12687,7 +12687,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": "<=",
               "expected": 204.73,
-              "actual": 196.516,
+              "actual": 196.522,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -12982,7 +12982,7 @@
     },
     {
       "dam_id": "fred-haigh-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "9.1",
       "expiry_date": "2029-05-01",
@@ -12995,14 +12995,14 @@
       "formal_activation_status": "not_confirmed",
       "formal_activation": "not_confirmed",
       "observed_inputs": {
-        "storage_level_m": 75.228,
+        "storage_level_m": 75.227,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 96.87,
-      "storage_level_m": 75.228,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "current_percent_full": 96.86,
+      "storage_level_m": 75.227,
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -13045,7 +13045,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 75.46,
-              "actual": 75.228,
+              "actual": 75.227,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -13097,7 +13097,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 75.56,
-              "actual": 75.228,
+              "actual": 75.227,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -13137,7 +13137,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 77.06,
-              "actual": 75.228,
+              "actual": 75.227,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -13177,7 +13177,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 82.42,
-              "actual": 75.228,
+              "actual": 75.227,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -13226,7 +13226,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 85.94,
-              "actual": 75.228,
+              "actual": 75.227,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -13335,7 +13335,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": "<=",
               "expected": 75.86,
-              "actual": 75.228,
+              "actual": 75.227,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -13628,7 +13628,7 @@
     },
     {
       "dam_id": "glenlyon-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "document_conflict",
       "version": "8.1",
       "expiry_date": "2027-04-01",
@@ -14326,7 +14326,7 @@
     },
     {
       "dam_id": "gold-creek-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2028-04-01",
@@ -14341,12 +14341,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:48:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 86.0,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:48:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -15118,7 +15118,7 @@
     },
     {
       "dam_id": "hinze-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2027-12-18",
@@ -15133,12 +15133,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:01:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 100.0,
+      "current_percent_full": 100.1,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:01:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -15846,7 +15846,7 @@
     },
     {
       "dam_id": "julius-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "8.3",
       "expiry_date": "2027-05-01",
@@ -15861,12 +15861,12 @@
       "observed_inputs": {
         "storage_level_m": 223.205,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T15:50:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:50:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 96.16,
       "storage_level_m": 223.205,
-      "storage_level_observed_at": "2026-07-11T15:50:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:50:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -16266,7 +16266,7 @@
     },
     {
       "dam_id": "kinchant-dam",
-      "assessed_at": "2026-07-11T07:42:38+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "7.2",
       "expiry_date": "2027-01-01",
@@ -16281,12 +16281,12 @@
       "observed_inputs": {
         "storage_level_m": 57.128,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 85.87,
       "storage_level_m": 57.128,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -16912,7 +16912,7 @@
     },
     {
       "dam_id": "kroombit-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.1",
       "expiry_date": "2027-12-01",
@@ -16925,14 +16925,14 @@
       "formal_activation_status": "not_confirmed",
       "formal_activation": "not_confirmed",
       "observed_inputs": {
-        "storage_level_m": 254.534,
+        "storage_level_m": 254.526,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 2.46,
-      "storage_level_m": 254.534,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "current_percent_full": 2.45,
+      "storage_level_m": 254.526,
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -16975,7 +16975,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 265.7,
-              "actual": 254.534,
+              "actual": 254.526,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -17027,7 +17027,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 265.8,
-              "actual": 254.534,
+              "actual": 254.526,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -17067,7 +17067,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 267.08,
-              "actual": 254.534,
+              "actual": 254.526,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -17107,7 +17107,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 267.78,
-              "actual": 254.534,
+              "actual": 254.526,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -17147,7 +17147,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 268.36,
-              "actual": 254.534,
+              "actual": 254.526,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -17205,7 +17205,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": "<=",
               "expected": 266.0,
-              "actual": 254.534,
+              "actual": 254.526,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -17464,7 +17464,7 @@
     },
     {
       "dam_id": "lake-macdonald-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "12.0",
       "expiry_date": "2029-05-01",
@@ -17479,12 +17479,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:01:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:01:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 42.0,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:01:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:01:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -18143,7 +18143,7 @@
     },
     {
       "dam_id": "lake-manchester-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2028-07-01",
@@ -18158,12 +18158,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:52:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 89.7,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:52:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -18871,7 +18871,7 @@
     },
     {
       "dam_id": "leslie-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "8.1",
       "expiry_date": "2027-10-01",
@@ -18886,12 +18886,12 @@
       "observed_inputs": {
         "storage_level_m": 468.326,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 58.29,
       "storage_level_m": 468.326,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -19421,7 +19421,7 @@
     },
     {
       "dam_id": "leslie-harrison-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-07-01",
@@ -19436,12 +19436,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:15:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 94.3,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:15:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -20149,7 +20149,7 @@
     },
     {
       "dam_id": "little-nerang-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2027-12-18",
@@ -20164,12 +20164,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:50:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:01:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 100.1,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:50:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:01:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -20879,7 +20879,7 @@
     },
     {
       "dam_id": "maroon-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2028-06-01",
@@ -20894,12 +20894,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 100.1,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -21607,7 +21607,7 @@
     },
     {
       "dam_id": "moogerah-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-08-01",
@@ -21622,12 +21622,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 83.3,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -22335,7 +22335,7 @@
     },
     {
       "dam_id": "nindooinbah-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "not_listed",
       "version": null,
       "expiry_date": null,
@@ -22350,12 +22350,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 96.2,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
       "storage_level_datum": null,
       "rules": [],
       "unavailable_required_inputs": [],
@@ -22395,7 +22395,7 @@
     },
     {
       "dam_id": "north-pine-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "13.0",
       "expiry_date": "2029-10-01",
@@ -23036,27 +23036,27 @@
     },
     {
       "dam_id": "paradise-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "12.2",
       "expiry_date": "2029-06-01",
       "source_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf",
-      "indicative_result": "input_unavailable",
-      "indication": "input_unavailable",
+      "indicative_result": "indeterminate",
+      "indication": "indeterminate",
       "highest_publicly_supported_level": null,
       "potential_level": null,
-      "confidence": "rules_verified_live_input_unavailable",
+      "confidence": "required_condition_unavailable",
       "formal_activation_status": "not_confirmed",
       "formal_activation": "not_confirmed",
       "observed_inputs": {
-        "storage_level_m": 61.512,
+        "storage_level_m": 61.51,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 97.26,
-      "storage_level_m": 61.512,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "current_percent_full": 97.24,
+      "storage_level_m": 61.51,
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -23099,7 +23099,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 61.7,
-              "actual": 61.512,
+              "actual": 61.51,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23111,7 +23111,7 @@
               "assessability": "publicly_observable_if_sufficient_live_history_available",
               "operator": "==",
               "expected": "rising",
-              "actual": "steady",
+              "actual": "falling",
               "unit": null,
               "state": "not_met",
               "result": "not_met"
@@ -23151,7 +23151,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 61.8,
-              "actual": 61.512,
+              "actual": 61.51,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23191,7 +23191,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 64.3,
-              "actual": 61.512,
+              "actual": 61.51,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23231,7 +23231,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 71.4,
-              "actual": 61.512,
+              "actual": 61.51,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23280,7 +23280,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": "<=",
               "expected": 63.3,
-              "actual": 61.512,
+              "actual": 61.51,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23292,14 +23292,14 @@
               "assessability": "publicly_observable_if_sufficient_live_history_available",
               "operator": "==",
               "expected": "falling",
-              "actual": "steady",
+              "actual": "falling",
               "unit": null,
-              "state": "not_met",
-              "result": "not_met"
+              "state": "met",
+              "result": "met"
             }
           ],
-          "assessment": "input_unavailable",
-          "result": "input_unavailable"
+          "assessment": "indeterminate",
+          "result": "indeterminate"
         }
       ],
       "unavailable_required_inputs": [
@@ -23317,7 +23317,7 @@
         "Datum unverified for Storage at or below EL 63.30 m"
       ],
       "warnings": [],
-      "reason": "Verified EAP rules are available, but official live reservoir elevation is unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "paradise-dam",
         "dam_name": "Paradise Dam",
@@ -23490,7 +23490,7 @@
     },
     {
       "dam_id": "peter-faust-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "9.0",
       "expiry_date": "2029-03-08",
@@ -23503,14 +23503,14 @@
       "formal_activation_status": "not_confirmed",
       "formal_activation": "not_confirmed",
       "observed_inputs": {
-        "storage_level_m": 85.34,
+        "storage_level_m": 85.342,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 97.74,
-      "storage_level_m": 85.34,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "current_percent_full": 97.76,
+      "storage_level_m": 85.342,
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -23553,7 +23553,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 85.6,
-              "actual": 85.34,
+              "actual": 85.342,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23605,7 +23605,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 87.08,
-              "actual": 85.34,
+              "actual": 85.342,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23645,7 +23645,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 88.8,
-              "actual": 85.34,
+              "actual": 85.342,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23694,7 +23694,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 94.23,
-              "actual": 85.34,
+              "actual": 85.342,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -23803,7 +23803,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": "<=",
               "expected": 85.7,
-              "actual": 85.34,
+              "actual": 85.342,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -24070,7 +24070,7 @@
     },
     {
       "dam_id": "poona-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.1",
       "expiry_date": "2028-05-01",
@@ -24085,12 +24085,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 76.9,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -24800,7 +24800,7 @@
     },
     {
       "dam_id": "sideling-creek-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.1",
       "expiry_date": "2027-07-01",
@@ -24815,12 +24815,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 100.7,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -25528,7 +25528,7 @@
     },
     {
       "dam_id": "somerset-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.0",
       "expiry_date": "2028-04-01",
@@ -25543,12 +25543,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T15:03:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 80.0,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T15:03:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -26376,7 +26376,7 @@
     },
     {
       "dam_id": "teemburra-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.1",
       "expiry_date": "2029-07-01",
@@ -26391,12 +26391,12 @@
       "observed_inputs": {
         "storage_level_m": 290.021,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 100.15,
       "storage_level_m": 290.021,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -26896,7 +26896,7 @@
     },
     {
       "dam_id": "tinaroo-falls-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2026-09-01",
@@ -27454,7 +27454,7 @@
     },
     {
       "dam_id": "wappa-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.1",
       "expiry_date": "2028-05-01",
@@ -27469,12 +27469,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T14:07:00+10:00",
+        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 100.3,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T14:07:00+10:00",
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -28182,7 +28182,7 @@
     },
     {
       "dam_id": "wivenhoe-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "10.3",
       "expiry_date": "2027-05-01",
@@ -28857,7 +28857,7 @@
     },
     {
       "dam_id": "wuruma-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "8.2",
       "expiry_date": "2027-01-01",
@@ -28870,14 +28870,14 @@
       "formal_activation_status": "not_confirmed",
       "formal_activation": "not_confirmed",
       "observed_inputs": {
-        "storage_level_m": 228.032,
+        "storage_level_m": 228.031,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
         "storage_level_quality": null
       },
-      "current_percent_full": 97.45,
-      "storage_level_m": 228.032,
-      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "current_percent_full": 97.44,
+      "storage_level_m": 228.031,
+      "storage_level_observed_at": "2026-07-11T17:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
@@ -28920,7 +28920,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 228.19,
-              "actual": 228.032,
+              "actual": 228.031,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -28972,7 +28972,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 228.29,
-              "actual": 228.032,
+              "actual": 228.031,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -29012,7 +29012,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 229.29,
-              "actual": 228.032,
+              "actual": 228.031,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -29052,7 +29052,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 232.03,
-              "actual": 228.032,
+              "actual": 228.031,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -29101,7 +29101,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": ">=",
               "expected": 239.27,
-              "actual": 228.032,
+              "actual": 228.031,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -29210,7 +29210,7 @@
               "assessability": "publicly_observable_exact_if_live_elevation_datum_matches",
               "operator": "<=",
               "expected": 228.39,
-              "actual": 228.032,
+              "actual": 228.031,
               "unit": "m EAP elevation",
               "state": "datum_unverified",
               "result": "datum_unverified"
@@ -29503,7 +29503,7 @@
     },
     {
       "dam_id": "wyaralong-dam",
-      "assessed_at": "2026-07-11T07:42:39+00:00",
+      "assessed_at": "2026-07-11T07:44:59+00:00",
       "document_status": "current",
       "version": "11.0",
       "expiry_date": "2029-07-01",
@@ -29518,12 +29518,12 @@
       "observed_inputs": {
         "storage_level_m": null,
         "storage_level_datum": null,
-        "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+        "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
         "storage_level_quality": null
       },
       "current_percent_full": 98.2,
       "storage_level_m": null,
-      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
       "storage_level_datum": null,
       "rules": [
         {
