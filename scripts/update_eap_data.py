@@ -23,7 +23,7 @@ import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse, urlunparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -37,6 +37,12 @@ CONFIG = ROOT / "config"
 DATA = ROOT / "data"
 DIRECTORY_URL = "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps"
 SUNWATER_EAP_INDEX = "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/"
+QUEENSLAND_PDF_HOST_ALIASES = (
+    "www.dlgwv.qld.gov.au",
+    "www.business.qld.gov.au",
+    "www.rdmw.qld.gov.au",
+    "www.resources.qld.gov.au",
+)
 USER_AGENT = "QueenslandDamDashboard-EAP-Audit/1.0 (+https://github.com/gowlettluke/qlddams)"
 LOG = logging.getLogger("eap-audit")
 
@@ -143,12 +149,72 @@ def discover_sunwater_links(session: requests.Session, sources: list[dict[str, A
     return output
 
 
+def discover_operator_index_links(session: requests.Session, sources: list[dict[str, Any]]) -> dict[str, dict[str, str]]:
+    """Discover EAP links from per-dam operator indexes configured in eap_sources.json."""
+    output: dict[str, dict[str, str]] = {}
+    pages: dict[str, BeautifulSoup | None] = {}
+    for index_url in dict.fromkeys(x.get("operator_eap_index") for x in sources if x.get("operator_eap_index")):
+        try:
+            response = session.get(index_url, timeout=60)
+            response.raise_for_status()
+            pages[index_url] = BeautifulSoup(response.text, "html.parser")
+        except Exception as exc:
+            LOG.warning("%s operator EAP index discovery failed: %s", index_url, exc)
+            pages[index_url] = None
+
+    for source in sources:
+        index_url = source.get("operator_eap_index")
+        soup = pages.get(index_url) if index_url else None
+        if not index_url or soup is None:
+            continue
+        wanted = norm(source.get("directory_name"))
+        links = []
+        for a in soup.find_all("a", href=True):
+            label = clean(a.get_text(" ", strip=True))
+            href = urljoin(index_url, a["href"])
+            key = norm(f"{label} {href}")
+            if not wanted or wanted in key or "emergencyactionplan" in key or href.lower().endswith(".pdf"):
+                links.append((label, href))
+        eap = next((u for t, u in links if "emergency action plan" in t.lower() or "eap" in t.lower() or u.lower().endswith(".pdf")), None)
+        if eap:
+            output[source["dam_id"]] = {"eap_url": eap, "emergency_info_url": index_url}
+    return output
+
+
+def expand_pdf_url_candidates(urls: list[str]) -> list[str]:
+    """Return configured URLs plus known Queensland government host aliases.
+
+    The referable-dam directory has served the same asset paths from multiple
+    Queensland Government domains during department renames. Trying host aliases
+    lets the audit keep working when one front door returns 403 or moves before
+    the directory text is updated.
+    """
+    expanded: list[str] = []
+    for url in urls:
+        if not url:
+            continue
+        expanded.append(url)
+        parsed = urlparse(url)
+        if parsed.netloc in QUEENSLAND_PDF_HOST_ALIASES and parsed.path.lower().endswith(".pdf"):
+            for host in QUEENSLAND_PDF_HOST_ALIASES:
+                expanded.append(urlunparse(parsed._replace(netloc=host)))
+    return list(dict.fromkeys(expanded))
+
+
 def fetch_pdf(session: requests.Session, urls: list[str]) -> tuple[bytes, str]:
     errors = []
     for url in dict.fromkeys(u for u in urls if u):
         try:
+            referer = DIRECTORY_URL
+            parsed = urlparse(url)
+            if parsed.scheme and parsed.netloc:
+                referer = f"{parsed.scheme}://{parsed.netloc}/"
             response = session.get(url, timeout=180, allow_redirects=True,
-                                   headers={"Referer": DIRECTORY_URL, "Accept": "application/pdf,*/*;q=0.8"})
+                                   headers={
+                                       "Referer": referer,
+                                       "Accept": "application/pdf,application/octet-stream,*/*;q=0.8",
+                                       "Accept-Language": "en-AU,en;q=0.9",
+                                   })
             response.raise_for_status()
             content_type = response.headers.get("content-type", "").lower()
             if not response.content.startswith(b"%PDF") and "pdf" not in content_type:
@@ -324,6 +390,7 @@ def run(force: bool = False, dam_filter: set[str] | None = None) -> int:
     session = make_session()
     directory_links: dict[str, dict[str, str]] = {}
     sunwater_links: dict[str, dict[str, str]] = {}
+    operator_index_links: dict[str, dict[str, str]] = {}
     discovery_errors: list[str] = []
     try:
         directory_links = discover_directory_links(session, sources)
@@ -335,6 +402,11 @@ def run(force: bool = False, dam_filter: set[str] | None = None) -> int:
     except Exception as exc:
         LOG.warning("Sunwater EAP link discovery failed: %s", exc)
         discovery_errors.append(f"Sunwater index: {exc}")
+    try:
+        operator_index_links = discover_operator_index_links(session, sources)
+    except Exception as exc:
+        LOG.warning("Configured operator EAP index discovery failed: %s", exc)
+        discovery_errors.append(f"operator indexes: {exc}")
 
     result: dict[str, dict[str, Any]] = {}
     counts = {"manually_verified": 0, "machine_extracted": 0, "document_only": 0,
@@ -347,10 +419,15 @@ def run(force: bool = False, dam_filter: set[str] | None = None) -> int:
         record = build_seed_record(source, override, prior)
         discovered = directory_links.get(dam_id, {})
         operator_discovered = sunwater_links.get(dam_id, {})
-        record["emergency_info_url"] = discovered.get("emergency_info_url") or operator_discovered.get("emergency_info_url") or record.get("emergency_info_url")
-        candidate_urls = [operator_discovered.get("eap_url"), discovered.get("eap_url"),
-                          override.get("eap_url") if override else None, record.get("eap_url")]
-        candidate_urls = [x for x in candidate_urls if x]
+        configured_operator_discovered = operator_index_links.get(dam_id, {})
+        record["emergency_info_url"] = (discovered.get("emergency_info_url")
+                                        or operator_discovered.get("emergency_info_url")
+                                        or configured_operator_discovered.get("emergency_info_url")
+                                        or record.get("emergency_info_url"))
+        candidate_urls = [configured_operator_discovered.get("eap_url"), operator_discovered.get("eap_url"),
+                          discovered.get("eap_url"), override.get("eap_url") if override else None,
+                          record.get("eap_url")]
+        candidate_urls = expand_pdf_url_candidates([x for x in candidate_urls if x])
         if candidate_urls:
             record["discovered_eap_url"] = candidate_urls[0]
             record["eap_url"] = candidate_urls[0]
@@ -421,6 +498,7 @@ def run(force: bool = False, dam_filter: set[str] | None = None) -> int:
         "generated_at": started,
         "directory_url": DIRECTORY_URL,
         "sunwater_eap_index": SUNWATER_EAP_INDEX,
+        "queensland_pdf_host_aliases": list(QUEENSLAND_PDF_HOST_ALIASES),
         "discovery_errors": discovery_errors,
         "counts": counts,
         "disclaimer": "Flood-trigger rules are an informational interpretation of published EAP material. They do not report or determine formal EAP activation.",
