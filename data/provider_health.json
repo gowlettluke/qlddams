@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-07-11T03:49:31+00:00",
+  "generated_at": "2026-07-11T05:35:49+00:00",
   "overall_status": "partial",
   "providers": {
     "seqwater_current": {
-      "status": "ok",
+      "status": "partial",
       "records": 24,
+      "expected_records": 25,
       "url": "https://www.seqwater.com.au/dam-levels"
     },
     "seqwater_historical": {
@@ -40,23 +41,57 @@
     "sunwater_historical": {
       "status": "partial",
       "dams": 18,
-      "observations": 16787,
+      "observations": 3271,
       "failures": [
         {
           "dam_id": "glenlyon-dam",
-          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/416303A/data?startDate=2026-06-11T03%3A49%3A58Z&continuationToken=1"
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/416303A/data?startDate=2026-06-11T05%3A36%3A14Z&continuationToken=1"
         },
         {
           "dam_id": "tinaroo-falls-dam",
-          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/110006A/data?startDate=2026-06-11T03%3A50%3A03Z&continuationToken=1"
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/110006A/data?startDate=2026-06-11T05%3A36%3A19Z&continuationToken=1"
         }
       ],
       "url": "https://www.sunwater.com.au/water-data/historical-dam-capacity/"
     },
     "bom_gauges": {
-      "status": "failed",
-      "message": "403 Client Error: Forbidden for url: https://www.bom.gov.au/qld/flood/rain_river.shtml",
-      "retained_previous": true
+      "status": "partial",
+      "qld_network_gauges": 145,
+      "gauges_with_recent_observation": 0,
+      "gauges_with_stale_observation": 0,
+      "gauges_without_observation": 145,
+      "unmatched_bulletin_observations": 0,
+      "dam_mappings": 50,
+      "bulletin_records": 0,
+      "verified_mappings": 5,
+      "automatic_candidates": 45,
+      "failures": [
+        {
+          "url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60285.html",
+          "message": "403 Client Error: Forbidden for url: https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60285.html"
+        },
+        {
+          "url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60286.html",
+          "message": "403 Client Error: Forbidden for url: https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60286.html"
+        },
+        {
+          "url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60287.html",
+          "message": "403 Client Error: Forbidden for url: https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60287.html"
+        },
+        {
+          "url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60288.html",
+          "message": "403 Client Error: Forbidden for url: https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60288.html"
+        },
+        {
+          "url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60289.html",
+          "message": "403 Client Error: Forbidden for url: https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60289.html"
+        },
+        {
+          "url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html",
+          "message": "403 Client Error: Forbidden for url: https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html"
+        }
+      ],
+      "url": "https://www.bom.gov.au/qld/flood/rain_river.shtml"
     }
   },
   "message": "One or more sources were incomplete; previous good data was retained where available."

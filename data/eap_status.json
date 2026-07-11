@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T05:10:12+00:00",
+  "generated_at": "2026-07-11T05:36:25+00:00",
   "counts": {
     "unable_to_assess": 33,
     "below_alert": 8,
@@ -12,7 +12,7 @@
   "dams": [
     {
       "dam_id": "atkinson-dam",
-      "assessed_at": "2026-07-11T05:10:11+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -52,7 +52,7 @@
     },
     {
       "dam_id": "baroon-pocket-dam",
-      "assessed_at": "2026-07-11T05:10:11+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -92,7 +92,7 @@
     },
     {
       "dam_id": "bill-gunn-dam",
-      "assessed_at": "2026-07-11T05:10:11+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -132,7 +132,7 @@
     },
     {
       "dam_id": "bjelke-petersen-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -141,15 +141,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 98.29,
-      "storage_level_m": 307.203,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 98.3,
+      "storage_level_m": 307.195,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.002,
-      "storage_level_rate_m_per_hour": -0.0003,
+      "storage_level_change_m": 0.001,
+      "storage_level_rate_m_per_hour": 0.0002,
       "rules": [],
       "eap": {
         "referable": true,
@@ -174,7 +172,7 @@
     },
     {
       "dam_id": "boondooma-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -183,15 +181,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 95.11,
-      "storage_level_m": 279.857,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 95.09,
+      "storage_level_m": 279.824,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.002,
-      "storage_level_rate_m_per_hour": -0.0003,
+      "storage_level_change_m": -0.005,
+      "storage_level_rate_m_per_hour": -0.0008,
       "rules": [],
       "eap": {
         "referable": true,
@@ -216,7 +212,7 @@
     },
     {
       "dam_id": "borumba-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -256,24 +252,22 @@
     },
     {
       "dam_id": "burdekin-falls-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "below_alert",
       "potential_level": null,
-      "confidence": "indeterminate",
+      "confidence": "medium",
       "formal_activation": "not_confirmed",
       "public_warning_status": "not_assessed",
       "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 96.63,
-      "storage_level_m": 153.722,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 96.59,
+      "storage_level_m": 153.704,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": 0.002,
-      "storage_level_rate_m_per_hour": 0.0003,
+      "storage_level_change_m": 0.0,
+      "storage_level_rate_m_per_hour": 0.0,
       "rules": [
         {
           "level": "alert",
@@ -304,7 +298,7 @@
               "label": "Storage level is at or above 153.90 m AHD",
               "expected": 153.9,
               "operator": ">=",
-              "actual": 153.722,
+              "actual": 153.704,
               "unit": "m AHD",
               "proxy": false,
               "publicly_observable": true,
@@ -345,7 +339,7 @@
               "label": "Storage level is above FSL 154.00 m AHD",
               "expected": 154.0,
               "operator": ">",
-              "actual": 153.722,
+              "actual": 153.704,
               "unit": "m AHD",
               "proxy": false,
               "publicly_observable": true,
@@ -375,7 +369,7 @@
               "label": "Storage level is above 157.00 m AHD",
               "expected": 157.0,
               "operator": ">",
-              "actual": 153.722,
+              "actual": 153.704,
               "unit": "m AHD",
               "proxy": false,
               "publicly_observable": true,
@@ -407,7 +401,7 @@
     },
     {
       "dam_id": "callide-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -449,7 +443,7 @@
     },
     {
       "dam_id": "cania-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -458,15 +452,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 27.59,
-      "storage_level_m": 318.481,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 27.6,
+      "storage_level_m": 318.474,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.001,
-      "storage_level_rate_m_per_hour": -0.0002,
+      "storage_level_change_m": -0.002,
+      "storage_level_rate_m_per_hour": -0.0003,
       "rules": [],
       "eap": {
         "referable": true,
@@ -491,7 +483,7 @@
     },
     {
       "dam_id": "cedar-pocket-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -531,7 +523,7 @@
     },
     {
       "dam_id": "clarendon-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -571,7 +563,7 @@
     },
     {
       "dam_id": "coolmunda-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -580,12 +572,10 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
+      "warnings": [],
       "current_percent_full": 59.14,
-      "storage_level_m": 312.226,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_m": 312.216,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
       "storage_level_change_m": 0.0,
       "storage_level_rate_m_per_hour": 0.0,
@@ -613,7 +603,7 @@
     },
     {
       "dam_id": "cooloolabin-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -625,7 +615,7 @@
         "Bureau flood warning is expected for the relevant catchment or watercourse"
       ],
       "warnings": [],
-      "current_percent_full": 96.3,
+      "current_percent_full": 96.4,
       "storage_level_m": null,
       "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
       "storage_level_trend": null,
@@ -710,7 +700,7 @@
               "label": "Published storage is at or above 100% of the current operating capacity",
               "expected": 100,
               "operator": ">=",
-              "actual": 96.3,
+              "actual": 96.4,
               "unit": "%",
               "proxy": true,
               "publicly_observable": true,
@@ -843,7 +833,7 @@
     },
     {
       "dam_id": "e-j-beardmore-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -852,15 +842,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 82.71,
-      "storage_level_m": 206.595,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 82.74,
+      "storage_level_m": 206.563,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": 0.005,
-      "storage_level_rate_m_per_hour": 0.0008,
+      "storage_level_change_m": -0.007,
+      "storage_level_rate_m_per_hour": -0.0012,
       "rules": [],
       "eap": {
         "referable": true,
@@ -885,7 +873,7 @@
     },
     {
       "dam_id": "enoggera-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -925,7 +913,7 @@
     },
     {
       "dam_id": "eungella-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -934,15 +922,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
+      "warnings": [],
       "current_percent_full": 99.99,
-      "storage_level_m": 562.701,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_m": 562.709,
+      "storage_level_observed_at": "2026-07-11T06:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.006,
-      "storage_level_rate_m_per_hour": -0.001,
+      "storage_level_change_m": 0.001,
+      "storage_level_rate_m_per_hour": 0.0003,
       "rules": [],
       "eap": {
         "referable": true,
@@ -967,7 +953,7 @@
     },
     {
       "dam_id": "ewen-maddock-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "low",
@@ -1169,7 +1155,7 @@
     },
     {
       "dam_id": "fairbairn-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1178,15 +1164,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 32.43,
-      "storage_level_m": 196.526,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 32.4,
+      "storage_level_m": 196.521,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.003,
-      "storage_level_rate_m_per_hour": -0.0005,
+      "storage_level_change_m": -0.001,
+      "storage_level_rate_m_per_hour": -0.0002,
       "rules": [],
       "eap": {
         "referable": true,
@@ -1211,7 +1195,7 @@
     },
     {
       "dam_id": "fred-haigh-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1220,15 +1204,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 96.88,
-      "storage_level_m": 75.247,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 96.87,
+      "storage_level_m": 75.228,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.001,
-      "storage_level_rate_m_per_hour": -0.0002,
+      "storage_level_change_m": 0.002,
+      "storage_level_rate_m_per_hour": 0.0003,
       "rules": [],
       "eap": {
         "referable": true,
@@ -1253,7 +1235,7 @@
     },
     {
       "dam_id": "glenlyon-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1295,7 +1277,7 @@
     },
     {
       "dam_id": "gold-creek-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -1525,7 +1507,7 @@
     },
     {
       "dam_id": "hinze-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:24+00:00",
       "indication": "conditions_incomplete",
       "potential_level": "alert",
       "confidence": "low",
@@ -1729,7 +1711,7 @@
     },
     {
       "dam_id": "julius-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1738,15 +1720,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 96.17,
-      "storage_level_m": 223.222,
-      "storage_level_observed_at": "2026-07-07T23:50:00+10:00",
+      "warnings": [],
+      "current_percent_full": 96.15,
+      "storage_level_m": 223.204,
+      "storage_level_observed_at": "2026-07-11T14:50:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.002,
-      "storage_level_rate_m_per_hour": -0.0003,
+      "storage_level_change_m": -0.004,
+      "storage_level_rate_m_per_hour": -0.0007,
       "rules": [],
       "eap": {
         "referable": true,
@@ -1771,7 +1751,7 @@
     },
     {
       "dam_id": "kinchant-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1780,15 +1760,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 85.92,
-      "storage_level_m": 57.144,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
-      "storage_level_trend": "steady",
-      "storage_level_change_m": -0.002,
-      "storage_level_rate_m_per_hour": -0.0003,
+      "warnings": [],
+      "current_percent_full": 85.86,
+      "storage_level_m": 57.127,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+      "storage_level_trend": "falling",
+      "storage_level_change_m": -0.015,
+      "storage_level_rate_m_per_hour": -0.0025,
       "rules": [],
       "eap": {
         "referable": true,
@@ -1813,7 +1791,7 @@
     },
     {
       "dam_id": "kroombit-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1822,15 +1800,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 2.5,
-      "storage_level_m": 255.047,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
-      "storage_level_trend": "rising",
-      "storage_level_change_m": 0.013,
-      "storage_level_rate_m_per_hour": 0.0022,
+      "warnings": [],
+      "current_percent_full": 2.47,
+      "storage_level_m": 254.542,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
+      "storage_level_trend": "falling",
+      "storage_level_change_m": -0.051,
+      "storage_level_rate_m_per_hour": -0.0085,
       "rules": [],
       "eap": {
         "referable": true,
@@ -1855,7 +1831,7 @@
     },
     {
       "dam_id": "lake-macdonald-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -2103,7 +2079,7 @@
     },
     {
       "dam_id": "lake-manchester-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -2303,7 +2279,7 @@
     },
     {
       "dam_id": "leslie-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2312,15 +2288,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
+      "warnings": [],
       "current_percent_full": 58.29,
-      "storage_level_m": 468.336,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_m": 468.326,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": 0.0,
-      "storage_level_rate_m_per_hour": 0.0,
+      "storage_level_change_m": -0.001,
+      "storage_level_rate_m_per_hour": -0.0002,
       "rules": [],
       "eap": {
         "referable": true,
@@ -2345,7 +2319,7 @@
     },
     {
       "dam_id": "leslie-harrison-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -2357,7 +2331,7 @@
         "Bureau flood warning is expected for the relevant catchment or watercourse"
       ],
       "warnings": [],
-      "current_percent_full": 94.3,
+      "current_percent_full": 94.4,
       "storage_level_m": null,
       "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
       "storage_level_trend": null,
@@ -2442,7 +2416,7 @@
               "label": "Published storage is at or above 100% of the current operating capacity",
               "expected": 100,
               "operator": ">=",
-              "actual": 94.3,
+              "actual": 94.4,
               "unit": "%",
               "proxy": true,
               "publicly_observable": true,
@@ -2545,7 +2519,7 @@
     },
     {
       "dam_id": "little-nerang-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "conditions_incomplete",
       "potential_level": "alert",
       "confidence": "low",
@@ -2797,7 +2771,7 @@
     },
     {
       "dam_id": "maroon-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2837,7 +2811,7 @@
     },
     {
       "dam_id": "moogerah-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2904,7 +2878,7 @@
     },
     {
       "dam_id": "north-pine-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2944,7 +2918,7 @@
     },
     {
       "dam_id": "paradise-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2953,15 +2927,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
+      "warnings": [],
       "current_percent_full": 97.24,
-      "storage_level_m": 61.54,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_m": 61.51,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.002,
-      "storage_level_rate_m_per_hour": -0.0003,
+      "storage_level_change_m": -0.001,
+      "storage_level_rate_m_per_hour": -0.0002,
       "rules": [],
       "eap": {
         "referable": true,
@@ -2986,7 +2958,7 @@
     },
     {
       "dam_id": "peter-faust-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2995,15 +2967,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 97.75,
-      "storage_level_m": 85.352,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 97.74,
+      "storage_level_m": 85.34,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": 0.003,
-      "storage_level_rate_m_per_hour": 0.0005,
+      "storage_level_change_m": -0.003,
+      "storage_level_rate_m_per_hour": -0.0005,
       "rules": [],
       "eap": {
         "referable": true,
@@ -3028,7 +2998,7 @@
     },
     {
       "dam_id": "poona-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -3276,7 +3246,7 @@
     },
     {
       "dam_id": "sideling-creek-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3286,7 +3256,7 @@
       "evidence": [],
       "missing_conditions": [],
       "warnings": [],
-      "current_percent_full": 100.6,
+      "current_percent_full": 100.7,
       "storage_level_m": null,
       "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
       "storage_level_trend": null,
@@ -3316,7 +3286,7 @@
     },
     {
       "dam_id": "somerset-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3506,7 +3476,7 @@
     },
     {
       "dam_id": "teemburra-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3515,15 +3485,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
+      "warnings": [],
       "current_percent_full": 100.15,
-      "storage_level_m": 290.024,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_m": 290.02,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.001,
-      "storage_level_rate_m_per_hour": -0.0002,
+      "storage_level_change_m": 0.0,
+      "storage_level_rate_m_per_hour": 0.0,
       "rules": [],
       "eap": {
         "referable": true,
@@ -3548,7 +3516,7 @@
     },
     {
       "dam_id": "tinaroo-falls-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3590,7 +3558,7 @@
     },
     {
       "dam_id": "wappa-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "conditions_incomplete",
       "potential_level": "alert",
       "confidence": "low",
@@ -3794,7 +3762,7 @@
     },
     {
       "dam_id": "wivenhoe-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3836,7 +3804,7 @@
     },
     {
       "dam_id": "wuruma-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3845,15 +3813,13 @@
       "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
       "evidence": [],
       "missing_conditions": [],
-      "warnings": [
-        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
-      ],
-      "current_percent_full": 97.45,
-      "storage_level_m": 228.041,
-      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "warnings": [],
+      "current_percent_full": 97.44,
+      "storage_level_m": 228.031,
+      "storage_level_observed_at": "2026-07-11T15:00:00+10:00",
       "storage_level_trend": "steady",
-      "storage_level_change_m": -0.002,
-      "storage_level_rate_m_per_hour": -0.0003,
+      "storage_level_change_m": -0.001,
+      "storage_level_rate_m_per_hour": -0.0002,
       "rules": [],
       "eap": {
         "referable": true,
@@ -3878,7 +3844,7 @@
     },
     {
       "dam_id": "wyaralong-dam",
-      "assessed_at": "2026-07-11T05:10:12+00:00",
+      "assessed_at": "2026-07-11T05:36:25+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
