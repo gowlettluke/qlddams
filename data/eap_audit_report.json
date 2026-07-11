@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-11T07:13:10+00:00",
+  "total_dashboard_dams": 45,
+  "officially_listed_plans": 44,
+  "reviewed_rules": 44,
+  "not_listed": 1,
+  "current": 41,
+  "expired": 1,
+  "near_expiry": 2,
+  "document_conflicts": 1,
+  "change_review_required": 1,
+  "records_with_exact_live_elevation": 0,
+  "records_missing_exact_live_elevation": 28,
+  "rules_currently_assessable": 0,
+  "rules_indeterminate_due_non_public_conditions": 16
+}
