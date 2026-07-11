@@ -18,8 +18,12 @@ permissions:
 
 jobs:
   extract:
+    strategy:
+      fail-fast: false
+      matrix:
+        batch: [0, 1, 2, 3]
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 25
     steps:
       - name: Check out research branch
         uses: actions/checkout@v4
@@ -31,13 +35,13 @@ jobs:
           python-version: '3.12'
       - name: Install extraction dependencies
         run: python -m pip install curl-cffi
-      - name: Extract EAP text in parallel
-        run: timeout 18m python scripts/research_extract_eap_jina_parallel.py
+      - name: Extract official EAP text batch
+        run: timeout 18m python scripts/research_extract_eap_jina_batch.py --batch ${{ matrix.batch }} --batches 4
         continue-on-error: true
-      - name: Upload research outputs
+      - name: Upload research batch
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: eap-research-output
-          path: research_eap_jina_parallel
+          name: eap-research-batch-${{ matrix.batch }}
+          path: research_eap_batch_${{ matrix.batch }}
           if-no-files-found: warn
