@@ -1,0 +1,1150 @@
+{
+  "burdekin-falls-dam": {
+    "version": "9.4",
+    "approved_date": null,
+    "expiry_date": "2027-05-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 154.0,
+    "notes": "Only the published flood-operations row is used for this storage-based indication. Structural, earthquake and other hazards are not inferred.",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Elevation 153.90 m AHD or higher and rising.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 153.9,
+            "label": "Storage level is at or above 153.90 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "storage_level_trend",
+            "op": "==",
+            "value": "rising",
+            "label": "Storage level is rising",
+            "publicly_observable": true
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Storage above full supply level 154.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">",
+            "value": 154.0,
+            "label": "Storage level is above FSL 154.00 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Storage above elevation 157.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">",
+            "value": 157.0,
+            "label": "Storage level is above 157.00 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ],
+    "stand_down_text": "Storage level 154.30 m AHD and falling, with no forecast increase in elevation."
+  },
+  "cooloolabin-dam": {
+    "version": "11.2",
+    "approved_date": "2025-08-26",
+    "expiry_date": "2028-05-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 293.0,
+    "notes": "The EAP also contains non-flood hazards that cannot be inferred from public storage data.",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 293.00 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 293.0,
+            "label": "Lake level is at or above full supply level (293.00 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Spillway crest high level reaches 296.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 296.0,
+            "label": "Lake level is at or above spillway crest high level 296.00 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 296.48 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 296.48,
+            "label": "Lake level is at or above Flood of Record (296.48 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 296.60 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 296.6,
+            "label": "Lake level is at or above Extreme Flood Level (296.60 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  },
+  "ewen-maddock-dam": {
+    "version": "11.5",
+    "approved_date": "2025-08-26",
+    "expiry_date": "2026-06-30",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 25.38,
+    "notes": "",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 25.38 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 25.38,
+            "label": "Lake level is at or above full supply level (25.38 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 26.92 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 26.92,
+            "label": "Lake level is at or above Flood of Record (26.92 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 27.50 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 27.5,
+            "label": "Lake level is at or above Extreme Flood Level (27.50 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  },
+  "gold-creek-dam": {
+    "version": "10.2",
+    "approved_date": "2025-08-26",
+    "expiry_date": "2028-04-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 92.75,
+    "notes": "",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 92.75 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 92.75,
+            "label": "Lake level is at or above full supply level (92.75 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Spillway crest high level reaches 95.75 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 95.75,
+            "label": "Lake level is at or above spillway crest high level 95.75 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 96.91 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 96.91,
+            "label": "Lake level is at or above Flood of Record (96.91 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 99.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 99.0,
+            "label": "Lake level is at or above Extreme Flood Level (99.00 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  },
+  "hinze-dam": {
+    "version": "11.2",
+    "approved_date": "2025-09-15",
+    "expiry_date": "2027-12-18",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 94.5,
+    "notes": "",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 94.50 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 94.5,
+            "label": "Lake level is at or above full supply level (94.50 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 100.28 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 100.28,
+            "label": "Lake level is at or above Flood of Record (100.28 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 104.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 104.0,
+            "label": "Lake level is at or above Extreme Flood Level (104.00 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  },
+  "lake-macdonald-dam": {
+    "version": "12.0",
+    "approved_date": "2025-08-06",
+    "expiry_date": "2029-05-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 93.0,
+    "notes": "The current EAP contains temporary cofferdam and siphon operating conditions. The indication is conservative and does not infer siphon status.",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "At least one siphon is activated to maintain the lake at or below operational FSL 93.0 m AHD, or a relevant Bureau warning is expected.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 93.0,
+            "label": "Lake level is at or above operational FSL 93.0 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%; siphon and Bureau-warning conditions remain unknown.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100%",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or predicted to exceed 94.0 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 94.0,
+            "label": "Lake level is at or above 94.0 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Stand Up 1 threshold: lake level is at or predicted to exceed 95.0 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 95.0,
+            "label": "Lake level is at or above 95.0 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Stand Up 2/3 level threshold: lake level is likely to exceed 96.0 m AHD; formal escalation also depends on failure-likelihood assessment.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">",
+            "value": 96.0,
+            "label": "Lake level is above 96.0 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "operator_failure_assessment",
+            "op": "==",
+            "value": "elevated",
+            "label": "Operator engineering assessment indicates an elevated failure likelihood",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ],
+    "stand_down_text": "Below operational FSL, or no current relevant flood warning, subject to the EAP decision process."
+  },
+  "lake-manchester-dam": {
+    "version": "11.2",
+    "approved_date": "2025-09-15",
+    "expiry_date": "2028-07-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 50.9,
+    "notes": "",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 50.90 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 50.9,
+            "label": "Lake level is at or above full supply level (50.90 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 53.34 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 53.34,
+            "label": "Lake level is at or above Flood of Record (53.34 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 57.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 57.0,
+            "label": "Lake level is at or above Extreme Flood Level (57.00 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  },
+  "leslie-harrison-dam": {
+    "version": "10.2",
+    "approved_date": "2025-09-01",
+    "expiry_date": "2027-07-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 15.24,
+    "notes": "",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 15.24 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 15.24,
+            "label": "Lake level is at or above full supply level (15.24 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 18.62 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 18.62,
+            "label": "Lake level is at or above Flood of Record (18.62 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 21.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 21.0,
+            "label": "Lake level is at or above Extreme Flood Level (21.00 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  },
+  "little-nerang-dam": {
+    "version": "11.2",
+    "approved_date": "2025-09-01",
+    "expiry_date": "2027-12-18",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 168.02,
+    "notes": "",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 168.02 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 168.02,
+            "label": "Lake level is at or above full supply level (168.02 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 171.74 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 171.74,
+            "label": "Lake level is at or above Flood of Record (171.74 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 172.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 172.0,
+            "label": "Lake level is at or above Extreme Flood Level (172.00 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "The EAP also requires consideration of cascade impacts and activation of the Hinze Dam EAP.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 172.0,
+            "label": "Lake level is at or above 172.0 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "cascade_assessment",
+            "op": "==",
+            "value": "required",
+            "label": "Cascade assessment/related EAP activation is required",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  },
+  "poona-dam": {
+    "version": "11.1",
+    "approved_date": "2024-09-16",
+    "expiry_date": "2028-05-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 152.7,
+    "notes": "",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 152.70 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 152.7,
+            "label": "Lake level is at or above full supply level (152.70 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 152.98 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 152.98,
+            "label": "Lake level is at or above Flood of Record (152.98 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 153.50 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 153.5,
+            "label": "Lake level is at or above Extreme Flood Level (153.50 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "The EAP also requires Wappa Dam cascade consideration.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 153.5,
+            "label": "Lake level is at or above 153.50 m AHD",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "cascade_assessment",
+            "op": "==",
+            "value": "required",
+            "label": "Wappa cascade assessment is required",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  },
+  "somerset-dam": {
+    "version": "11.0",
+    "approved_date": "2025-01-16",
+    "expiry_date": "2028-04-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf",
+    "review_status": "manually_verified",
+    "notes": "Somerset uses an Operational Full Supply Level that may be altered by regulation. Percentage full alone is not a reliable substitute for the operational elevation and flood forecast.",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Reservoir is within 1 m of the current Operational FSL and flood commencement is possible; a relevant Bureau warning is expected.",
+        "conditions": [
+          {
+            "metric": "within_operational_fsl_m",
+            "op": "<=",
+            "value": 1.0,
+            "label": "Reservoir is within 1 m of the current Operational FSL",
+            "publicly_observable": true,
+            "unit": "m"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Reservoir is within 1 m of the current Operational FSL and flood commencement is likely.",
+        "conditions": [
+          {
+            "metric": "within_operational_fsl_m",
+            "op": "<=",
+            "value": 1.0,
+            "label": "Reservoir is within 1 m of the current Operational FSL",
+            "publicly_observable": true,
+            "unit": "m"
+          },
+          {
+            "metric": "forecast_flood_commencement",
+            "op": "==",
+            "value": "likely",
+            "label": "Flood commencement is forecast as likely",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Reservoir is above the applicable full supply level, or radial/sluice gate failure occurs during a flood. Wivenhoe cascade arrangements are also relevant.",
+        "conditions": [
+          {
+            "metric": "above_operational_fsl",
+            "op": "==",
+            "value": true,
+            "label": "Reservoir is above the applicable Operational FSL",
+            "publicly_observable": true
+          },
+          {
+            "metric": "operator_gate_or_cascade_assessment",
+            "op": "==",
+            "value": "stand_up",
+            "label": "Gate/cascade decision conditions are met",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ],
+    "stand_down_text": "Reservoir below Operational FSL and releases have ceased."
+  },
+  "wappa-dam": {
+    "version": "11.1",
+    "approved_date": "2024-09-16",
+    "expiry_date": "2028-05-01",
+    "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf",
+    "review_status": "manually_verified",
+    "fsl_m_ahd": 44.81,
+    "notes": "",
+    "rules": [
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Lake level is at or above FSL 44.81 m AHD and the Bureau is expected to issue a relevant flood warning.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 44.81,
+            "label": "Lake level is at or above full supply level (44.81 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "alert",
+        "hazard": "flood_operations",
+        "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+        "conditions": [
+          {
+            "metric": "percent_full",
+            "op": ">=",
+            "value": 100,
+            "label": "Published storage is at or above 100% of the current operating capacity",
+            "publicly_observable": true,
+            "unit": "%",
+            "proxy": true
+          },
+          {
+            "metric": "bom_flood_warning_expected",
+            "op": "==",
+            "value": true,
+            "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+            "publicly_observable": false
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "lean_forward",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 46.68 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 46.68,
+            "label": "Lake level is at or above Flood of Record (46.68 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      },
+      {
+        "level": "stand_up",
+        "hazard": "flood_operations",
+        "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 48.00 m AHD.",
+        "conditions": [
+          {
+            "metric": "storage_level_m",
+            "op": ">=",
+            "value": 48.0,
+            "label": "Lake level is at or above Extreme Flood Level (48.00 m AHD)",
+            "publicly_observable": true,
+            "unit": "m AHD"
+          }
+        ],
+        "source_page": "Emergency activation quick reference"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3920 @@
+{
+  "generated_at": "2026-07-11T04:53:41+00:00",
+  "counts": {
+    "unable_to_assess": 33,
+    "below_alert": 8,
+    "conditions_incomplete": 3,
+    "not_applicable": 1
+  },
+  "formal_activation_source": "not_integrated",
+  "public_warning_source": "not_integrated",
+  "disclaimer": "These are indicative comparisons with published EAP flood-operation triggers. They are not formal activation levels, emergency warnings, or evacuation advice.",
+  "dams": [
+    {
+      "dam_id": "atkinson-dam",
+      "assessed_at": "2026-07-11T04:53:40+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 72.3,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "baroon-pocket-dam",
+      "assessed_at": "2026-07-11T04:53:40+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 99.6,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "bill-gunn-dam",
+      "assessed_at": "2026-07-11T04:53:40+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 81.8,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "bjelke-petersen-dam",
+      "assessed_at": "2026-07-11T04:53:40+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 98.29,
+      "storage_level_m": 307.203,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.002,
+      "storage_level_rate_m_per_hour": -0.0003,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "boondooma-dam",
+      "assessed_at": "2026-07-11T04:53:40+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 95.11,
+      "storage_level_m": 279.857,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.002,
+      "storage_level_rate_m_per_hour": -0.0003,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "borumba-dam",
+      "assessed_at": "2026-07-11T04:53:40+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 99.9,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "burdekin-falls-dam",
+      "assessed_at": "2026-07-11T04:53:40+00:00",
+      "indication": "below_alert",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 96.63,
+      "storage_level_m": 153.722,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": 0.002,
+      "storage_level_rate_m_per_hour": 0.0003,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Elevation 153.90 m AHD or higher and rising.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 153.9,
+              "label": "Storage level is at or above 153.90 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "storage_level_trend",
+              "op": "==",
+              "value": "rising",
+              "label": "Storage level is rising",
+              "publicly_observable": true
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Storage level is at or above 153.90 m AHD",
+              "expected": 153.9,
+              "operator": ">=",
+              "actual": 153.722,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "not_met"
+            },
+            {
+              "metric": "storage_level_trend",
+              "label": "Storage level is rising",
+              "expected": "rising",
+              "operator": "==",
+              "actual": "steady",
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "not_met"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Storage above full supply level 154.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">",
+              "value": 154.0,
+              "label": "Storage level is above FSL 154.00 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Storage level is above FSL 154.00 m AHD",
+              "expected": 154.0,
+              "operator": ">",
+              "actual": 153.722,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "not_met"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Storage above elevation 157.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">",
+              "value": 157.0,
+              "label": "Storage level is above 157.00 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Storage level is above 157.00 m AHD",
+              "expected": 157.0,
+              "operator": ">",
+              "actual": 153.722,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "not_met"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "9.4",
+        "approved_date": null,
+        "expiry_date": "2027-05-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 154.0,
+        "notes": "Only the published flood-operations row is used for this storage-based indication. Structural, earthquake and other hazards are not inferred.",
+        "stand_down_text": "Storage level 154.30 m AHD and falling, with no forecast increase in elevation.",
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "callide-dam",
+      "assessed_at": "2026-07-11T04:53:40+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 13.469999999999999,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:50:03+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "cania-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 27.59,
+      "storage_level_m": 318.481,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.001,
+      "storage_level_rate_m_per_hour": -0.0002,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "cedar-pocket-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 100.0,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "clarendon-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 81.5,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "coolmunda-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 59.14,
+      "storage_level_m": 312.226,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": 0.0,
+      "storage_level_rate_m_per_hour": 0.0,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "cooloolabin-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "below_alert",
+      "potential_level": null,
+      "confidence": "medium",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
+      "evidence": [],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [],
+      "current_percent_full": 96.3,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 293.00 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 293.0,
+              "label": "Lake level is at or above full supply level (293.00 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (293.00 m AHD)",
+              "expected": 293.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 96.3,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "not_met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Spillway crest high level reaches 296.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 296.0,
+              "label": "Lake level is at or above spillway crest high level 296.00 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above spillway crest high level 296.00 m AHD",
+              "expected": 296.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 296.48 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 296.48,
+              "label": "Lake level is at or above Flood of Record (296.48 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (296.48 m AHD)",
+              "expected": 296.48,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 296.60 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 296.6,
+              "label": "Lake level is at or above Extreme Flood Level (296.60 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (296.60 m AHD)",
+              "expected": 296.6,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "11.2",
+        "approved_date": "2025-08-26",
+        "expiry_date": "2028-05-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 293.0,
+        "notes": "The EAP also contains non-flood hazards that cannot be inferred from public storage data.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "e-j-beardmore-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 82.71,
+      "storage_level_m": 206.595,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": 0.005,
+      "storage_level_rate_m_per_hour": 0.0008,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "enoggera-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 100.3,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "eungella-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 99.99,
+      "storage_level_m": 562.701,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.006,
+      "storage_level_rate_m_per_hour": -0.001,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "ewen-maddock-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "below_alert",
+      "potential_level": null,
+      "confidence": "low",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
+      "evidence": [],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [
+        "The cached EAP expiry date (2026-06-30) has passed; a replacement document requires review."
+      ],
+      "current_percent_full": 99.0,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 25.38 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 25.38,
+              "label": "Lake level is at or above full supply level (25.38 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (25.38 m AHD)",
+              "expected": 25.38,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 99.0,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "not_met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 26.92 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 26.92,
+              "label": "Lake level is at or above Flood of Record (26.92 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (26.92 m AHD)",
+              "expected": 26.92,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 27.50 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 27.5,
+              "label": "Lake level is at or above Extreme Flood Level (27.50 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (27.50 m AHD)",
+              "expected": 27.5,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "11.5",
+        "approved_date": "2025-08-26",
+        "expiry_date": "2026-06-30",
+        "document_expired": true,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 25.38,
+        "notes": "",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "fairbairn-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 32.43,
+      "storage_level_m": 196.526,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.003,
+      "storage_level_rate_m_per_hour": -0.0005,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "fred-haigh-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 96.88,
+      "storage_level_m": 75.247,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.001,
+      "storage_level_rate_m_per_hour": -0.0002,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "glenlyon-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 68.38,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:50:03+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "gold-creek-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "below_alert",
+      "potential_level": null,
+      "confidence": "medium",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
+      "evidence": [],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [],
+      "current_percent_full": 86.0,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 92.75 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 92.75,
+              "label": "Lake level is at or above full supply level (92.75 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (92.75 m AHD)",
+              "expected": 92.75,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 86.0,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "not_met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Spillway crest high level reaches 95.75 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 95.75,
+              "label": "Lake level is at or above spillway crest high level 95.75 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above spillway crest high level 95.75 m AHD",
+              "expected": 95.75,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 96.91 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 96.91,
+              "label": "Lake level is at or above Flood of Record (96.91 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (96.91 m AHD)",
+              "expected": 96.91,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 99.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 99.0,
+              "label": "Lake level is at or above Extreme Flood Level (99.00 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (99.00 m AHD)",
+              "expected": 99.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "10.2",
+        "approved_date": "2025-08-26",
+        "expiry_date": "2028-04-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 92.75,
+        "notes": "",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "hinze-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "conditions_incomplete",
+      "potential_level": "alert",
+      "confidence": "low",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable part of a published alert rule appears to be met, but one or more required conditions are unavailable or non-public.",
+      "evidence": [
+        "Published storage is at or above 100% of the current operating capacity"
+      ],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [
+        "This indication uses percentage full as a low-confidence proxy because current reservoir elevation was unavailable."
+      ],
+      "current_percent_full": 100.0,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 94.50 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 94.5,
+              "label": "Lake level is at or above full supply level (94.50 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (94.50 m AHD)",
+              "expected": 94.5,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "possible",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 100.0,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 100.28 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 100.28,
+              "label": "Lake level is at or above Flood of Record (100.28 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (100.28 m AHD)",
+              "expected": 100.28,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 104.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 104.0,
+              "label": "Lake level is at or above Extreme Flood Level (104.00 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (104.00 m AHD)",
+              "expected": 104.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "11.2",
+        "approved_date": "2025-09-15",
+        "expiry_date": "2027-12-18",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 94.5,
+        "notes": "",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "julius-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 96.17,
+      "storage_level_m": 223.222,
+      "storage_level_observed_at": "2026-07-07T23:50:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.002,
+      "storage_level_rate_m_per_hour": -0.0003,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "kinchant-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 85.92,
+      "storage_level_m": 57.144,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.002,
+      "storage_level_rate_m_per_hour": -0.0003,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "kroombit-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 2.5,
+      "storage_level_m": 255.047,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "rising",
+      "storage_level_change_m": 0.013,
+      "storage_level_rate_m_per_hour": 0.0022,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "lake-macdonald-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "below_alert",
+      "potential_level": null,
+      "confidence": "medium",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
+      "evidence": [],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [],
+      "current_percent_full": 42.0,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "At least one siphon is activated to maintain the lake at or below operational FSL 93.0 m AHD, or a relevant Bureau warning is expected.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 93.0,
+              "label": "Lake level is at or above operational FSL 93.0 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above operational FSL 93.0 m AHD",
+              "expected": 93.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%; siphon and Bureau-warning conditions remain unknown.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100%",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100%",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 42.0,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "not_met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or predicted to exceed 94.0 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 94.0,
+              "label": "Lake level is at or above 94.0 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above 94.0 m AHD",
+              "expected": 94.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Stand Up 1 threshold: lake level is at or predicted to exceed 95.0 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 95.0,
+              "label": "Lake level is at or above 95.0 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above 95.0 m AHD",
+              "expected": 95.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Stand Up 2/3 level threshold: lake level is likely to exceed 96.0 m AHD; formal escalation also depends on failure-likelihood assessment.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">",
+              "value": 96.0,
+              "label": "Lake level is above 96.0 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "operator_failure_assessment",
+              "op": "==",
+              "value": "elevated",
+              "label": "Operator engineering assessment indicates an elevated failure likelihood",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is above 96.0 m AHD",
+              "expected": 96.0,
+              "operator": ">",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "operator_failure_assessment",
+              "label": "Operator engineering assessment indicates an elevated failure likelihood",
+              "expected": "elevated",
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "12.0",
+        "approved_date": "2025-08-06",
+        "expiry_date": "2029-05-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 93.0,
+        "notes": "The current EAP contains temporary cofferdam and siphon operating conditions. The indication is conservative and does not infer siphon status.",
+        "stand_down_text": "Below operational FSL, or no current relevant flood warning, subject to the EAP decision process.",
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "lake-manchester-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "below_alert",
+      "potential_level": null,
+      "confidence": "medium",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
+      "evidence": [],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [],
+      "current_percent_full": 89.7,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 50.90 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 50.9,
+              "label": "Lake level is at or above full supply level (50.90 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (50.90 m AHD)",
+              "expected": 50.9,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 89.7,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "not_met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 53.34 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 53.34,
+              "label": "Lake level is at or above Flood of Record (53.34 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (53.34 m AHD)",
+              "expected": 53.34,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 57.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 57.0,
+              "label": "Lake level is at or above Extreme Flood Level (57.00 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (57.00 m AHD)",
+              "expected": 57.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "11.2",
+        "approved_date": "2025-09-15",
+        "expiry_date": "2028-07-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 50.9,
+        "notes": "",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "leslie-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 58.29,
+      "storage_level_m": 468.336,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": 0.0,
+      "storage_level_rate_m_per_hour": 0.0,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "leslie-harrison-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "below_alert",
+      "potential_level": null,
+      "confidence": "medium",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
+      "evidence": [],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [],
+      "current_percent_full": 94.3,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 15.24 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 15.24,
+              "label": "Lake level is at or above full supply level (15.24 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (15.24 m AHD)",
+              "expected": 15.24,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 94.3,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "not_met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 18.62 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 18.62,
+              "label": "Lake level is at or above Flood of Record (18.62 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (18.62 m AHD)",
+              "expected": 18.62,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 21.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 21.0,
+              "label": "Lake level is at or above Extreme Flood Level (21.00 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (21.00 m AHD)",
+              "expected": 21.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "10.2",
+        "approved_date": "2025-09-01",
+        "expiry_date": "2027-07-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 15.24,
+        "notes": "",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "little-nerang-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "conditions_incomplete",
+      "potential_level": "alert",
+      "confidence": "low",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable part of a published alert rule appears to be met, but one or more required conditions are unavailable or non-public.",
+      "evidence": [
+        "Published storage is at or above 100% of the current operating capacity"
+      ],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [
+        "This indication uses percentage full as a low-confidence proxy because current reservoir elevation was unavailable."
+      ],
+      "current_percent_full": 100.1,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 168.02 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 168.02,
+              "label": "Lake level is at or above full supply level (168.02 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (168.02 m AHD)",
+              "expected": 168.02,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "possible",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 100.1,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 171.74 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 171.74,
+              "label": "Lake level is at or above Flood of Record (171.74 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (171.74 m AHD)",
+              "expected": 171.74,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 172.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 172.0,
+              "label": "Lake level is at or above Extreme Flood Level (172.00 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (172.00 m AHD)",
+              "expected": 172.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "The EAP also requires consideration of cascade impacts and activation of the Hinze Dam EAP.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 172.0,
+              "label": "Lake level is at or above 172.0 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "cascade_assessment",
+              "op": "==",
+              "value": "required",
+              "label": "Cascade assessment/related EAP activation is required",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above 172.0 m AHD",
+              "expected": 172.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "cascade_assessment",
+              "label": "Cascade assessment/related EAP activation is required",
+              "expected": "required",
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "11.2",
+        "approved_date": "2025-09-01",
+        "expiry_date": "2027-12-18",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 168.02,
+        "notes": "",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "maroon-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 100.1,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "moogerah-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 83.3,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "nindooinbah-dam",
+      "indication": "not_applicable",
+      "potential_level": null,
+      "confidence": "not_applicable",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "No public referable-dam EAP located in the Queensland directory.",
+      "storage_level_m": null,
+      "storage_level_trend": null,
+      "rules": [],
+      "eap": {
+        "dam_id": "nindooinbah-dam",
+        "referable": false,
+        "directory_name": "Nindooinbah Dam",
+        "operator": "Seqwater",
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "eap_url": null,
+        "emergency_info_url": null,
+        "rules": [],
+        "document_status": "not_listed",
+        "review_status": "not_applicable",
+        "notes": "No public referable-dam EAP located in the Queensland directory.",
+        "document_expired": false
+      }
+    },
+    {
+      "dam_id": "north-pine-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 54.0,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "paradise-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 97.24,
+      "storage_level_m": 61.54,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.002,
+      "storage_level_rate_m_per_hour": -0.0003,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "peter-faust-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 97.75,
+      "storage_level_m": 85.352,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": 0.003,
+      "storage_level_rate_m_per_hour": 0.0005,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "poona-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "below_alert",
+      "potential_level": null,
+      "confidence": "medium",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable published Alert flood threshold represented in the app does not appear to be met.",
+      "evidence": [],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [],
+      "current_percent_full": 76.9,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 152.70 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 152.7,
+              "label": "Lake level is at or above full supply level (152.70 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (152.70 m AHD)",
+              "expected": 152.7,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "not_met",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 76.9,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "not_met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 152.98 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 152.98,
+              "label": "Lake level is at or above Flood of Record (152.98 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (152.98 m AHD)",
+              "expected": 152.98,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 153.50 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 153.5,
+              "label": "Lake level is at or above Extreme Flood Level (153.50 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (153.50 m AHD)",
+              "expected": 153.5,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "The EAP also requires Wappa Dam cascade consideration.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 153.5,
+              "label": "Lake level is at or above 153.50 m AHD",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "cascade_assessment",
+              "op": "==",
+              "value": "required",
+              "label": "Wappa cascade assessment is required",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above 153.50 m AHD",
+              "expected": 153.5,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "cascade_assessment",
+              "label": "Wappa cascade assessment is required",
+              "expected": "required",
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "11.1",
+        "approved_date": "2024-09-16",
+        "expiry_date": "2028-05-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 152.7,
+        "notes": "",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "sideling-creek-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 100.6,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "somerset-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [
+        "Reservoir is within 1 m of the current Operational FSL",
+        "Bureau flood warning is expected for the relevant catchment or watercourse",
+        "Flood commencement is forecast as likely",
+        "Reservoir is above the applicable Operational FSL",
+        "Gate/cascade decision conditions are met"
+      ],
+      "warnings": [],
+      "current_percent_full": 80.0,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Reservoir is within 1 m of the current Operational FSL and flood commencement is possible; a relevant Bureau warning is expected.",
+          "conditions": [
+            {
+              "metric": "within_operational_fsl_m",
+              "op": "<=",
+              "value": 1.0,
+              "label": "Reservoir is within 1 m of the current Operational FSL",
+              "publicly_observable": true,
+              "unit": "m"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "within_operational_fsl_m",
+              "label": "Reservoir is within 1 m of the current Operational FSL",
+              "expected": 1.0,
+              "operator": "<=",
+              "actual": null,
+              "unit": "m",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Reservoir is within 1 m of the current Operational FSL and flood commencement is likely.",
+          "conditions": [
+            {
+              "metric": "within_operational_fsl_m",
+              "op": "<=",
+              "value": 1.0,
+              "label": "Reservoir is within 1 m of the current Operational FSL",
+              "publicly_observable": true,
+              "unit": "m"
+            },
+            {
+              "metric": "forecast_flood_commencement",
+              "op": "==",
+              "value": "likely",
+              "label": "Flood commencement is forecast as likely",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "within_operational_fsl_m",
+              "label": "Reservoir is within 1 m of the current Operational FSL",
+              "expected": 1.0,
+              "operator": "<=",
+              "actual": null,
+              "unit": "m",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "forecast_flood_commencement",
+              "label": "Flood commencement is forecast as likely",
+              "expected": "likely",
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Reservoir is above the applicable full supply level, or radial/sluice gate failure occurs during a flood. Wivenhoe cascade arrangements are also relevant.",
+          "conditions": [
+            {
+              "metric": "above_operational_fsl",
+              "op": "==",
+              "value": true,
+              "label": "Reservoir is above the applicable Operational FSL",
+              "publicly_observable": true
+            },
+            {
+              "metric": "operator_gate_or_cascade_assessment",
+              "op": "==",
+              "value": "stand_up",
+              "label": "Gate/cascade decision conditions are met",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "above_operational_fsl",
+              "label": "Reservoir is above the applicable Operational FSL",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "operator_gate_or_cascade_assessment",
+              "label": "Gate/cascade decision conditions are met",
+              "expected": "stand_up",
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "11.0",
+        "approved_date": "2025-01-16",
+        "expiry_date": "2028-04-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "Somerset uses an Operational Full Supply Level that may be altered by regulation. Percentage full alone is not a reliable substitute for the operational elevation and flood forecast.",
+        "stand_down_text": "Reservoir below Operational FSL and releases have ceased.",
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "teemburra-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 100.15,
+      "storage_level_m": 290.024,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.001,
+      "storage_level_rate_m_per_hour": -0.0002,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "tinaroo-falls-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 75.68,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:50:03+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "wappa-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "conditions_incomplete",
+      "potential_level": "alert",
+      "confidence": "low",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The measurable part of a published alert rule appears to be met, but one or more required conditions are unavailable or non-public.",
+      "evidence": [
+        "Published storage is at or above 100% of the current operating capacity"
+      ],
+      "missing_conditions": [
+        "Bureau flood warning is expected for the relevant catchment or watercourse"
+      ],
+      "warnings": [
+        "This indication uses percentage full as a low-confidence proxy because current reservoir elevation was unavailable."
+      ],
+      "current_percent_full": 100.3,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Lake level is at or above FSL 44.81 m AHD and the Bureau is expected to issue a relevant flood warning.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 44.81,
+              "label": "Lake level is at or above full supply level (44.81 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above full supply level (44.81 m AHD)",
+              "expected": 44.81,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "alert",
+          "hazard": "flood_operations",
+          "text": "Low-confidence public proxy: published storage is at or above 100%, but the EAP also requires a relevant Bureau flood-warning condition.",
+          "conditions": [
+            {
+              "metric": "percent_full",
+              "op": ">=",
+              "value": 100,
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "publicly_observable": true,
+              "unit": "%",
+              "proxy": true
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "op": "==",
+              "value": true,
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "publicly_observable": false
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "possible",
+          "condition_results": [
+            {
+              "metric": "percent_full",
+              "label": "Published storage is at or above 100% of the current operating capacity",
+              "expected": 100,
+              "operator": ">=",
+              "actual": 100.3,
+              "unit": "%",
+              "proxy": true,
+              "publicly_observable": true,
+              "result": "met"
+            },
+            {
+              "metric": "bom_flood_warning_expected",
+              "label": "Bureau flood warning is expected for the relevant catchment or watercourse",
+              "expected": true,
+              "operator": "==",
+              "actual": null,
+              "unit": null,
+              "proxy": false,
+              "publicly_observable": false,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "lean_forward",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Flood of Record level of 46.68 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 46.68,
+              "label": "Lake level is at or above Flood of Record (46.68 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Flood of Record (46.68 m AHD)",
+              "expected": 46.68,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        },
+        {
+          "level": "stand_up",
+          "hazard": "flood_operations",
+          "text": "Lake level reaches or is predicted to exceed the published Extreme Flood Level of 48.00 m AHD.",
+          "conditions": [
+            {
+              "metric": "storage_level_m",
+              "op": ">=",
+              "value": 48.0,
+              "label": "Lake level is at or above Extreme Flood Level (48.00 m AHD)",
+              "publicly_observable": true,
+              "unit": "m AHD"
+            }
+          ],
+          "source_page": "Emergency activation quick reference",
+          "assessment": "unknown",
+          "condition_results": [
+            {
+              "metric": "storage_level_m",
+              "label": "Lake level is at or above Extreme Flood Level (48.00 m AHD)",
+              "expected": 48.0,
+              "operator": ">=",
+              "actual": null,
+              "unit": "m AHD",
+              "proxy": false,
+              "publicly_observable": true,
+              "result": "unknown"
+            }
+          ]
+        }
+      ],
+      "eap": {
+        "referable": true,
+        "document_status": "available_seed",
+        "review_status": "manually_verified",
+        "version": "11.1",
+        "approved_date": "2024-09-16",
+        "expiry_date": "2028-05-01",
+        "document_expired": false,
+        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf",
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": 44.81,
+        "notes": "",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "wivenhoe-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 83.5,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "wuruma-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [
+        "The current storage reading is stale or unavailable; no current EAP threshold indication is asserted."
+      ],
+      "current_percent_full": 97.45,
+      "storage_level_m": 228.041,
+      "storage_level_observed_at": "2026-07-07T23:00:00+10:00",
+      "storage_level_trend": "steady",
+      "storage_level_change_m": -0.002,
+      "storage_level_rate_m_per_hour": -0.0003,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    },
+    {
+      "dam_id": "wyaralong-dam",
+      "assessed_at": "2026-07-11T04:53:41+00:00",
+      "indication": "unable_to_assess",
+      "potential_level": null,
+      "confidence": "indeterminate",
+      "formal_activation": "not_confirmed",
+      "public_warning_status": "not_assessed",
+      "reason": "The public data does not contain enough information to assess the published flood-trigger rules.",
+      "evidence": [],
+      "missing_conditions": [],
+      "warnings": [],
+      "current_percent_full": 98.2,
+      "storage_level_m": null,
+      "storage_level_observed_at": "2025-12-02T20:00:00+10:00",
+      "storage_level_trend": null,
+      "storage_level_change_m": null,
+      "storage_level_rate_m_per_hour": null,
+      "rules": [],
+      "eap": {
+        "referable": true,
+        "document_status": "pending_audit",
+        "review_status": "pending",
+        "version": null,
+        "approved_date": null,
+        "expiry_date": null,
+        "document_expired": false,
+        "eap_url": null,
+        "emergency_info_url": null,
+        "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+        "fsl_m_ahd": null,
+        "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
+        "stand_down_text": null,
+        "sha256": null,
+        "checked_at": "2026-07-11T04:35:52+00:00",
+        "downloaded_at": null,
+        "fetch_error": null
+      },
+      "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
+    }
+  ]
+}

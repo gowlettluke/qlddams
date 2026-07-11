@@ -107,6 +107,38 @@ def iso_datetime(value: Any, assume_brisbane: bool = True) -> str | None:
         return None
 
 
+def iso_datetime_sunwater(value: Any) -> str | None:
+    """Parse Sunwater timestamps without silently swapping day and month.
+
+    Sunwater endpoints have used both ISO timestamps and slash-formatted dates.
+    For an ambiguous slash date, evaluate both interpretations and choose the
+    plausible instant closest to the collection time, rejecting far-future data.
+    """
+    if value in (None, ""):
+        return None
+    raw = str(value).strip()
+    candidates: list[datetime] = []
+    for dayfirst in (False, True):
+        try:
+            dt = date_parser.parse(raw, dayfirst=dayfirst, fuzzy=False)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=BRISBANE)
+            candidates.append(dt)
+        except Exception:
+            pass
+    if not candidates:
+        return None
+    now = datetime.now(timezone.utc)
+    def score(dt: datetime) -> float:
+        utc = dt.astimezone(timezone.utc)
+        future_penalty = 10**10 if utc > now + timedelta(days=2) else 0
+        return future_penalty + abs((utc - now).total_seconds())
+    chosen = min(candidates, key=score)
+    if chosen.astimezone(timezone.utc) > now + timedelta(days=2):
+        return None
+    return chosen.isoformat(timespec="seconds")
+
+
 def read_json(path: Path, default: Any) -> Any:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -418,7 +450,7 @@ def fetch_sunwater_current_api(session: requests.Session, station: str, dam_id: 
     response.raise_for_status()
     value = response.json()
     return {
-        "dam_id": dam_id, "observed_at": iso_datetime(value.get("date"), assume_brisbane=False),
+        "dam_id": dam_id, "observed_at": iso_datetime_sunwater(value.get("date")),
         "percent_full": number(value.get("percentageFull")), "volume_ml": number(value.get("megaLitres")),
         "full_supply_volume_ml": number(value.get("totalCapacityMegaLitres")), "storage_level_m": None,
         "outflow_cms": None, "rainfall_mm": None, "river_level_m": None, "information": None,
@@ -478,7 +510,7 @@ def fetch_sunwater_history(session: requests.Session, station: str, days: int) -
         payload = response.json()
         values = payload.get("value") or []
         for value in values:
-            observed = iso_datetime(value.get("date"), assume_brisbane=False)
+            observed = iso_datetime_sunwater(value.get("date"))
             if not observed:
                 continue
             records.append({
@@ -609,7 +641,7 @@ def merge_history(dam_id: str, new_records: Iterable[dict[str, Any]], max_days: 
             dt = date_parser.parse(stamp)
             if dt.tzinfo is None: dt = dt.replace(tzinfo=BRISBANE)
             dt = dt.astimezone(timezone.utc)
-            if dt < cutoff: continue
+            if dt < cutoff or dt > now + timedelta(days=2): continue
         except Exception:
             continue
         parsed.append((dt, record))
@@ -644,7 +676,9 @@ def sunwater_history_days(dam_id: str, requested_days: int) -> int:
         try:
             dt = date_parser.parse(item["observed_at"])
             if dt.tzinfo is None: dt = dt.replace(tzinfo=BRISBANE)
-            live_dates.append(dt.astimezone(timezone.utc))
+            utc = dt.astimezone(timezone.utc)
+            if utc <= datetime.now(timezone.utc) + timedelta(days=2):
+                live_dates.append(utc)
         except Exception:
             pass
     if not live_dates:
@@ -700,7 +734,8 @@ def run(history_days: int) -> int:
     try:
         records = parse_seqwater_current(session, registry)
         for item in records: current[item["dam_id"]] = item
-        health["providers"]["seqwater_current"] = health_record("ok", records=len(records), url=SEQ_CURRENT_URL)
+        seq_status = "ok" if len(records) >= 25 else "partial"
+        health["providers"]["seqwater_current"] = health_record(seq_status, records=len(records), expected_records=25, url=SEQ_CURRENT_URL)
     except Exception as exc:
         LOG.exception("Seqwater current failed")
         health["providers"]["seqwater_current"] = health_record("failed", message=str(exc), retained_previous=True)
@@ -723,15 +758,11 @@ def run(history_days: int) -> int:
         LOG.exception("Queensland station registry failed")
         health["providers"]["qld_station_registry"] = health_record("failed", message=str(exc))
 
+    # Configured station codes remain preferred until a candidate is proven by a
+    # successful API response. This prevents a nearby monitoring station from
+    # being persisted merely because its name is similar to a dam.
     codes = discover_sunwater_codes(session, registry, sites)
     changed_registry = False
-    for dam in dams:
-        code = codes.get(dam["id"])
-        if code and dam.get("station_code") != code:
-            dam["station_code"] = code; changed_registry = True
-    if changed_registry:
-        write_json(CONFIG / "dams.json", dams)
-        registry = Registry(dams)
 
     # Sunwater current. Page values are a fallback; API values replace them.
     page_values: dict[str, dict[str, Any]] = {}
@@ -804,6 +835,26 @@ def run(history_days: int) -> int:
     for dam in dams:
         item = copy.deepcopy(current.get(dam["id"], {"dam_id":dam["id"], "source":dam["operator"], "quality_status":"missing"}))
         observations = read_json(HISTORY / f"{dam['id']}.json", {"observations":[]}).get("observations", [])
+        # The Sunwater current-capacity endpoint omits elevation, outflow and
+        # rainfall. Carry the newest non-future historical metrics into the latest
+        # row when they are recent enough to represent the same operating state.
+        valid_history = []
+        now_utc = datetime.now(timezone.utc)
+        for observation in observations:
+            try:
+                dt = date_parser.parse(observation.get("observed_at", ""))
+                if dt.tzinfo is None: dt = dt.replace(tzinfo=BRISBANE)
+                dt = dt.astimezone(timezone.utc)
+                if dt <= now_utc + timedelta(days=2): valid_history.append((dt, observation))
+            except Exception:
+                pass
+        if valid_history:
+            history_dt, history_latest = max(valid_history, key=lambda pair: pair[0])
+            if now_utc - history_dt <= timedelta(hours=48):
+                for metric in ("storage_level_m", "outflow_cms", "rainfall_mm", "river_level_m"):
+                    if item.get(metric) is None and history_latest.get(metric) is not None:
+                        item[metric] = history_latest.get(metric)
+                item["supplemental_observed_at"] = history_latest.get("observed_at")
         pct = number(item.get("percent_full"))
         item["change_24h"] = closest_delta(observations, pct, item.get("observed_at"), 1)
         item["change_7d"] = closest_delta(observations, pct, item.get("observed_at"), 7)

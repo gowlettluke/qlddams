@@ -1,9 +1,21 @@
-name: Update Queensland dam data
+name: Audit Queensland dam EAPs
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "config/eap_*.json"
+      - "scripts/update_eap_data.py"
+      - "scripts/assess_eap_status.py"
+      - ".github/workflows/update-eap-data.yml"
   workflow_dispatch:
+    inputs:
+      dam_id:
+        description: "Optional single dam id (leave blank to audit all dams)"
+        required: false
+        type: string
   schedule:
-    - cron: "17 * * * *"
+    - cron: "41 3 * * 0"
 
 permissions:
   contents: write
@@ -15,9 +27,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collect:
+  audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 120
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -29,27 +41,33 @@ jobs:
           cache: pip
           cache-dependency-path: scripts/requirements.txt
 
-      - name: Install collector dependencies
+      - name: Install dependencies
         run: python -m pip install --requirement scripts/requirements.txt
 
-      - name: Collect live dam and gauge data
-        run: python scripts/update_dam_data.py --history-days 400
+      - name: Audit official EAP documents
+        shell: bash
+        run: |
+          if [ -n "${{ inputs.dam_id }}" ]; then
+            python scripts/update_eap_data.py --dam "${{ inputs.dam_id }}"
+          else
+            python scripts/update_eap_data.py
+          fi
 
-      - name: Calculate indicative EAP flood-trigger levels
+      - name: Recalculate indicative flood-trigger levels
         run: python scripts/assess_eap_status.py
 
-      - name: Validate generated dashboard data
+      - name: Validate dashboard data
         run: python scripts/validate_data.py
 
-      - name: Commit updated data
+      - name: Commit EAP audit data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data config/dams.json
+          git add data/eap_documents.json data/eap_status.json
           if git diff --cached --quiet; then
-            echo "No data changes to commit."
+            echo "No EAP changes to commit."
           else
-            git commit -m "Update Queensland dam data and EAP indications"
+            git commit -m "Audit Queensland dam EAP documents"
             git push
           fi
 
@@ -62,7 +80,7 @@ jobs:
           path: .
 
   deploy:
-    needs: collect
+    needs: audit
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -71,16 +89,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  required-feed-health:
-    needs: [collect, deploy]
-    if: always() && needs.collect.result == 'success'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out latest committed data
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Report required current-feed failures
-        run: python scripts/check_provider_health.py

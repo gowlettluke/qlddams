@@ -1,0 +1,407 @@
+[
+  {
+    "dam_id": "atkinson-dam",
+    "directory_name": "Atkinson Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "baroon-pocket-dam",
+    "directory_name": "Baroon Pocket Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "bill-gunn-dam",
+    "directory_name": "Bill Gunn Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "bjelke-petersen-dam",
+    "directory_name": "Bjelke-Petersen Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "boondooma-dam",
+    "directory_name": "Boondooma Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "borumba-dam",
+    "directory_name": "Borumba Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "burdekin-falls-dam",
+    "directory_name": "Burdekin Falls Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "callide-dam",
+    "directory_name": "Callide Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "cania-dam",
+    "directory_name": "Cania Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "cedar-pocket-dam",
+    "directory_name": "Cedar Pocket Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "clarendon-dam",
+    "directory_name": "Clarendon Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "coolmunda-dam",
+    "directory_name": "Coolmunda Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "cooloolabin-dam",
+    "directory_name": "Cooloolabin Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "e-j-beardmore-dam",
+    "directory_name": "EJ Beardmore Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "enoggera-dam",
+    "directory_name": "Enoggera Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "eungella-dam",
+    "directory_name": "Eungella Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "ewen-maddock-dam",
+    "directory_name": "Ewen Maddock Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "fairbairn-dam",
+    "directory_name": "Fairbairn Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "fred-haigh-dam",
+    "directory_name": "Fred Haigh Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "glenlyon-dam",
+    "directory_name": "Glenlyon Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "gold-creek-dam",
+    "directory_name": "Gold Creek Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "hinze-dam",
+    "directory_name": "Hinze Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "julius-dam",
+    "directory_name": "Julius Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "kinchant-dam",
+    "directory_name": "Kinchant Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "kroombit-dam",
+    "directory_name": "Kroombit Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "lake-macdonald-dam",
+    "directory_name": "Lake MacDonald Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "lake-manchester-dam",
+    "directory_name": "Lake Manchester Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "leslie-dam",
+    "directory_name": "Leslie Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "leslie-harrison-dam",
+    "directory_name": "Leslie Harrison Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "little-nerang-dam",
+    "directory_name": "Little Nerang Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "maroon-dam",
+    "directory_name": "Maroon Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "moogerah-dam",
+    "directory_name": "Moogerah Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "nindooinbah-dam",
+    "directory_name": "Nindooinbah Dam",
+    "operator": "Seqwater",
+    "referable": false,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": "No public referable-dam EAP located in the Queensland directory."
+  },
+  {
+    "dam_id": "north-pine-dam",
+    "directory_name": "North Pine Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "paradise-dam",
+    "directory_name": "Paradise Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "peter-faust-dam",
+    "directory_name": "Peter Faust Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "poona-dam",
+    "directory_name": "Poona Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "sideling-creek-dam",
+    "directory_name": "Sideling Creek Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "somerset-dam",
+    "directory_name": "Somerset Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "teemburra-dam",
+    "directory_name": "Teemburra Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "tinaroo-falls-dam",
+    "directory_name": "Tinaroo Falls Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "wappa-dam",
+    "directory_name": "Wappa Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "wivenhoe-dam",
+    "directory_name": "Wivenhoe Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  },
+  {
+    "dam_id": "wuruma-dam",
+    "directory_name": "Wuruma Dam",
+    "operator": "Sunwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
+    "notes": ""
+  },
+  {
+    "dam_id": "wyaralong-dam",
+    "directory_name": "Wyaralong Dam",
+    "operator": "Seqwater",
+    "referable": true,
+    "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
+    "operator_eap_index": null,
+    "notes": ""
+  }
+]
