@@ -139,7 +139,7 @@
     dark:L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap &copy; CARTO',maxZoom:20,subdomains:'abcd'})
   };
   state.base=bases.light.addTo(map);map.fitBounds(QLD_BOUNDS,{padding:[18,18]});setTimeout(()=>map.invalidateSize(true),200);
-  const gaugeLayer=L.layerGroup();
+  const gaugeLayer=L.layerGroup().addTo(map);
   const layerControl=L.control.layers({'OpenStreetMap':bases.light,'Dark map':bases.dark},{'BOM river gauges':gaugeLayer},{position:'topright'}).addTo(map);
   window.addEventListener('resize',()=>setTimeout(()=>map.invalidateSize(true),80));
 
