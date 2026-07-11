@@ -114,3 +114,11 @@ Stale observations never produce a current activation indication. Where the last
 The weekly **Audit Queensland dam EAPs** workflow checks the official Queensland directory and Sunwater emergency-management index, downloads available PDFs, records SHA-256 hashes, extracts activation quick-reference text, and flags changed documents for manual re-verification. Machine-extracted rules are labelled separately from manually verified rules.
 
 Structural, earthquake, security, seepage, instrumentation and engineering-judgement triggers are not inferred from storage levels. Public Australian Warning System warnings are also kept separate from EAP activation levels.
+
+## BOM Queensland river gauges
+
+The dashboard includes an official BOM-only Queensland river-gauge layer. Gauge locations and metadata are collected during the scheduled GitHub Actions run from the Bureau of Meteorology National Flood Gauge Network ArcGIS service. Current river heights, observation timestamps, flood classes and direct Plot/Table links are parsed from BOM Queensland “Latest River Heights” bulletin pages discovered from the official Queensland flood index.
+
+Observations are joined to locations primarily by exact BOM station number, then by AWRC/state station identifier where applicable, with a unique normalized station-name match only as a controlled fallback. Not every network gauge has a recent public bulletin observation, so statewide gauges may appear without a current height. Readings older than 24 hours are marked stale and are never described as current.
+
+Per-dam gauge cards are enriched from the same statewide BOM gauge records. Manually verified mappings in `config/gauges_overrides.json` remain authoritative. Automatically selected nearby BOM gauges are labelled as proximity candidates only; proximity to a dam does not prove an upstream, downstream or hydrological relationship.
