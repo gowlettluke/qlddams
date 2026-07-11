@@ -86,3 +86,4 @@ def test_reviewed_rules_survive_failed_pdf_refresh():
     after=json.loads((ROOT/'data/eap_documents.json').read_text(encoding='utf-8'))['dams']['fairbairn-dam']
     assert len(after['rules'])==before and after['review_status'].startswith('rules_verified')
 
+
