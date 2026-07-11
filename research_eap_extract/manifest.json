@@ -1,0 +1,1214 @@
+{
+  "atkinson-dam": {
+    "dam_id": "atkinson-dam",
+    "dam_name": "Atkinson Dam",
+    "candidates": [
+      [
+        "Atkinson Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf"
+      ],
+      [
+        "Atkinson Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf",
+    "http_status": 403,
+    "bytes": 10048,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "baroon-pocket-dam": {
+    "dam_id": "baroon-pocket-dam",
+    "dam_name": "Baroon Pocket Dam",
+    "candidates": [
+      [
+        "Baroon Pocket Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf"
+      ],
+      [
+        "Baroon Pocket Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf"
+      ],
+      [
+        "Baroon Pocket Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf"
+      ],
+      [
+        "Baroon Pocket Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf"
+      ],
+      [
+        "Baroon Pocket Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf"
+      ],
+      [
+        "Baroon Pocket Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf",
+    "http_status": 403,
+    "bytes": 10277,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "bill-gunn-dam": {
+    "dam_id": "bill-gunn-dam",
+    "dam_name": "Bill Gunn Dam",
+    "candidates": [
+      [
+        "Bill Gunn Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf"
+      ],
+      [
+        "Bill Gunn Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf"
+      ],
+      [
+        "Bill Gunn Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf"
+      ],
+      [
+        "Bill Gunn Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf",
+    "http_status": 403,
+    "bytes": 10265,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "bjelke-petersen-dam": {
+    "dam_id": "bjelke-petersen-dam",
+    "dam_name": "Bjelke-Petersen Dam",
+    "candidates": [
+      [
+        "Bjelke-Petersen Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf"
+      ],
+      [
+        "Bjelke-Petersen Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf"
+      ],
+      [
+        "Bjelke-Petersen Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf"
+      ],
+      [
+        "Bjelke-Petersen Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf"
+      ],
+      [
+        "Bjelke-Petersen Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf"
+      ],
+      [
+        "Bjelke-Petersen Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf",
+    "http_status": 403,
+    "bytes": 10326,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "boondooma-dam": {
+    "dam_id": "boondooma-dam",
+    "dam_name": "Boondooma Dam",
+    "candidates": [
+      [
+        "Boondooma Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf"
+      ],
+      [
+        "Boondooma Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf"
+      ],
+      [
+        "Boondooma Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf"
+      ],
+      [
+        "Boondooma Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf",
+    "http_status": 403,
+    "bytes": 10265,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "borumba-dam": {
+    "dam_id": "borumba-dam",
+    "dam_name": "Borumba Dam",
+    "candidates": [
+      [
+        "Borumba Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf"
+      ],
+      [
+        "Borumba Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf"
+      ],
+      [
+        "Borumba Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf"
+      ],
+      [
+        "Borumba Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf"
+      ],
+      [
+        "Borumba Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf"
+      ],
+      [
+        "Borumba Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf",
+    "http_status": 403,
+    "bytes": 10280,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "burdekin-falls-dam": {
+    "dam_id": "burdekin-falls-dam",
+    "dam_name": "Burdekin Falls Dam",
+    "candidates": [
+      [
+        "Burdekin Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+      ],
+      [
+        "Burdekin Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+      ],
+      [
+        "Burdekin Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+      ],
+      [
+        "Burdekin Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+      ],
+      [
+        "Burdekin Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+      ],
+      [
+        "Burdekin Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+      ],
+      [
+        "Burdekin Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+      ],
+      [
+        "Burdekin Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf",
+    "http_status": 403,
+    "bytes": 10344,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "callide-dam": {
+    "dam_id": "callide-dam",
+    "dam_name": "Callide Dam",
+    "candidates": [
+      [
+        "Callide Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf"
+      ],
+      [
+        "Callide Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf",
+    "http_status": 403,
+    "bytes": 10280,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "cania-dam": {
+    "dam_id": "cania-dam",
+    "dam_name": "Cania Dam",
+    "candidates": [
+      [
+        "Cania Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf"
+      ],
+      [
+        "Cania Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf",
+    "http_status": 403,
+    "bytes": 10295,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "cedar-pocket-dam": {
+    "dam_id": "cedar-pocket-dam",
+    "dam_name": "Cedar Pocket Dam",
+    "candidates": [
+      [
+        "Cedar Pocket Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf"
+      ],
+      [
+        "Cedar Pocket Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf",
+    "http_status": 403,
+    "bytes": 10317,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "clarendon-dam": {
+    "dam_id": "clarendon-dam",
+    "dam_name": "Clarendon Dam",
+    "candidates": [
+      [
+        "Clarendon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf"
+      ],
+      [
+        "Clarendon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf"
+      ],
+      [
+        "Clarendon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf"
+      ],
+      [
+        "Clarendon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf",
+    "http_status": 403,
+    "bytes": 10286,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "coolmunda-dam": {
+    "dam_id": "coolmunda-dam",
+    "dam_name": "Coolmunda Dam",
+    "candidates": [
+      [
+        "Coolmunda Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+      ],
+      [
+        "Coolmunda Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+      ],
+      [
+        "Coolmunda Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+      ],
+      [
+        "Coolmunda Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+      ],
+      [
+        "Coolmunda Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+      ],
+      [
+        "Coolmunda Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+      ],
+      [
+        "Coolmunda Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+      ],
+      [
+        "Coolmunda Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf",
+    "http_status": 403,
+    "bytes": 10286,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "cooloolabin-dam": {
+    "dam_id": "cooloolabin-dam",
+    "dam_name": "Cooloolabin Dam",
+    "candidates": [
+      [
+        "Cooloolabin Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf"
+      ],
+      [
+        "Cooloolabin Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf",
+    "http_status": 403,
+    "bytes": 10314,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "e-j-beardmore-dam": {
+    "dam_id": "e-j-beardmore-dam",
+    "dam_name": "EJ Beardmore Dam",
+    "candidates": [
+      [
+        "EJ Beardmore Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf"
+      ],
+      [
+        "EJ Beardmore Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf",
+    "http_status": 403,
+    "bytes": 10265,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "enoggera-dam": {
+    "dam_id": "enoggera-dam",
+    "dam_name": "Enoggera Dam",
+    "candidates": [
+      [
+        "Enoggera Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf"
+      ],
+      [
+        "Enoggera Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf",
+    "http_status": 403,
+    "bytes": 10304,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "eungella-dam": {
+    "dam_id": "eungella-dam",
+    "dam_name": "Eungella Dam",
+    "candidates": [
+      [
+        "Eungella Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf"
+      ],
+      [
+        "Eungella Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf",
+    "http_status": 403,
+    "bytes": 10304,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "ewen-maddock-dam": {
+    "dam_id": "ewen-maddock-dam",
+    "dam_name": "Ewen Maddock Dam",
+    "candidates": [
+      [
+        "Ewen Maddock Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf"
+      ],
+      [
+        "Ewen Maddock Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf",
+    "http_status": 403,
+    "bytes": 10317,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "fairbairn-dam": {
+    "dam_id": "fairbairn-dam",
+    "dam_name": "Fairbairn Dam",
+    "candidates": [
+      [
+        "Fairbairn Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf"
+      ],
+      [
+        "Fairbairn Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf"
+      ],
+      [
+        "Fairbairn Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf"
+      ],
+      [
+        "Fairbairn Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf",
+    "http_status": 403,
+    "bytes": 10286,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "fred-haigh-dam": {
+    "dam_id": "fred-haigh-dam",
+    "dam_name": "Fred Haigh Dam",
+    "candidates": [
+      [
+        "Fred Haigh Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf"
+      ],
+      [
+        "Fred Haigh Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf",
+    "http_status": 403,
+    "bytes": 10290,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "glenlyon-dam": {
+    "dam_id": "glenlyon-dam",
+    "dam_name": "Glenlyon Dam",
+    "candidates": [
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ],
+      [
+        "Glenlyon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf",
+    "http_status": 403,
+    "bytes": 10262,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "gold-creek-dam": {
+    "dam_id": "gold-creek-dam",
+    "dam_name": "Gold Creek Dam",
+    "candidates": [
+      [
+        "Gold Creek Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf"
+      ],
+      [
+        "Gold Creek Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf",
+    "http_status": 403,
+    "bytes": 10311,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "hinze-dam": {
+    "dam_id": "hinze-dam",
+    "dam_name": "Hinze Dam",
+    "candidates": [
+      [
+        "Hinze Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf"
+      ],
+      [
+        "Hinze Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf",
+    "http_status": 403,
+    "bytes": 10274,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "julius-dam": {
+    "dam_id": "julius-dam",
+    "dam_name": "Julius Dam",
+    "candidates": [
+      [
+        "Julius Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+      ],
+      [
+        "Julius Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+      ],
+      [
+        "Julius Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+      ],
+      [
+        "Julius Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+      ],
+      [
+        "Julius Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+      ],
+      [
+        "Julius Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+      ],
+      [
+        "Julius Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+      ],
+      [
+        "Julius Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf",
+    "http_status": 403,
+    "bytes": 10298,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "kinchant-dam": {
+    "dam_id": "kinchant-dam",
+    "dam_name": "Kinchant Dam",
+    "candidates": [
+      [
+        "Kinchant Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf"
+      ],
+      [
+        "Kinchant Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf",
+    "http_status": 403,
+    "bytes": 10283,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "kroombit-dam": {
+    "dam_id": "kroombit-dam",
+    "dam_name": "Kroombit Dam",
+    "candidates": [
+      [
+        "Kroombit Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf"
+      ],
+      [
+        "Kroombit Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf",
+    "http_status": 403,
+    "bytes": 10304,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "lake-macdonald-dam": {
+    "dam_id": "lake-macdonald-dam",
+    "dam_name": "Lake MacDonald Dam",
+    "candidates": [
+      [
+        "Lake MacDonald Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf"
+      ],
+      [
+        "Lake MacDonald Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf"
+      ],
+      [
+        "Lake MacDonald Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf"
+      ],
+      [
+        "Lake MacDonald Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf",
+    "http_status": 403,
+    "bytes": 10323,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "lake-manchester-dam": {
+    "dam_id": "lake-manchester-dam",
+    "dam_name": "Lake Manchester Dam",
+    "candidates": [
+      [
+        "Lake Manchester Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf"
+      ],
+      [
+        "Lake Manchester Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf"
+      ],
+      [
+        "Lake Manchester Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf"
+      ],
+      [
+        "Lake Manchester Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf"
+      ],
+      [
+        "Lake Manchester Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf"
+      ],
+      [
+        "Lake Manchester Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf",
+    "http_status": 403,
+    "bytes": 10326,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "leslie-dam": {
+    "dam_id": "leslie-dam",
+    "dam_name": "Leslie Dam",
+    "candidates": [
+      [
+        "Leslie Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf"
+      ],
+      [
+        "Leslie Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf"
+      ],
+      [
+        "Leslie Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf"
+      ],
+      [
+        "Leslie Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf",
+    "http_status": 403,
+    "bytes": 10277,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "leslie-harrison-dam": {
+    "dam_id": "leslie-harrison-dam",
+    "dam_name": "Leslie Harrison Dam",
+    "candidates": [
+      [
+        "Leslie Harrison Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf"
+      ],
+      [
+        "Leslie Harrison Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf"
+      ],
+      [
+        "Leslie Harrison Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf"
+      ],
+      [
+        "Leslie Harrison Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf",
+    "http_status": 403,
+    "bytes": 10326,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "little-nerang-dam": {
+    "dam_id": "little-nerang-dam",
+    "dam_name": "Little Nerang Dam",
+    "candidates": [
+      [
+        "Little Nerang Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf"
+      ],
+      [
+        "Little Nerang Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf",
+    "http_status": 403,
+    "bytes": 10299,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "maroon-dam": {
+    "dam_id": "maroon-dam",
+    "dam_name": "Maroon Dam",
+    "candidates": [
+      [
+        "Maroon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf"
+      ],
+      [
+        "Maroon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf"
+      ],
+      [
+        "Maroon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf"
+      ],
+      [
+        "Maroon Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf",
+    "http_status": 403,
+    "bytes": 10256,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "moogerah-dam": {
+    "dam_id": "moogerah-dam",
+    "dam_name": "Moogerah Dam",
+    "candidates": [
+      [
+        "Moogerah Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf"
+      ],
+      [
+        "Moogerah Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf"
+      ],
+      [
+        "Moogerah Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf"
+      ],
+      [
+        "Moogerah Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf",
+    "http_status": 403,
+    "bytes": 10283,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "north-pine-dam": {
+    "dam_id": "north-pine-dam",
+    "dam_name": "North Pine Dam",
+    "candidates": [
+      [
+        "North Pine Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf"
+      ],
+      [
+        "North Pine Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf"
+      ],
+      [
+        "North Pine Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf"
+      ],
+      [
+        "North Pine Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf",
+    "http_status": 403,
+    "bytes": 10311,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "paradise-dam": {
+    "dam_id": "paradise-dam",
+    "dam_name": "Paradise Dam",
+    "candidates": [
+      [
+        "Paradise Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf"
+      ],
+      [
+        "Paradise Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf"
+      ],
+      [
+        "Paradise Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf"
+      ],
+      [
+        "Paradise Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf",
+    "http_status": 403,
+    "bytes": 10283,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "peter-faust-dam": {
+    "dam_id": "peter-faust-dam",
+    "dam_name": "Peter Faust Dam",
+    "candidates": [
+      [
+        "Peter Faust Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf"
+      ],
+      [
+        "Peter Faust Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf"
+      ],
+      [
+        "Peter Faust Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf"
+      ],
+      [
+        "Peter Faust Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf",
+    "http_status": 403,
+    "bytes": 10335,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "poona-dam": {
+    "dam_id": "poona-dam",
+    "dam_name": "Poona Dam",
+    "candidates": [
+      [
+        "Poona Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf"
+      ],
+      [
+        "Poona Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf",
+    "http_status": 403,
+    "bytes": 10295,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "sideling-creek-dam": {
+    "dam_id": "sideling-creek-dam",
+    "dam_name": "Sideling Creek Dam",
+    "candidates": [
+      [
+        "Sideling Creek Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf"
+      ],
+      [
+        "Sideling Creek Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf"
+      ],
+      [
+        "Sideling Creek Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf"
+      ],
+      [
+        "Sideling Creek Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf",
+    "http_status": 403,
+    "bytes": 10302,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "somerset-dam": {
+    "dam_id": "somerset-dam",
+    "dam_name": "Somerset Dam",
+    "candidates": [
+      [
+        "Somerset Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf"
+      ],
+      [
+        "Somerset Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf"
+      ],
+      [
+        "Somerset Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf"
+      ],
+      [
+        "Somerset Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf"
+      ],
+      [
+        "Somerset Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf"
+      ],
+      [
+        "Somerset Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf",
+    "http_status": 403,
+    "bytes": 10304,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "teemburra-dam": {
+    "dam_id": "teemburra-dam",
+    "dam_name": "Teemburra Dam",
+    "candidates": [
+      [
+        "Teemburra Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf"
+      ],
+      [
+        "Teemburra Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf",
+    "http_status": 403,
+    "bytes": 10307,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "tinaroo-falls-dam": {
+    "dam_id": "tinaroo-falls-dam",
+    "dam_name": "Tinaroo Falls Dam",
+    "candidates": [
+      [
+        "Tinaroo Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf"
+      ],
+      [
+        "Tinaroo Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf"
+      ],
+      [
+        "Tinaroo Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf"
+      ],
+      [
+        "Tinaroo Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf"
+      ],
+      [
+        "Tinaroo Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf"
+      ],
+      [
+        "Tinaroo Falls Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf",
+    "http_status": 403,
+    "bytes": 10320,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "wappa-dam": {
+    "dam_id": "wappa-dam",
+    "dam_name": "Wappa Dam",
+    "candidates": [
+      [
+        "Wappa Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf"
+      ],
+      [
+        "Wappa Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf",
+    "http_status": 403,
+    "bytes": 10253,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "wivenhoe-dam": {
+    "dam_id": "wivenhoe-dam",
+    "dam_name": "Wivenhoe Dam",
+    "candidates": [
+      [
+        "Wivenhoe Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf"
+      ],
+      [
+        "Wivenhoe Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf"
+      ],
+      [
+        "Wivenhoe Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf"
+      ],
+      [
+        "Wivenhoe Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf"
+      ],
+      [
+        "Wivenhoe Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf"
+      ],
+      [
+        "Wivenhoe Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf",
+    "http_status": 403,
+    "bytes": 10283,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "wuruma-dam": {
+    "dam_id": "wuruma-dam",
+    "dam_name": "Wuruma Dam",
+    "candidates": [
+      [
+        "Wuruma Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf"
+      ],
+      [
+        "Wuruma Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf"
+      ],
+      [
+        "Wuruma Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf"
+      ],
+      [
+        "Wuruma Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf",
+    "http_status": 403,
+    "bytes": 10298,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  },
+  "wyaralong-dam": {
+    "dam_id": "wyaralong-dam",
+    "dam_name": "Wyaralong Dam",
+    "candidates": [
+      [
+        "Wyaralong Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+      ],
+      [
+        "Wyaralong Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+      ],
+      [
+        "Wyaralong Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+      ],
+      [
+        "Wyaralong Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+      ],
+      [
+        "Wyaralong Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+      ],
+      [
+        "Wyaralong Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+      ],
+      [
+        "Wyaralong Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+      ],
+      [
+        "Wyaralong Dam EAP (PDF)",
+        "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+      ]
+    ],
+    "status": "not_pdf",
+    "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf",
+    "http_status": 403,
+    "bytes": 10286,
+    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+  }
+}
