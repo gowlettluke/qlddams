@@ -51,6 +51,14 @@ SUN_API_ROOT = "https://data.sunwater.com.au/api"
 QLD_MONITORING_SITES = "https://water-monitoring.information.qld.gov.au/wgen/sites.hd.anon.xml"
 BOM_RIVER_INDEX = "https://www.bom.gov.au/qld/flood/rain_river.shtml"
 BOM_STATION_INDEX = "https://www.bom.gov.au/qld/flood/networks/section3.shtml"
+BOM_BULLETIN_FALLBACK_URLS = (
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60285.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60286.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60287.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60288.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60289.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html",
+)
 BOM_GAUGE_NETWORK = "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/flood/National_Flood_Gauge_Network/MapServer"
 BOM_ALLOWED_HOSTS = {"www.bom.gov.au", "hosting.wsapi.cloud.bom.gov.au"}
 
@@ -672,7 +680,7 @@ def parse_bom_bulletin_page(html: str, url: str) -> list[dict[str, Any]]:
 
 
 def discover_bom_bulletin_urls(session: requests.Session) -> list[str]:
-    seeds = {"https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60286.html", "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html"}
+    seeds = set(BOM_BULLETIN_FALLBACK_URLS)
     try:
         response = session.get(BOM_RIVER_INDEX, timeout=50); response.raise_for_status()
         soup = BeautifulSoup(response.text, "html.parser")
@@ -993,23 +1001,33 @@ def run(history_days: int) -> int:
     hist_status = "ok" if hist_ok == 20 else "partial" if hist_ok else "failed"
     health["providers"]["sunwater_historical"] = health_record(hist_status, dams=hist_ok, observations=hist_count, failures=hist_failed[:20], url=SUN_HISTORY_PAGE)
 
-    # Gauges: verified overrides + station candidates + current BOM bulletin data.
+    # Gauges: official BOM network locations are the base layer. Bulletin
+    # failures (including www.bom.gov.au 403s) must not suppress map markers.
     overrides = read_json(CONFIG / "gauges_overrides.json", {})
     bulletins: list[dict[str, Any]] = []
+    bulletin_stats: dict[str, Any] = {"attempted": len(BOM_BULLETIN_FALLBACK_URLS), "succeeded": 0, "failures": []}
     try:
-        bulletins, bulletin_stats = fetch_bom_bulletins(session)
         network_gauges = fetch_bom_network_gauges(session)
+    except Exception as exc:
+        LOG.exception("BOM gauge network failed")
+        health["providers"]["bom_gauges"] = health_record("failed", message=str(exc), retained_previous=True, url=BOM_GAUGE_NETWORK)
+    else:
+        try:
+            bulletins, bulletin_stats = fetch_bom_bulletins(session)
+        except Exception as exc:
+            # Defensive: fetch_bom_bulletins normally records per-page failures,
+            # but keep statewide network markers visible if the bulletin index or
+            # all bulletin pages are blocked/unavailable.
+            LOG.warning("BOM bulletins unavailable; publishing gauge locations without observations: %s", exc)
+            bulletin_stats = {"attempted": len(BOM_BULLETIN_FALLBACK_URLS), "succeeded": 0, "failures": [{"url": BOM_RIVER_INDEX, "message": str(exc)}]}
         gauge_payload = build_gauges(registry, sites, bulletins, overrides, network_gauges)
         gauge_payload["generated_at"] = started
         gauge_payload["source"].update({"bulletin_pages_attempted": bulletin_stats["attempted"], "bulletin_pages_succeeded": bulletin_stats["succeeded"]})
         write_json(DATA / "gauges.json", gauge_payload)
         verified = sum(1 for values in gauge_payload["dams"].values() for x in values if x.get("confidence") == "verified")
         candidates = sum(1 for values in gauge_payload["dams"].values() for x in values if x.get("confidence") != "verified")
-        status = "ok" if bulletin_stats["succeeded"] == bulletin_stats["attempted"] else "partial"
+        status = "ok" if bulletin_stats["attempted"] and bulletin_stats["succeeded"] == bulletin_stats["attempted"] else "partial"
         health["providers"]["bom_gauges"] = health_record(status, **gauge_payload["stats"], bulletin_records=len(bulletins), verified_mappings=verified, automatic_candidates=candidates, failures=bulletin_stats.get("failures", []), url=BOM_RIVER_INDEX)
-    except Exception as exc:
-        LOG.exception("BOM gauges failed")
-        health["providers"]["bom_gauges"] = health_record("failed", message=str(exc), retained_previous=True)
 
     # Ensure every configured dam has a latest row and calculate derived fields.
     output = []

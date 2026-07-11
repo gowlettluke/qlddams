@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from scripts.update_dam_data import parse_bom_bulletin_page, join_observations, freshness, build_gauges, Registry
+from scripts.update_dam_data import parse_bom_bulletin_page, join_observations, freshness, build_gauges, Registry, fetch_bom_bulletins
 
 URL='https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60286.html'
 
@@ -29,6 +29,29 @@ class BomGaugeTests(unittest.TestCase):
     def test_stale_freshness(self):
         old=(datetime.now(timezone(timedelta(hours=10)))-timedelta(hours=25)).isoformat()
         self.assertEqual(freshness(old, 1.0)['freshness_status'], 'stale')
+
+    def test_bulletin_index_failure_uses_fallback_failures_without_raising(self):
+        class Response:
+            text = ''
+            def raise_for_status(self):
+                raise RuntimeError('403 Forbidden')
+        class Session:
+            def get(self, *args, **kwargs):
+                return Response()
+        records, stats = fetch_bom_bulletins(Session())
+        self.assertEqual(records, [])
+        self.assertGreaterEqual(stats['attempted'], 1)
+        self.assertEqual(stats['succeeded'], 0)
+        self.assertGreaterEqual(len(stats['failures']), 1)
+
+    def test_network_locations_publish_without_bulletin_observations(self):
+        dams=[{'id':'dam-a','name':'Example Dam','operator':'Seqwater','latitude':-27.1,'longitude':153.1,'aliases':[]}]
+        network=[{'id':'540054','bom_station_number':'540054','awrc_stateid':None,'name':'Example Station','latitude':-27.0,'longitude':153.0,'state':'QLD','basin':'Basin','agency':'BOM'}]
+        out=build_gauges(Registry(dams), [], [], {}, network)
+        self.assertEqual(len(out['gauges']), 1)
+        self.assertEqual(out['gauges'][0]['current']['freshness_status'], 'unavailable')
+        self.assertEqual(out['stats']['qld_network_gauges'], 1)
+
     def test_statewide_and_dam_share_enriched_record(self):
         dams=[{'id':'dam-a','name':'Example Dam','operator':'Seqwater','latitude':-27.1,'longitude':153.1,'aliases':[]}]
         network=[{'id':'540054','bom_station_number':'540054','awrc_stateid':None,'name':'Example Station','latitude':-27.0,'longitude':153.0,'state':'QLD','basin':'Basin','agency':'BOM'}]
