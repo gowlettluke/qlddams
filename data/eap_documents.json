@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T07:38:48+00:00",
+  "generated_at": "2026-07-11T07:42:02+00:00",
   "reviewed_audit_file": "qld_45_dam_eap_audit.json",
   "audit_date": "2026-07-11",
   "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
@@ -260,7 +260,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "baroon-pocket-dam": {
       "dam_id": "baroon-pocket-dam",
@@ -517,7 +517,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "bill-gunn-dam": {
       "dam_id": "bill-gunn-dam",
@@ -774,7 +774,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "bjelke-petersen-dam": {
       "dam_id": "bjelke-petersen-dam",
@@ -1007,7 +1007,7 @@
       ],
       "notes": "At the highest Stand Up stage, assess possible impacts to Paradise Dam; this is an operational/cascade consideration, not a separate public level trigger.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "boondooma-dam": {
       "dam_id": "boondooma-dam",
@@ -1238,7 +1238,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "borumba-dam": {
       "dam_id": "borumba-dam",
@@ -1495,7 +1495,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "burdekin-falls-dam": {
       "dam_id": "burdekin-falls-dam",
@@ -1750,7 +1750,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "callide-dam": {
       "dam_id": "callide-dam",
@@ -2201,7 +2201,7 @@
         "Change review required",
         "Operator link appears newer; compare current PDF before changing reviewed thresholds"
       ],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "cania-dam": {
       "dam_id": "cania-dam",
@@ -2381,7 +2381,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "cedar-pocket-dam": {
       "dam_id": "cedar-pocket-dam",
@@ -2661,7 +2661,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "clarendon-dam": {
       "dam_id": "clarendon-dam",
@@ -2918,7 +2918,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "coolmunda-dam": {
       "dam_id": "coolmunda-dam",
@@ -3210,7 +3210,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "cooloolabin-dam": {
       "dam_id": "cooloolabin-dam",
@@ -3492,7 +3492,7 @@
       ],
       "notes": "At Stand Up, activate the Wappa Dam EAP and assess possible cascade implications.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "e-j-beardmore-dam": {
       "dam_id": "e-j-beardmore-dam",
@@ -3725,7 +3725,7 @@
       "warnings": [
         "Near expiry: EAP expires 1 August 2026"
       ],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "enoggera-dam": {
       "dam_id": "enoggera-dam",
@@ -3964,7 +3964,7 @@
       ],
       "notes": "Stand Up stages contain downstream-impact and failure-judgement conditions; storage level alone is not sufficient.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "eungella-dam": {
       "dam_id": "eungella-dam",
@@ -4138,7 +4138,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "ewen-maddock-dam": {
       "dam_id": "ewen-maddock-dam",
@@ -4397,7 +4397,7 @@
       "warnings": [
         "EAP expired — replacement required"
       ],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "fairbairn-dam": {
       "dam_id": "fairbairn-dam",
@@ -4630,7 +4630,7 @@
       ],
       "notes": "The FODM may activate before the tabulated levels based on forecast rainfall and flood modelling. The uploaded official PDF is issue 11.2, September 2025, expiring 14 March 2028.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:48+00:00"
+      "checked_at": "2026-07-11T07:42:02+00:00"
     },
     "fred-haigh-dam": {
       "dam_id": "fred-haigh-dam",
@@ -4861,7 +4861,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "glenlyon-dam": {
       "dam_id": "glenlyon-dam",
@@ -5117,7 +5117,7 @@
       "warnings": [
         "Document conflict — automatic Alert assessment disabled"
       ],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "gold-creek-dam": {
       "dam_id": "gold-creek-dam",
@@ -5397,7 +5397,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "hinze-dam": {
       "dam_id": "hinze-dam",
@@ -5654,7 +5654,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "julius-dam": {
       "dam_id": "julius-dam",
@@ -5807,7 +5807,7 @@
       ],
       "notes": "The flood trigger table has one Stand Up level; do not manufacture additional Stand Up sub-stages.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "kinchant-dam": {
       "dam_id": "kinchant-dam",
@@ -6038,7 +6038,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "kroombit-dam": {
       "dam_id": "kroombit-dam",
@@ -6239,7 +6239,7 @@
       ],
       "notes": "A former 270.20 m flood stage is superseded by the separate overturning/sliding hazard section and must not be implemented as a current flood trigger.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "lake-macdonald-dam": {
       "dam_id": "lake-macdonald-dam",
@@ -6478,7 +6478,7 @@
       "warnings": [
         "Construction/cofferdam-specific EAP; configuration review required after project changes"
       ],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "lake-manchester-dam": {
       "dam_id": "lake-manchester-dam",
@@ -6735,7 +6735,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "leslie-dam": {
       "dam_id": "leslie-dam",
@@ -6934,7 +6934,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "leslie-harrison-dam": {
       "dam_id": "leslie-harrison-dam",
@@ -7191,7 +7191,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "little-nerang-dam": {
       "dam_id": "little-nerang-dam",
@@ -7450,7 +7450,7 @@
       ],
       "notes": "At Stand Up, activate the Hinze Dam EAP and assess possible cascade implications.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "maroon-dam": {
       "dam_id": "maroon-dam",
@@ -7707,7 +7707,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "moogerah-dam": {
       "dam_id": "moogerah-dam",
@@ -7964,7 +7964,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "nindooinbah-dam": {
       "dam_id": "nindooinbah-dam",
@@ -7993,7 +7993,7 @@
       ],
       "notes": "No applicable Nindooinbah Dam EAP was found in the current Queensland referable-dam EAP directory. Do not reuse another dam’s rules.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "north-pine-dam": {
       "dam_id": "north-pine-dam",
@@ -8219,7 +8219,7 @@
       ],
       "notes": "Additional key levels: 41.11 m AHD Flood of Record, 41.12 m AHD winch floor, 41.66 m AHD electrical control gear. These are context levels, not separate activation rules unless the current EAP says otherwise.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "paradise-dam": {
       "dam_id": "paradise-dam",
@@ -8387,7 +8387,7 @@
       ],
       "notes": "Flood levels above EL 73.30 m transfer to the separate overturning hazard section; do not invent an additional flood Stand Up stage.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "peter-faust-dam": {
       "dam_id": "peter-faust-dam",
@@ -8594,7 +8594,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "poona-dam": {
       "dam_id": "poona-dam",
@@ -8853,7 +8853,7 @@
       ],
       "notes": "At Stand Up, activate the Wappa Dam EAP and assess possible cascade implications.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "sideling-creek-dam": {
       "dam_id": "sideling-creek-dam",
@@ -9110,7 +9110,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "somerset-dam": {
       "dam_id": "somerset-dam",
@@ -9403,7 +9403,7 @@
       "warnings": [
         "Dynamic OFSL must be resolved from an authoritative source; percent full is not a valid substitute"
       ],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "teemburra-dam": {
       "dam_id": "teemburra-dam",
@@ -9592,7 +9592,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "tinaroo-falls-dam": {
       "dam_id": "tinaroo-falls-dam",
@@ -9793,7 +9793,7 @@
       "warnings": [
         "Near expiry: EAP expires 1 September 2026"
       ],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "wappa-dam": {
       "dam_id": "wappa-dam",
@@ -10050,7 +10050,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "wivenhoe-dam": {
       "dam_id": "wivenhoe-dam",
@@ -10286,7 +10286,7 @@
       ],
       "notes": "Additional key levels: 76.20 m AHD left fuse plug, 76.70 m AHD right fuse plug, 80.00 m AHD saddle-dam crests, 80.10 m AHD main embankment. Gate and sluice failures are separate non-public pathways.",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "wuruma-dam": {
       "dam_id": "wuruma-dam",
@@ -10517,7 +10517,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     },
     "wyaralong-dam": {
       "dam_id": "wyaralong-dam",
@@ -10745,7 +10745,7 @@
       "implementation_notes": [],
       "notes": "",
       "warnings": [],
-      "checked_at": "2026-07-11T07:38:43+00:00"
+      "checked_at": "2026-07-11T07:41:58+00:00"
     }
   }
 }
