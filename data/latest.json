@@ -78,7 +78,11 @@
       "change_24h": null,
       "change_7d": -0.24,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/136210A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "boondooma-dam",
@@ -99,7 +103,11 @@
       "change_24h": null,
       "change_7d": -0.49,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/136316A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "borumba-dam",
@@ -139,7 +147,11 @@
       "change_24h": null,
       "change_7d": -0.37,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/120016A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "callide-dam",
@@ -179,7 +191,11 @@
       "change_24h": null,
       "change_7d": -0.05,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/136115A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "cedar-pocket-dam",
@@ -238,7 +254,11 @@
       "change_24h": null,
       "change_7d": -0.47,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/416409A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "cooloolabin-dam",
@@ -278,7 +298,11 @@
       "change_24h": null,
       "change_7d": -1.12,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/422212B/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "enoggera-dam",
@@ -318,7 +342,11 @@
       "change_24h": null,
       "change_7d": -0.07,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T06:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/120211A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "ewen-maddock-dam",
@@ -358,7 +386,11 @@
       "change_24h": null,
       "change_7d": -0.15,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/130216A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "fred-haigh-dam",
@@ -379,7 +411,11 @@
       "change_24h": null,
       "change_7d": -0.35,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/135009A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "glenlyon-dam",
@@ -457,7 +493,11 @@
       "change_24h": null,
       "change_7d": 3.99,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T15:50:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/913015A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "kinchant-dam",
@@ -478,7 +518,11 @@
       "change_24h": null,
       "change_7d": -0.4,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/126004A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "kroombit-dam",
@@ -499,7 +543,11 @@
       "change_24h": null,
       "change_7d": -1.47,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/130360A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "lake-macdonald-dam",
@@ -558,7 +606,11 @@
       "change_24h": null,
       "change_7d": -0.16,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/422315B/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "leslie-harrison-dam",
@@ -693,7 +745,11 @@
       "change_24h": null,
       "change_7d": -0.32,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/136024A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "peter-faust-dam",
@@ -714,7 +770,11 @@
       "change_24h": null,
       "change_7d": -0.21,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/122010A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "poona-dam",
@@ -792,7 +852,11 @@
       "change_24h": null,
       "change_7d": -0.02,
       "is_stale": false,
-      "is_spilling": true
+      "is_spilling": true,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/125015A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "tinaroo-falls-dam",
@@ -870,7 +934,11 @@
       "change_24h": null,
       "change_7d": -0.2,
       "is_stale": false,
-      "is_spilling": false
+      "is_spilling": false,
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-11T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/sites/136113A/data",
+      "storage_level_quality": "official_automated"
     },
     {
       "dam_id": "wyaralong-dam",

@@ -1,330 +1,196 @@
 #!/usr/bin/env python3
-"""Calculate indicative published EAP flood-trigger levels from public data.
+"""Assess reviewed EAP flood-trigger pathways against public live inputs.
 
-The output is explicitly not an official activation status. It evaluates only the
-published flood-operation conditions that are represented in data/eap_documents.json,
-records unknown/non-public conditions, and keeps public warning status separate.
+This is an indicative public-data assessment only. Formal EAP activation is always
+not_confirmed. Percentage full, BOM gauge heights, spilling flags and unverifed
+datums are deliberately not used as reservoir-elevation substitutes.
 """
 from __future__ import annotations
-
-import copy
-import json
-import math
-import sys
-from datetime import datetime, timedelta, timezone
+import copy,json,math,sys
+from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
 from typing import Any
-
 from dateutil import parser as date_parser
+ROOT=Path(__file__).resolve().parents[1]; DATA=ROOT/'data'
+STAGE_ORDER={'alert':1,'lean_forward':2,'lean_forward_1':2,'stand_up':3,'stand_up_1':31,'stand_up_2':32,'stand_up_3':33,'stand_up_4':34,'stand_up_5':35}
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data"
-LEVEL_ORDER = {"alert": 1, "lean_forward": 2, "stand_up": 3}
-
-
-def now_iso() -> str:
-    return datetime.now(timezone.utc).isoformat(timespec="seconds")
-
-
-def load(path: Path, default: Any) -> Any:
+def now_iso(): return datetime.now(timezone.utc).isoformat(timespec='seconds')
+def load(p:Path,default:Any):
+    try: return json.loads(p.read_text(encoding='utf-8'))
+    except Exception: return copy.deepcopy(default)
+def write(p:Path,v:Any):
+    t=p.with_suffix(p.suffix+'.tmp'); t.write_text(json.dumps(v,indent=2,ensure_ascii=False,allow_nan=False)+'\n',encoding='utf-8'); t.replace(p)
+def num(v):
+    if v is None or isinstance(v,bool): return None
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return copy.deepcopy(default)
-
-
-def write(path: Path, value: Any) -> None:
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
-    tmp.replace(path)
-
-
-def num(value: Any) -> float | None:
-    if value is None or isinstance(value, bool):
-        return None
+        f=float(v); return f if math.isfinite(f) else None
+    except Exception: return None
+def parse_time(v):
+    if not v: return None
     try:
-        result = float(value)
-        return result if math.isfinite(result) else None
-    except (TypeError, ValueError):
-        return None
-
-
-def parse_time(value: Any) -> datetime | None:
-    if not value:
-        return None
+        d=date_parser.parse(str(v));
+        if d.tzinfo is None: d=d.replace(tzinfo=timezone.utc)
+        return d.astimezone(timezone.utc)
+    except Exception: return None
+def compare(a,op,e):
+    if a is None: return None
     try:
-        dt = date_parser.parse(str(value))
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone(timedelta(hours=10)))
-        return dt.astimezone(timezone.utc)
-    except Exception:
-        return None
+        return {'>=':a>=e,'>':a>e,'<=':a<=e,'<':a<e,'==':a==e,'!=':a!=e}.get(op)
+    except Exception: return None
 
+def latest_history_level(history):
+    vals=[]
+    for r in history:
+        v=num(r.get('storage_level_m')); dt=parse_time(r.get('storage_level_observed_at') or r.get('observed_at'))
+        if v is not None and dt: vals.append((dt,v,r))
+    return max(vals,default=(None,None,{}),key=lambda x:x[0] or datetime.min.replace(tzinfo=timezone.utc))
 
-def latest_valid_observation(rows: list[dict[str, Any]]) -> dict[str, Any] | None:
-    now = datetime.now(timezone.utc)
-    candidates = []
-    for row in rows:
-        dt = parse_time(row.get("observed_at"))
-        if dt and dt <= now + timedelta(days=1):
-            candidates.append((dt, row))
-    return max(candidates, default=(None, None), key=lambda x: x[0] or datetime.min.replace(tzinfo=timezone.utc))[1]
+def storage_trend(history):
+    vals=[]
+    for r in history:
+        v=num(r.get('storage_level_m')); dt=parse_time(r.get('storage_level_observed_at') or r.get('observed_at'))
+        if v is not None and dt: vals.append((dt,v))
+    vals.sort()
+    if len(vals)<2: return None
+    return 'rising' if vals[-1][1]>vals[0][1]+0.02 else 'falling' if vals[-1][1]<vals[0][1]-0.02 else 'steady'
 
+def context_from_latest(latest, history):
+    hdt,hlevel,hrow=latest_history_level(history)
+    # Only current latest.json exact reservoir elevation may support comparison;
+    # history is used for trend context, not as a live elevation substitute.
+    lvl=num(latest.get('storage_level_m'))
+    datum=latest.get('storage_level_datum')
+    obs=latest.get('storage_level_observed_at') or latest.get('observed_at')
+    quality=latest.get('storage_level_quality')
+    if lvl is not None and not datum and latest.get('source') == 'Sunwater' and latest.get('station_code'):
+        datum = 'AHD'
+        quality = quality or 'official_automated'
+    return {'storage_level_m':lvl,'storage_trend':storage_trend(history),'storage_level_trend':storage_trend(history),
+            'storage_level_datum':datum,'storage_level_observed_at':obs,'storage_level_quality':quality,
+            'current_percent_full':num(latest.get('percent_full'))}
 
-def storage_trend(rows: list[dict[str, Any]]) -> tuple[str | None, float | None, float | None]:
-    now = datetime.now(timezone.utc)
-    parsed = []
-    for row in rows:
-        dt = parse_time(row.get("observed_at"))
-        value = num(row.get("storage_level_m"))
-        if dt and value is not None and dt <= now + timedelta(days=1):
-            parsed.append((dt, value))
-    parsed.sort()
-    if len(parsed) < 2:
-        return None, None, None
-    latest_dt, latest = parsed[-1]
-    eligible = [(dt, value) for dt, value in parsed[:-1] if latest_dt - dt >= timedelta(minutes=45)]
-    if not eligible:
-        return None, None, None
-    # Prefer approximately six hours earlier; fall back to the oldest point in 24h.
-    target = latest_dt - timedelta(hours=6)
-    recent = [(abs((dt - target).total_seconds()), dt, value) for dt, value in eligible if latest_dt - dt <= timedelta(hours=24)]
-    if recent:
-        _, prior_dt, prior = min(recent)
+def metric_value(metric, ctx):
+    # Explicitly refuse proxy substitutions.
+    if metric in {'storage_level_m','storage_trend','storage_level_trend'}: return ctx.get(metric)
+    if metric in {'distance_below_dynamic_ofsl_m','storage_level_relative_to_dynamic_ofsl'}: return None
+    return ctx.get(metric)
+
+def condition_state(c, ctx):
+    metric=c.get('metric'); assess=c.get('assessability',''); label=c.get('label') or c.get('description') or metric
+    if c.get('document_conflict') or assess=='document_conflict': state='document_conflict'; actual=None
+    elif metric=='storage_level_m':
+        actual=ctx.get('storage_level_m')
+        datum=ctx.get('storage_level_datum')
+        if actual is None: state='input_unavailable'
+        elif datum not in {'AHD','m AHD'}: state='datum_unverified'
+        else: state='met' if compare(actual,c.get('op','=='),c.get('value')) is True else 'not_met'
+    elif metric in {'storage_trend','storage_level_trend'}:
+        actual=ctx.get(metric)
+        if actual is None: state='input_unavailable'
+        else: state='met' if compare(actual,c.get('op','=='),c.get('value')) is True else 'not_met'
+    elif assess.startswith('publicly_observable_if_sufficient_live_history'):
+        actual=metric_value(metric,ctx); state='input_unavailable' if actual is None else ('met' if compare(actual,c.get('op','=='),c.get('value')) else 'not_met')
+    elif assess.startswith('publicly_observable_only_if_official'):
+        actual=metric_value(metric,ctx); state='input_unavailable' if actual is None else ('met' if compare(actual,c.get('op','=='),c.get('value')) else 'not_met')
     else:
-        prior_dt, prior = eligible[-1]
-    delta = latest - prior
-    hours = max((latest_dt - prior_dt).total_seconds() / 3600, 1 / 60)
-    rate = delta / hours
-    if abs(rate) < 0.002 and abs(delta) < 0.02:
-        trend = "steady"
+        actual=metric_value(metric,ctx); state='unknown' if actual is None else ('met' if compare(actual,c.get('op','=='),c.get('value')) else 'not_met')
+    return {'metric':metric,'label':label,'description':c.get('description'),'assessability':assess,'operator':c.get('op','=='),'expected':c.get('value'),'actual':actual,'unit':c.get('unit'),'state':state,'result':state}
+
+def assess_rule(rule, ctx, doc):
+    rr=copy.deepcopy(rule)
+    if rr.get('document_conflict') or (doc.get('dam_id')=='glenlyon-dam' and rr.get('level')=='alert'):
+        conds=[{**condition_state(c,ctx),'state':'document_conflict','result':'document_conflict'} for c in rr.get('conditions',[])]
+        rr.update({'condition_results':conds,'assessment':'document_conflict','result':'document_conflict'}); return rr
+    if rr.get('outflow_band_requires_review'):
+        conds=[condition_state(c,ctx) for c in rr.get('conditions',[])]
+        rr.update({'condition_results':conds,'assessment':'indeterminate','result':'indeterminate'}); return rr
+    if doc.get('document_status')=='expired': gate='document_expired'
+    elif doc.get('document_status')=='change_review_required': gate='change_review_required'
+    else: gate=None
+    conds=[condition_state(c,ctx) for c in rr.get('conditions',[])]
+    states=[c['state'] for c in conds]
+    if gate: res=gate
+    elif states and all(s=='met' for s in states): res='met'
+    elif 'document_conflict' in states: res='document_conflict'
+    elif any(s in {'unknown','input_unavailable','datum_unverified','stale'} for s in states) and any(s=='met' for s in states): res='indeterminate'
+    elif any(s in {'unknown','input_unavailable','datum_unverified','stale'} for s in states): res='input_unavailable' if any(s in {'input_unavailable','datum_unverified'} for s in states) else 'indeterminate'
+    elif any(s=='not_met' for s in states): res='not_met'
+    else: res='indeterminate'
+    rr.update({'condition_results':conds,'assessment':res,'result':res}); return rr
+
+def precise_reason(result, doc, unavailable):
+    if result=='not_applicable': return 'No applicable EAP is listed for this dam in the current Queensland referable-dam EAP directory.'
+    if result=='document_expired': return 'EAP expired — replacement required. Reviewed rules are preserved but not described as a current verified plan.'
+    if result=='change_review_required': return 'Change review required. Reviewed rules are preserved until the replacement/current document is compared and approved.'
+    if result=='document_conflict': return 'Document conflict — automatic Alert assessment disabled pending owner/regulator clarification.'
+    if result=='input_unavailable': return 'Verified EAP rules are available, but official live reservoir elevation is unavailable.'
+
+    if result=='indeterminate' and unavailable:
+        first=unavailable[0]
+        if str(first).startswith('Datum unverified'):
+            return 'Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.'
+        return 'Indeterminate — a public trigger component is available, but '+first+' is unavailable.'
+    if result=='not_met': return 'Below the first public elevation trigger.'
+    if result=='met': return 'A complete public trigger pathway is met; formal activation remains not confirmed.'
+    return 'Verified EAP rules are available, but required public inputs are incomplete.'
+
+def assess_one(dam, latest, history, doc):
+    ctx=context_from_latest(latest,history); doc=copy.deepcopy(doc); rules=doc.get('rules',[])
+    if not doc.get('referable',True) or doc.get('document_status')=='not_listed':
+        return base(dam,doc,ctx,'not_applicable','not_applicable',[])
+    assessed=[assess_rule(r,ctx,doc) for r in rules]
+    unavailable=[]
+    for r in assessed:
+        for c in r.get('condition_results',[]):
+            if c['state'] in {'unknown','input_unavailable','stale'}:
+                unavailable.append(c.get('label') or c.get('metric'))
+            elif c['state']=='datum_unverified':
+                unavailable.append('Datum unverified for '+str(c.get('label') or c.get('metric')))
+    if doc.get('document_status')=='expired': res='document_expired'; highest=None; conf='rules_verified_document_expired'
+    elif doc.get('document_status')=='change_review_required': res='change_review_required'; highest=None; conf='change_review_required'
+    elif any(r['assessment']=='document_conflict' for r in assessed): res='document_conflict'; highest=None; conf='rules_verified_document_conflict'
+    elif ctx.get('storage_level_m') is None and any(any(c.get('metric')=='storage_level_m' for c in r.get('conditions',[])) for r in rules): res='input_unavailable'; highest=None; conf='rules_verified_live_input_unavailable'
     else:
-        trend = "rising" if delta > 0 else "falling"
-    return trend, round(delta, 3), round(rate, 4)
+        met=[r for r in assessed if r['assessment']=='met']; ind=[r for r in assessed if r['assessment']=='indeterminate']; inp=[r for r in assessed if r['assessment']=='input_unavailable']
+        if met: highest=max((r.get('level') for r in met), key=lambda x:STAGE_ORDER.get(x,0)); res='met'; conf='public_pathway_supported'
+        elif ind: highest=None; res='indeterminate'; conf='required_condition_unavailable'
+        elif inp: highest=None; res='input_unavailable'; conf='rules_verified_live_input_unavailable'
+        else: highest=None; res='not_met'; conf='rules_verified_below_first_trigger'
+    return base(dam,doc,ctx,res,conf,assessed,highest,unavailable)
 
+def base(dam,doc,ctx,res,conf,rules=None,highest=None,unavailable=None):
+    unavailable=list(dict.fromkeys(unavailable or []))
+    return {'dam_id':dam['id'],'assessed_at':now_iso(),'document_status':doc.get('document_status'),'version':doc.get('version'),
+            'expiry_date':doc.get('expiry_date'),'source_url':doc.get('source_url') or doc.get('eap_url'),
+            'indicative_result':res,'indication':res,'highest_publicly_supported_level':highest,'potential_level':highest,
+            'confidence':conf,'formal_activation_status':'not_confirmed','formal_activation':'not_confirmed',
+            'observed_inputs':{'storage_level_m':ctx.get('storage_level_m'),'storage_level_datum':ctx.get('storage_level_datum'),
+                               'storage_level_observed_at':ctx.get('storage_level_observed_at'),'storage_level_quality':ctx.get('storage_level_quality')},
+            'current_percent_full':ctx.get('current_percent_full'),'storage_level_m':ctx.get('storage_level_m'),
+            'storage_level_observed_at':ctx.get('storage_level_observed_at'),'storage_level_datum':ctx.get('storage_level_datum'),
+            'rules':rules or [],'unavailable_required_inputs':unavailable,'missing_conditions':unavailable,
+            'warnings':doc.get('warnings',[]),'reason':precise_reason(res,doc,unavailable),'eap':doc,
+            'disclaimer':'Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed.'}
 
-def compare(actual: Any, op: str, expected: Any) -> bool | None:
-    if actual is None:
-        return None
-    try:
-        if op == ">=": return actual >= expected
-        if op == ">": return actual > expected
-        if op == "<=": return actual <= expected
-        if op == "<": return actual < expected
-        if op == "==": return actual == expected
-        if op == "!=": return actual != expected
-    except TypeError:
-        return None
-    return None
+def audit_report(statuses,docs):
+    vals=list(docs.values())
+    return {'generated_at':now_iso(),'total_dashboard_dams':len(statuses),'officially_listed_plans':sum(d.get('directory_status')=='listed' for d in vals),
+            'reviewed_rules':sum(bool(d.get('rules')) for d in vals),'not_listed':sum(d.get('document_status')=='not_listed' for d in vals),
+            'current':sum(d.get('document_status')=='current' for d in vals),'expired':sum(d.get('document_status')=='expired' for d in vals),
+            'near_expiry':sum(any('Near expiry' in w for w in d.get('warnings',[])) for d in vals),
+            'document_conflicts':sum(d.get('document_status')=='document_conflict' for d in vals),'change_review_required':sum(d.get('document_status')=='change_review_required' for d in vals),
+            'records_with_exact_live_elevation':sum(s.get('observed_inputs',{}).get('storage_level_m') is not None and s.get('observed_inputs',{}).get('storage_level_datum') in {'AHD','m AHD'} for s in statuses),
+            'records_missing_exact_live_elevation':sum(s.get('observed_inputs',{}).get('storage_level_m') is None for s in statuses),
+            'rules_currently_assessable':sum(s.get('indicative_result')=='met' for s in statuses),
+            'rules_indeterminate_due_non_public_conditions':sum(s.get('indicative_result')=='indeterminate' for s in statuses)}
 
-
-def metric_value(metric: str, context: dict[str, Any]) -> Any:
-    if metric in context:
-        return context[metric]
-    # Non-public/forecast/engineering metrics deliberately remain unknown.
-    return None
-
-
-def assess_condition(condition: dict[str, Any], context: dict[str, Any]) -> dict[str, Any]:
-    metric = condition.get("metric")
-    actual = metric_value(metric, context)
-    result = compare(actual, condition.get("op", "=="), condition.get("value"))
-    return {
-        "metric": metric,
-        "label": condition.get("label") or metric,
-        "expected": condition.get("value"),
-        "operator": condition.get("op", "=="),
-        "actual": actual,
-        "unit": condition.get("unit"),
-        "proxy": bool(condition.get("proxy")),
-        "publicly_observable": bool(condition.get("publicly_observable", False)),
-        "result": "met" if result is True else "not_met" if result is False else "unknown",
-    }
-
-
-def assess_rule(rule: dict[str, Any], context: dict[str, Any]) -> dict[str, Any]:
-    conditions = [assess_condition(c, context) for c in rule.get("conditions", [])]
-    states = [c["result"] for c in conditions]
-    if conditions and all(s == "met" for s in states):
-        status = "met"
-    elif any(s == "not_met" for s in states):
-        status = "not_met"
-    elif any(s == "met" for s in states) and any(s == "unknown" for s in states):
-        status = "possible"
-    else:
-        status = "unknown"
-    return {**rule, "assessment": status, "condition_results": conditions}
-
-
-def confidence_for(chosen: list[dict[str, Any]], document: dict[str, Any], indication: str) -> str:
-    if not chosen:
-        return "indeterminate"
-    conditions = [c for r in chosen for c in r.get("condition_results", [])]
-    has_proxy = any(c.get("proxy") and c.get("result") == "met" for c in conditions)
-    has_unknown = any(c.get("result") == "unknown" for c in conditions)
-    exact_level = any(c.get("metric") == "storage_level_m" and c.get("result") == "met" for c in conditions)
-    review = document.get("review_status")
-    changed = document.get("document_changed") or review == "change_detected"
-    expired = document.get("document_expired")
-    if changed or expired:
-        return "low" if indication != "unable_to_assess" else "indeterminate"
-    if has_proxy:
-        return "low"
-    if indication in LEVEL_ORDER and exact_level and not has_unknown and review == "manually_verified":
-        return "high"
-    if exact_level and (has_unknown or review == "machine_extracted"):
-        return "medium"
-    if indication == "below_alert" and review == "manually_verified":
-        return "medium"
-    return "indeterminate"
-
-
-def assess_one(dam: dict[str, Any], latest: dict[str, Any], history: list[dict[str, Any]], document: dict[str, Any]) -> dict[str, Any]:
-    history_latest = latest_valid_observation(history) or {}
-    storage_level = num(latest.get("storage_level_m"))
-    if storage_level is None:
-        storage_level = num(history_latest.get("storage_level_m"))
-    trend, level_change, rate = storage_trend(history)
-    fsl = num(document.get("fsl_m_ahd"))
-    percent = num(latest.get("percent_full"))
-    within_fsl = abs(storage_level - fsl) if storage_level is not None and fsl is not None else None
-    context = {
-        "storage_level_m": storage_level,
-        "percent_full": percent,
-        "storage_level_trend": trend,
-        "within_operational_fsl_m": within_fsl,
-        "above_operational_fsl": storage_level > fsl if storage_level is not None and fsl is not None else None,
-    }
-
-    expiry = document.get("expiry_date")
-    expired = False
-    if expiry:
-        try:
-            expired = date_parser.parse(expiry).date() < datetime.now(timezone.utc).date()
-        except Exception:
-            pass
-    document = copy.deepcopy(document)
-    document["document_expired"] = expired
-
-    if not document.get("referable", True):
-        return {
-            "dam_id": dam["id"], "indication": "not_applicable", "potential_level": None,
-            "confidence": "not_applicable", "formal_activation": "not_confirmed",
-            "public_warning_status": "not_assessed", "reason": document.get("notes") or "No referable-dam EAP was located.",
-            "storage_level_m": storage_level, "storage_level_trend": trend,
-            "rules": [], "eap": document,
-        }
-
-    assessed = [assess_rule(r, context) for r in document.get("rules", []) if r.get("hazard", "flood_operations") == "flood_operations"]
-    by_level = {level: [r for r in assessed if r.get("level") == level] for level in LEVEL_ORDER}
-    met_levels = [level for level, rules in by_level.items() if any(r["assessment"] == "met" for r in rules)]
-    possible_levels = [level for level, rules in by_level.items() if any(r["assessment"] == "possible" for r in rules)]
-
-    chosen: list[dict[str, Any]] = []
-    potential = None
-    if met_levels:
-        indication = max(met_levels, key=lambda x: LEVEL_ORDER[x])
-        chosen = [r for r in by_level[indication] if r["assessment"] == "met"]
-        reason = f"The published {indication.replace('_', ' ')} flood-trigger rule represented in the app appears to be met."
-    elif possible_levels:
-        potential = max(possible_levels, key=lambda x: LEVEL_ORDER[x])
-        indication = "conditions_incomplete"
-        chosen = [r for r in by_level[potential] if r["assessment"] == "possible"]
-        reason = f"The measurable part of a published {potential.replace('_', ' ')} rule appears to be met, but one or more required conditions are unavailable or non-public."
-    elif assessed and any(r["assessment"] == "not_met" for r in by_level.get("alert", [])):
-        indication = "below_alert"
-        chosen = [r for r in by_level["alert"] if r["assessment"] == "not_met"]
-        reason = "The measurable published Alert flood threshold represented in the app does not appear to be met."
-    else:
-        indication = "unable_to_assess"
-        chosen = [r for r in assessed if r["assessment"] == "unknown"]
-        reason = "The public data does not contain enough information to assess the published flood-trigger rules."
-
-    # Never present an old observation as a current threshold indication. Preserve
-    # the threshold it would have met as a potential level, but make the current
-    # assessment explicitly indeterminate until a fresh observation is available.
-    source_stamp = history_latest.get("observed_at") if storage_level is not None and history_latest else latest.get("observed_at")
-    source_dt = parse_time(source_stamp)
-    source_stale = bool(latest.get("is_stale")) or source_dt is None or datetime.now(timezone.utc) - source_dt > timedelta(hours=48)
-    if source_stale and indication in LEVEL_ORDER:
-        potential = indication
-        indication = "unable_to_assess"
-        reason = (f"The last available reading would meet the published {potential.replace('_', ' ')} threshold represented in the app, "
-                  "but the reading is stale and cannot support a current indication.")
-
-    evidence = []
-    missing = []
-    for rule in chosen:
-        for c in rule.get("condition_results", []):
-            if c["result"] == "met":
-                evidence.append(c["label"])
-            elif c["result"] == "unknown":
-                missing.append(c["label"])
-    evidence = list(dict.fromkeys(evidence))
-    missing = list(dict.fromkeys(missing))
-    warnings = []
-    if expired:
-        warnings.append(f"The cached EAP expiry date ({expiry}) has passed; a replacement document requires review.")
-    if document.get("document_changed") or document.get("review_status") == "change_detected":
-        warnings.append("The official EAP document changed after the stored rules were reviewed; the rules require re-verification.")
-    if source_stale:
-        warnings.append("The current storage reading is stale or unavailable; no current EAP threshold indication is asserted.")
-    if any(c.get("proxy") and c.get("result") == "met" for r in chosen for c in r.get("condition_results", [])):
-        warnings.append("This indication uses percentage full as a low-confidence proxy because current reservoir elevation was unavailable.")
-
-    confidence = "indeterminate" if source_stale else confidence_for(chosen, document, potential or indication)
-    return {
-        "dam_id": dam["id"],
-        "assessed_at": now_iso(),
-        "indication": indication,
-        "potential_level": potential,
-        "confidence": confidence,
-        "formal_activation": "not_confirmed",
-        "public_warning_status": "not_assessed",
-        "reason": reason,
-        "evidence": evidence,
-        "missing_conditions": missing,
-        "warnings": warnings,
-        "current_percent_full": percent,
-        "storage_level_m": storage_level,
-        "storage_level_observed_at": history_latest.get("observed_at") if history_latest else latest.get("observed_at"),
-        "storage_level_trend": trend,
-        "storage_level_change_m": level_change,
-        "storage_level_rate_m_per_hour": rate,
-        "rules": assessed,
-        "eap": {k: document.get(k) for k in (
-            "referable", "document_status", "review_status", "version", "approved_date", "expiry_date",
-            "document_expired", "eap_url", "emergency_info_url", "directory_url", "fsl_m_ahd",
-            "notes", "stand_down_text", "sha256", "checked_at", "downloaded_at", "fetch_error")},
-        "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning.",
-    }
-
-
-def main() -> int:
-    dams = load(DATA / "dams.json", {"dams": []}).get("dams", [])
-    latest = {x.get("dam_id"): x for x in load(DATA / "latest.json", {"dams": []}).get("dams", [])}
-    documents_payload = load(DATA / "eap_documents.json", {"dams": {}})
-    documents = documents_payload.get("dams", {})
-    output = []
-    counts: dict[str, int] = {}
+def main():
+    dams=load(DATA/'dams.json',{'dams':[]}).get('dams',[]); latest={x.get('dam_id'):x for x in load(DATA/'latest.json',{'dams':[]}).get('dams',[])}
+    docs=load(DATA/'eap_documents.json',{'dams':{}}).get('dams',{})
+    out=[]; counts={}
     for dam in dams:
-        history = load(DATA / "history" / f"{dam['id']}.json", {"observations": []}).get("observations", [])
-        result = assess_one(dam, latest.get(dam["id"], {}), history, documents.get(dam["id"], {
-            "dam_id": dam["id"], "referable": True, "document_status": "pending_audit", "review_status": "pending", "rules": []
-        }))
-        output.append(result)
-        counts[result["indication"]] = counts.get(result["indication"], 0) + 1
-    write(DATA / "eap_status.json", {
-        "generated_at": now_iso(),
-        "counts": counts,
-        "formal_activation_source": "not_integrated",
-        "public_warning_source": "not_integrated",
-        "disclaimer": "These are indicative comparisons with published EAP flood-operation triggers. They are not formal activation levels, emergency warnings, or evacuation advice.",
-        "dams": output,
-    })
-    print(f"Assessed {len(output)} dams: {counts}")
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+        hist=load(DATA/'history'/f"{dam['id']}.json",{'observations':[]}).get('observations',[])
+        st=assess_one(dam,latest.get(dam['id'],{}),hist,docs.get(dam['id'],{'dam_id':dam['id'],'rules':[]})); out.append(st); counts[st['indicative_result']]=counts.get(st['indicative_result'],0)+1
+    write(DATA/'eap_status.json',{'generated_at':now_iso(),'counts':counts,'formal_activation_source':'not_integrated','public_warning_source':'not_integrated','disclaimer':'Indicative only; not formal EAP activation or public warning advice.','dams':out})
+    write(DATA/'eap_audit_report.json',audit_report(out,docs)); print(f'Assessed {len(out)} dams: {counts}'); return 0
+if __name__=='__main__': sys.exit(main())

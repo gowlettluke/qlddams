@@ -523,12 +523,21 @@ def fetch_sunwater_history(session: requests.Session, station: str, days: int) -
             observed = iso_datetime_sunwater(value.get("date"))
             if not observed:
                 continue
-            records.append({
+            storage_level = number(value.get("storageLevelMetres"))
+            record = {
                 "observed_at": observed, "percent_full": number(value.get("percentageFull")),
-                "volume_ml": number(value.get("volumeMegaLitres")), "storage_level_m": number(value.get("storageLevelMetres")),
+                "volume_ml": number(value.get("volumeMegaLitres")), "storage_level_m": storage_level,
                 "outflow_cms": number(value.get("cubicMetersPerSecond")), "rainfall_mm": number(value.get("rainfallMillimetres")),
                 "river_level_m": number(value.get("riverLevelMetres")), "source": "Sunwater", "quality_status": "live",
-            })
+            }
+            if storage_level is not None:
+                record.update({
+                    "storage_level_datum": "AHD",
+                    "storage_level_observed_at": observed,
+                    "storage_level_source_url": f"{SUN_API_ROOT}/Sites/{station}/data",
+                    "storage_level_quality": "official_automated",
+                })
+            records.append(record)
         new_token = payload.get("continuationToken")
         if not values or new_token in (None, "", 0, "0"):
             break
@@ -1053,6 +1062,13 @@ def run(history_days: int) -> int:
                 for metric in ("storage_level_m", "outflow_cms", "rainfall_mm", "river_level_m"):
                     if item.get(metric) is None and history_latest.get(metric) is not None:
                         item[metric] = history_latest.get(metric)
+                if item.get("storage_level_m") is not None:
+                    for metric in ("storage_level_datum", "storage_level_observed_at", "storage_level_source_url", "storage_level_quality"):
+                        if item.get(metric) is None and history_latest.get(metric) is not None:
+                            item[metric] = history_latest.get(metric)
+                    item.setdefault("storage_level_datum", "AHD")
+                    item.setdefault("storage_level_observed_at", history_latest.get("observed_at"))
+                    item.setdefault("storage_level_quality", "official_automated")
                 item["supplemental_observed_at"] = history_latest.get("observed_at")
         pct = number(item.get("percent_full"))
         item["change_24h"] = closest_delta(observations, pct, item.get("observed_at"), 1)
