@@ -71,7 +71,9 @@
       <div class="eap-card"><div class="num amber" id="countEapAlert">–</div><div class="cap">Alert indicated</div></div>
       <div class="eap-card"><div class="num" style="color:var(--orange)" id="countEapLean">–</div><div class="cap">Lean Forward indicated</div></div>
       <div class="eap-card"><div class="num red" id="countEapStand">–</div><div class="cap">Stand Up indicated</div></div>
+      <div class="eap-card"><div class="num green" id="countEapBelow">–</div><div class="cap">Below Alert</div></div>
       <div class="eap-card"><div class="num blue" id="countEapUnknown">–</div><div class="cap">Incomplete / unable</div></div>
+      <div class="eap-card"><div class="num blue" id="countEapNotApplicable">–</div><div class="cap">Not applicable</div></div>
     </div><div class="cap" style="line-height:1.45">Indicative comparison with published flood-operation triggers only. It is not an operator activation status or public warning.</div></section>
     <section class="section"><h2>Find a dam</h2>
       <div class="grid2"><div><label>Operator</label><select id="operator"><option value="all">Both operators</option><option value="Seqwater">Seqwater</option><option value="Sunwater">Sunwater</option></select></div><div><label>Storage status</label><select id="statusFilter"><option value="all">All levels</option><option value="spilling">At/above 100%</option><option value="high">80–99.99%</option><option value="medium">50–79.99%</option><option value="low">Below 50%</option><option value="stale">Stale/missing</option></select></div></div>
@@ -168,7 +170,7 @@
     const values=state.registry.map(latestFor),pcts=values.map(x=>num(x.percent_full));
     $('countDams').textContent=state.registry.length;$('countSpilling').textContent=pcts.filter(x=>x!==null&&x>=100).length;
     $('countLow').textContent=pcts.filter(x=>x!==null&&x<50).length;$('countStale').textContent=values.filter(x=>x.is_stale||num(x.percent_full)===null).length;
-    const es=state.registry.map(eapFor);$('countEapAlert').textContent=es.filter(x=>x.indication==='alert').length;$('countEapLean').textContent=es.filter(x=>x.indication==='lean_forward').length;$('countEapStand').textContent=es.filter(x=>x.indication==='stand_up').length;$('countEapUnknown').textContent=es.filter(x=>['conditions_incomplete','unable_to_assess'].includes(x.indication)).length;
+    const es=state.registry.map(eapFor);$('countEapAlert').textContent=es.filter(x=>x.indication==='alert').length;$('countEapLean').textContent=es.filter(x=>x.indication==='lean_forward').length;$('countEapStand').textContent=es.filter(x=>x.indication==='stand_up').length;$('countEapBelow').textContent=es.filter(x=>x.indication==='below_alert').length;$('countEapUnknown').textContent=es.filter(x=>['conditions_incomplete','unable_to_assess'].includes(x.indication)).length;$('countEapNotApplicable').textContent=es.filter(x=>x.indication==='not_applicable').length;
     const generated=state.health?.generated_at||'';$('lastRefresh').textContent=niceDate(generated);
     const hs=state.health?.overall_status||'seed';$('healthDot').className=`health-dot ${hs==='ok'?'ok':hs==='failed'?'failed':''}`;
     $('subtitle').textContent=`${state.registry.length} Seqwater and Sunwater dams · ${state.health?.message||'Data loaded'} · ${niceDate(generated)}`;
