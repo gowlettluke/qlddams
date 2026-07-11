@@ -5138,6 +5138,54 @@
       "storage_level_observed_at": "2026-07-12T07:55:00+10:00",
       "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
       "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-12T08:00:00+10:00",
+      "percent_full": 96.62,
+      "volume_ml": 1797177.752,
+      "storage_level_m": 153.707,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-12T08:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-12T08:35:00+10:00",
+      "percent_full": 96.49,
+      "volume_ml": 1794640.144,
+      "storage_level_m": 153.695,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-12T08:35:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-12T09:00:00+10:00",
+      "percent_full": 96.51,
+      "volume_ml": 1795062.883,
+      "storage_level_m": 153.697,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-12T09:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_quality": "official_exact"
     }
   ]
 }
