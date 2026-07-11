@@ -31,6 +31,7 @@ jobs:
         run: timeout 25m python scripts/research_extract_eap_jina.py
         continue-on-error: true
       - name: Extract official EAP PDFs where directly accessible
+        if: github.event_name != 'pull_request'
         run: timeout 20m python scripts/research_extract_eap_curl.py
         continue-on-error: true
       - name: Upload research outputs
