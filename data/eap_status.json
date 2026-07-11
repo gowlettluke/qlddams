@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T04:54:14+00:00",
+  "generated_at": "2026-07-11T05:10:12+00:00",
   "counts": {
     "unable_to_assess": 33,
     "below_alert": 8,
@@ -12,7 +12,7 @@
   "dams": [
     {
       "dam_id": "atkinson-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:11+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -44,15 +44,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "baroon-pocket-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:11+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -84,15 +84,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "bill-gunn-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:11+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -124,15 +124,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "bjelke-petersen-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -159,22 +159,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/bjelke-petersen-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "boondooma-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -201,22 +201,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/boondooma-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "borumba-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -248,15 +248,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "burdekin-falls-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -392,22 +392,22 @@
         "approved_date": null,
         "expiry_date": "2027-05-01",
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/burdekin-falls-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": 154.0,
         "notes": "Only the published flood-operations row is used for this storage-based indication. Structural, earthquake and other hazards are not inferred.",
         "stand_down_text": "Storage level 154.30 m AHD and falling, with no forecast increase in elevation.",
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "callide-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -434,22 +434,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/callide-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "cania-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -476,22 +476,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/cania-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "cedar-pocket-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -523,15 +523,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "clarendon-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -563,15 +563,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "coolmunda-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -598,22 +598,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/coolmunda-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "cooloolabin-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -835,15 +835,15 @@
         "notes": "The EAP also contains non-flood hazards that cannot be inferred from public storage data.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "e-j-beardmore-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -870,22 +870,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "enoggera-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -917,15 +917,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "eungella-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -952,22 +952,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/eungella-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "ewen-maddock-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "low",
@@ -1161,15 +1161,15 @@
         "notes": "",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "fairbairn-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1196,22 +1196,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/fairbairn-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "fred-haigh-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1238,22 +1238,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/fred-haigh-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "glenlyon-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1280,22 +1280,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/glenlyon-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "gold-creek-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -1517,15 +1517,15 @@
         "notes": "",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "hinze-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "conditions_incomplete",
       "potential_level": "alert",
       "confidence": "low",
@@ -1721,15 +1721,15 @@
         "notes": "",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "julius-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1756,22 +1756,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/julius-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "kinchant-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1798,22 +1798,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/kinchant-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "kroombit-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -1840,22 +1840,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/kroombit-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "lake-macdonald-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -2095,15 +2095,15 @@
         "notes": "The current EAP contains temporary cofferdam and siphon operating conditions. The indication is conservative and does not infer siphon status.",
         "stand_down_text": "Below operational FSL, or no current relevant flood warning, subject to the EAP decision process.",
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "lake-manchester-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -2295,15 +2295,15 @@
         "notes": "",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "leslie-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2330,22 +2330,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/leslie-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "leslie-harrison-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -2537,15 +2537,15 @@
         "notes": "",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "little-nerang-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "conditions_incomplete",
       "potential_level": "alert",
       "confidence": "low",
@@ -2789,15 +2789,15 @@
         "notes": "",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "maroon-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2829,15 +2829,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "moogerah-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2869,9 +2869,9 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
@@ -2892,7 +2892,7 @@
         "directory_name": "Nindooinbah Dam",
         "operator": "Seqwater",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
-        "checked_at": "2026-07-11T04:54:12+00:00",
+        "checked_at": "2026-07-11T05:09:33+00:00",
         "eap_url": null,
         "emergency_info_url": null,
         "rules": [],
@@ -2904,7 +2904,7 @@
     },
     {
       "dam_id": "north-pine-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2936,15 +2936,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "paradise-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -2971,22 +2971,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/paradise-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "peter-faust-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3013,22 +3013,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/peter-faust-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "poona-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "below_alert",
       "potential_level": null,
       "confidence": "medium",
@@ -3268,15 +3268,15 @@
         "notes": "",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "sideling-creek-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3308,15 +3308,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "somerset-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3498,15 +3498,15 @@
         "notes": "Somerset uses an Operational Full Supply Level that may be altered by regulation. Percentage full alone is not a reliable substitute for the operational elevation and flood forecast.",
         "stand_down_text": "Reservoir below Operational FSL and releases have ceased.",
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "teemburra-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3533,22 +3533,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/teemburra-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "tinaroo-falls-dam",
-      "assessed_at": "2026-07-11T04:54:13+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3575,22 +3575,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/tinaroo-falls-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "wappa-dam",
-      "assessed_at": "2026-07-11T04:54:14+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "conditions_incomplete",
       "potential_level": "alert",
       "confidence": "low",
@@ -3786,15 +3786,15 @@
         "notes": "",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "wivenhoe-dam",
-      "assessed_at": "2026-07-11T04:54:14+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3828,15 +3828,15 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "wuruma-dam",
-      "assessed_at": "2026-07-11T04:54:14+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3863,22 +3863,22 @@
         "approved_date": null,
         "expiry_date": null,
         "document_expired": false,
-        "eap_url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf",
+        "eap_url": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/",
         "emergency_info_url": "https://www.sunwater.com.au/dams/wuruma-dam/",
         "directory_url": "https://www.business.qld.gov.au/industries/mining-energy-water/water/industry-infrastructure/dams/referable-dam-eaps",
         "fsl_m_ahd": null,
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf"
+        "fetch_error": "https://www.sunwater.com.au/community/preparing-for-emergencies/emergency-management/emergency-action-plan-video-transcript/: response was not a PDF (text/html; charset=utf-8); https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     },
     {
       "dam_id": "wyaralong-dam",
-      "assessed_at": "2026-07-11T04:54:14+00:00",
+      "assessed_at": "2026-07-11T05:10:12+00:00",
       "indication": "unable_to_assess",
       "potential_level": null,
       "confidence": "indeterminate",
@@ -3910,9 +3910,9 @@
         "notes": "The official EAP link and activation quick-reference will be audited by the scheduled EAP workflow.",
         "stand_down_text": null,
         "sha256": null,
-        "checked_at": "2026-07-11T04:54:00+00:00",
+        "checked_at": "2026-07-11T05:07:55+00:00",
         "downloaded_at": null,
-        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
+        "fetch_error": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf: 403 Client Error: Forbidden for url: https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf; https://www.business.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf: 404 Client Error: Not Found for url: https://www.business.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf; https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf: 403 Client Error: Forbidden for url: https://www.rdmw.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf; https://www.resources.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf: 403 Client Error: Forbidden for url: https://www.resources.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf"
       },
       "disclaimer": "Indicative comparison with published flood-operation triggers only; not a formal EAP activation level or public warning."
     }
