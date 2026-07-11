@@ -13,7 +13,7 @@ def latest(level=None, datum='AHD', percent=100):
     return {'dam_id':'x','percent_full':percent,'storage_level_m':level,'storage_level_datum':datum,'storage_level_observed_at':'2026-07-11T00:00:00+00:00','storage_level_quality':'official_exact'}
 
 def assess(dam_id, level=None, datum='AHD', history=None, extra=None):
-    l=latest(level,datum); 
+    l=latest(level,datum)
     if extra: l.update(extra)
     return assess_one(DAMS[dam_id], l, history or [], DOCS[dam_id])
 
@@ -85,5 +85,3 @@ def test_reviewed_rules_survive_failed_pdf_refresh():
     assert update_run(False, {'fairbairn-dam'})==0
     after=json.loads((ROOT/'data/eap_documents.json').read_text(encoding='utf-8'))['dams']['fairbairn-dam']
     assert len(after['rules'])==before and after['review_status'].startswith('rules_verified')
-
-
