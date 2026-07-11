@@ -14,9 +14,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf",
-    "http_status": 403,
-    "bytes": 10048,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619632/atkinson-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10411,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "baroon-pocket-dam": {
     "dam_id": "baroon-pocket-dam",
@@ -49,9 +68,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf",
-    "http_status": 403,
-    "bytes": 10277,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619634/baroon-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10363,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "bill-gunn-dam": {
     "dam_id": "bill-gunn-dam",
@@ -76,9 +114,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf",
-    "http_status": 403,
-    "bytes": 10265,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619637/bill-gunn-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10414,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "bjelke-petersen-dam": {
     "dam_id": "bjelke-petersen-dam",
@@ -111,9 +168,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf",
-    "http_status": 403,
-    "bytes": 10326,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619638/bjelke-petersen-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10432,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "boondooma-dam": {
     "dam_id": "boondooma-dam",
@@ -138,9 +214,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf",
-    "http_status": 403,
-    "bytes": 10265,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619640/boondooma-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10414,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "borumba-dam": {
     "dam_id": "borumba-dam",
@@ -173,9 +268,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf",
-    "http_status": 403,
-    "bytes": 10280,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619641/borumba-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10408,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "burdekin-falls-dam": {
     "dam_id": "burdekin-falls-dam",
@@ -216,9 +330,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf",
-    "http_status": 403,
-    "bytes": 10344,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619644/burdekin-falls-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10408,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "callide-dam": {
     "dam_id": "callide-dam",
@@ -235,9 +368,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf",
-    "http_status": 403,
-    "bytes": 10280,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619660/callide-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10408,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "cania-dam": {
     "dam_id": "cania-dam",
@@ -254,9 +406,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf",
-    "http_status": 403,
-    "bytes": 10295,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619671/cania-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10381,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "cedar-pocket-dam": {
     "dam_id": "cedar-pocket-dam",
@@ -273,9 +444,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf",
-    "http_status": 403,
-    "bytes": 10317,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619672/cedar-pocket-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10402,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "clarendon-dam": {
     "dam_id": "clarendon-dam",
@@ -300,9 +490,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf",
-    "http_status": 403,
-    "bytes": 10286,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619675/clarendon-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10414,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "coolmunda-dam": {
     "dam_id": "coolmunda-dam",
@@ -343,9 +552,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf",
-    "http_status": 403,
-    "bytes": 10286,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619678/coolmunda-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10414,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "cooloolabin-dam": {
     "dam_id": "cooloolabin-dam",
@@ -362,9 +590,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf",
-    "http_status": 403,
-    "bytes": 10314,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0012/1619679/cooloolabin-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10420,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "e-j-beardmore-dam": {
     "dam_id": "e-j-beardmore-dam",
@@ -381,9 +628,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf",
-    "http_status": 403,
-    "bytes": 10265,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619635/beardmore-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10414,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "enoggera-dam": {
     "dam_id": "enoggera-dam",
@@ -400,9 +666,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf",
-    "http_status": 403,
-    "bytes": 10304,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619706/enoggera-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10411,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "eungella-dam": {
     "dam_id": "eungella-dam",
@@ -419,9 +704,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf",
-    "http_status": 403,
-    "bytes": 10304,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619708/eungella-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10432,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "ewen-maddock-dam": {
     "dam_id": "ewen-maddock-dam",
@@ -438,9 +742,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf",
-    "http_status": 403,
-    "bytes": 10317,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619709/ewen-maddock-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10423,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "fairbairn-dam": {
     "dam_id": "fairbairn-dam",
@@ -465,9 +788,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf",
-    "http_status": 403,
-    "bytes": 10286,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619711/fairbairn-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10435,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "fred-haigh-dam": {
     "dam_id": "fred-haigh-dam",
@@ -484,9 +826,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf",
-    "http_status": 403,
-    "bytes": 10290,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619713/fred-haigh-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10417,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "glenlyon-dam": {
     "dam_id": "glenlyon-dam",
@@ -559,9 +920,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf",
-    "http_status": 403,
-    "bytes": 10262,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619714/glenlyon-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10390,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "gold-creek-dam": {
     "dam_id": "gold-creek-dam",
@@ -578,9 +958,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf",
-    "http_status": 403,
-    "bytes": 10311,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619716/gold-creek-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10417,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "hinze-dam": {
     "dam_id": "hinze-dam",
@@ -597,9 +996,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf",
-    "http_status": 403,
-    "bytes": 10274,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619720/hinze-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10338,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "julius-dam": {
     "dam_id": "julius-dam",
@@ -640,9 +1058,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf",
-    "http_status": 403,
-    "bytes": 10298,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619725/julius-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10384,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "kinchant-dam": {
     "dam_id": "kinchant-dam",
@@ -659,9 +1096,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf",
-    "http_status": 403,
-    "bytes": 10283,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619727/kinchant-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10411,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "kroombit-dam": {
     "dam_id": "kroombit-dam",
@@ -678,9 +1134,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf",
-    "http_status": 403,
-    "bytes": 10304,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619729/kroombit-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10411,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "lake-macdonald-dam": {
     "dam_id": "lake-macdonald-dam",
@@ -705,9 +1180,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf",
-    "http_status": 403,
-    "bytes": 10323,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619736/lake-macdonald-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10429,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "lake-manchester-dam": {
     "dam_id": "lake-manchester-dam",
@@ -740,9 +1234,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf",
-    "http_status": 403,
-    "bytes": 10326,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619737/lake-manchester-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10411,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "leslie-dam": {
     "dam_id": "leslie-dam",
@@ -767,9 +1280,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf",
-    "http_status": 403,
-    "bytes": 10277,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619742/leslie-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10384,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "leslie-harrison-dam": {
     "dam_id": "leslie-harrison-dam",
@@ -794,9 +1326,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf",
-    "http_status": 403,
-    "bytes": 10326,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619743/leslie-harrison-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10432,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "little-nerang-dam": {
     "dam_id": "little-nerang-dam",
@@ -813,9 +1364,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf",
-    "http_status": 403,
-    "bytes": 10299,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619745/little-nerang-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10426,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "maroon-dam": {
     "dam_id": "maroon-dam",
@@ -840,9 +1410,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf",
-    "http_status": 403,
-    "bytes": 10256,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619748/maroon-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10363,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "moogerah-dam": {
     "dam_id": "moogerah-dam",
@@ -867,9 +1456,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf",
-    "http_status": 403,
-    "bytes": 10283,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619754/moogerah-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10390,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "north-pine-dam": {
     "dam_id": "north-pine-dam",
@@ -894,9 +1502,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf",
-    "http_status": 403,
-    "bytes": 10311,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0010/1619758/north-pine-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10396,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "paradise-dam": {
     "dam_id": "paradise-dam",
@@ -921,9 +1548,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf",
-    "http_status": 403,
-    "bytes": 10283,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0003/1619760/paradise-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10390,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "peter-faust-dam": {
     "dam_id": "peter-faust-dam",
@@ -948,9 +1594,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf",
-    "http_status": 403,
-    "bytes": 10335,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619763/peter-faust-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10420,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "poona-dam": {
     "dam_id": "poona-dam",
@@ -967,9 +1632,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf",
-    "http_status": 403,
-    "bytes": 10295,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0007/1619764/poona-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10402,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "sideling-creek-dam": {
     "dam_id": "sideling-creek-dam",
@@ -994,9 +1678,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf",
-    "http_status": 403,
-    "bytes": 10302,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619770/sideling-creek-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10429,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "somerset-dam": {
     "dam_id": "somerset-dam",
@@ -1029,9 +1732,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf",
-    "http_status": 403,
-    "bytes": 10304,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619771/somerset-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10390,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "teemburra-dam": {
     "dam_id": "teemburra-dam",
@@ -1048,9 +1770,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf",
-    "http_status": 403,
-    "bytes": 10307,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0006/1619781/teemburra-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10393,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "tinaroo-falls-dam": {
     "dam_id": "tinaroo-falls-dam",
@@ -1083,9 +1824,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf",
-    "http_status": 403,
-    "bytes": 10320,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0008/1619783/tinaroo-falls-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10405,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "wappa-dam": {
     "dam_id": "wappa-dam",
@@ -1102,9 +1862,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf",
-    "http_status": 403,
-    "bytes": 10253,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0009/1619784/wappa-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10381,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "wivenhoe-dam": {
     "dam_id": "wivenhoe-dam",
@@ -1137,9 +1916,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf",
-    "http_status": 403,
-    "bytes": 10283,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0011/1619786/wivenhoe-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10411,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "wuruma-dam": {
     "dam_id": "wuruma-dam",
@@ -1164,9 +1962,28 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf",
-    "http_status": 403,
-    "bytes": 10298,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0004/1619788/wuruma-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10384,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   },
   "wyaralong-dam": {
     "dam_id": "wyaralong-dam",
@@ -1207,8 +2024,27 @@
     ],
     "status": "not_pdf",
     "url": "https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf",
-    "http_status": 403,
-    "bytes": 10286,
-    "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    "diagnostics": {
+      "attempts": [
+        {
+          "method": "page.goto",
+          "error": "Error('Page.goto: Download is starting\\nCall log:\\n  - navigating to \"https://www.dlgwv.qld.gov.au/__data/assets/pdf_file/0005/1619789/wyaralong-eap.pdf\", waiting until \"commit\"\\n')"
+        },
+        {
+          "method": "context.request.after_browser",
+          "status": 403,
+          "bytes": 10414,
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "method": "anchor_download",
+          "error": "TimeoutError('Timeout 60000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')"
+        }
+      ]
+    },
+    "bytes": 0,
+    "page_url": "chrome-error://chromewebdata/",
+    "page_title": "",
+    "body_prefix": "<html><head></head><body></body></html>"
   }
 }
