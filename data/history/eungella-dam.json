@@ -2749,7 +2749,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T08:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T09:00:00+10:00",
@@ -2760,7 +2765,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T09:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T09:58:20+10:00",
@@ -2771,7 +2781,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T09:58:20+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T10:00:00+10:00",
@@ -2782,7 +2797,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T10:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T11:00:00+10:00",
@@ -2793,7 +2813,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T11:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T12:00:00+10:00",
@@ -2804,7 +2829,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T12:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T12:58:20+10:00",
@@ -2815,7 +2845,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T12:58:20+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T13:00:00+10:00",
@@ -2826,7 +2861,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T13:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T14:00:00+10:00",
@@ -2837,7 +2877,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T14:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T15:00:00+10:00",
@@ -2848,7 +2893,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T15:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T15:58:20+10:00",
@@ -2859,7 +2909,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T15:58:20+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T16:00:00+10:00",
@@ -2870,7 +2925,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T16:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T17:00:00+10:00",
@@ -2881,7 +2941,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T17:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T18:00:00+10:00",
@@ -2892,7 +2957,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T18:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T18:58:20+10:00",
@@ -2903,7 +2973,12 @@
       "rainfall_mm": 0.0,
       "river_level_m": 0.0,
       "source": "Sunwater",
-      "quality_status": "live"
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-08T18:58:20+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120211A/data",
+      "storage_level_quality": "official_exact"
     },
     {
       "observed_at": "2026-07-08T19:00:00+10:00",
