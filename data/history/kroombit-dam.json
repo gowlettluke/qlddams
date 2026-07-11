@@ -3443,6 +3443,17 @@
       "river_level_m": 0.0,
       "source": "Sunwater",
       "quality_status": "live"
+    },
+    {
+      "observed_at": "2026-07-11T16:00:00+10:00",
+      "percent_full": 2.46,
+      "volume_ml": 359.128,
+      "storage_level_m": 254.534,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live"
     }
   ]
 }

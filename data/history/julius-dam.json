@@ -11341,6 +11341,72 @@
       "river_level_m": 0.0,
       "source": "Sunwater",
       "quality_status": "live"
+    },
+    {
+      "observed_at": "2026-07-11T15:00:00+10:00",
+      "percent_full": 96.16,
+      "volume_ml": 103372.9,
+      "storage_level_m": 223.205,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live"
+    },
+    {
+      "observed_at": "2026-07-11T15:10:00+10:00",
+      "percent_full": 96.16,
+      "volume_ml": 103372.9,
+      "storage_level_m": 223.205,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live"
+    },
+    {
+      "observed_at": "2026-07-11T15:20:00+10:00",
+      "percent_full": 96.16,
+      "volume_ml": 103372.9,
+      "storage_level_m": 223.205,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live"
+    },
+    {
+      "observed_at": "2026-07-11T15:30:00+10:00",
+      "percent_full": 96.15,
+      "volume_ml": 103360.718,
+      "storage_level_m": 223.204,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live"
+    },
+    {
+      "observed_at": "2026-07-11T15:40:00+10:00",
+      "percent_full": 96.17,
+      "volume_ml": 103385.083,
+      "storage_level_m": 223.206,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live"
+    },
+    {
+      "observed_at": "2026-07-11T15:50:00+10:00",
+      "percent_full": 96.16,
+      "volume_ml": 103372.9,
+      "storage_level_m": 223.205,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live"
     }
   ]
 }
