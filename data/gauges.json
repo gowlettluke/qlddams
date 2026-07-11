@@ -1,0 +1,49 @@
+{
+  "generated_at": "2025-12-02T20:50:03+10:00",
+  "dams": {
+    "atkinson-dam": [
+      {
+        "id": "540547",
+        "name": "Buaraba Creek at Atkinson Dam",
+        "relationship": "dam gauge",
+        "confidence": "verified",
+        "image_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540547.png",
+        "bulletin_url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60286.html#Ipswich/Brisbane_Creeks"
+      }
+    ],
+    "burdekin-falls-dam": [
+      {
+        "id": "533075",
+        "name": "Burdekin River at Sellheim",
+        "relationship": "upstream river gauge",
+        "confidence": "verified",
+        "image_url": "https://www.bom.gov.au/fwo/IDQ65393/IDQ65393.533075.png",
+        "bulletin_url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html#Burdekin"
+      },
+      {
+        "id": "534010",
+        "name": "Cape River at Taemas",
+        "relationship": "upstream tributary gauge",
+        "confidence": "verified",
+        "image_url": "https://www.bom.gov.au/fwo/IDQ65393/IDQ65393.534010.png",
+        "bulletin_url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html#Burdekin"
+      },
+      {
+        "id": "534013",
+        "name": "Burdekin River at Hydro Site",
+        "relationship": "dam-area gauge",
+        "confidence": "verified",
+        "image_url": "https://www.bom.gov.au/fwo/IDQ65393/IDQ65393.534013.png",
+        "bulletin_url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html#Burdekin"
+      },
+      {
+        "id": "534012",
+        "name": "Suttor River at St Anns",
+        "relationship": "upstream tributary gauge",
+        "confidence": "verified",
+        "image_url": "https://www.bom.gov.au/fwo/IDQ65393/IDQ65393.534012.png",
+        "bulletin_url": "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html#Burdekin"
+      }
+    ]
+  }
+}

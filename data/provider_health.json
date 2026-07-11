@@ -1,0 +1,27 @@
+{
+  "generated_at": "2025-12-02T20:50:03+10:00",
+  "overall_status": "seed",
+  "message": "Seed data extracted from the supplied Power BI reports. Run the GitHub Actions workflow to replace it with live data.",
+  "providers": {
+    "seqwater_current": {
+      "status": "seed",
+      "records": 25
+    },
+    "seqwater_historical": {
+      "status": "seed",
+      "dams": 25
+    },
+    "sunwater_current": {
+      "status": "seed",
+      "records": 20
+    },
+    "sunwater_historical": {
+      "status": "seed",
+      "dams": 1
+    },
+    "bom_gauges": {
+      "status": "seed",
+      "verified_mappings": 5
+    }
+  }
+}

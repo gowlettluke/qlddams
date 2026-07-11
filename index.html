@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Live dam levels for Seqwater and Sunwater dams across Queensland.">
+  <title>Queensland Dam Levels</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" crossorigin href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script crossorigin src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+  <style>
+    :root{
+      --bg:#f5f5f5;--panel:#fff;--line:#d7d7d7;--soft:#f0f2f5;--soft2:#e8edf2;--text:#1f1f1f;--muted:#667085;
+      --red:#b00020;--red-dark:#7b0015;--orange:#e56600;--amber:#a76500;--green:#008f83;--blue:#2563eb;--navy:#17324d;
+      --seq:#008f83;--sun:#1666a8;--shadow:0 2px 10px rgba(0,0,0,.12);--font:Arial,Helvetica,sans-serif;
+      --map-bg:#dbe5ee;--chart-grid:rgba(102,112,133,.18)
+    }
+    body.dark{
+      --bg:#0f1117;--panel:#171b21;--line:#303744;--soft:#111722;--soft2:#202733;--text:#f3f4f6;--muted:#a8b1c2;
+      --shadow:0 2px 16px rgba(0,0,0,.45);--map-bg:#111722;--chart-grid:rgba(168,177,194,.18)
+    }
+    *{box-sizing:border-box}html,body{height:100%;margin:0;font-family:var(--font);font-size:13px;color:var(--text);background:var(--bg);overflow:hidden}
+    button,select,input{font:inherit;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:0}
+    button{font-weight:800;padding:8px 11px;cursor:pointer}button:hover{border-color:var(--red)}button.primary{background:var(--red);border-color:var(--red);color:#fff}
+    button:disabled{cursor:not-allowed;opacity:.55}select,input{width:100%;padding:7px 8px}a{color:var(--blue)}
+    .app{height:100vh;display:grid;grid-template-columns:350px minmax(0,1fr);grid-template-rows:58px minmax(0,1fr);min-width:0}
+    header{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;background:var(--panel);border-bottom:1px solid var(--line);box-shadow:var(--shadow);z-index:1100;padding:9px 12px;gap:12px}
+    .brand{display:flex;align-items:center;gap:10px;min-width:0}.mark{width:34px;height:34px;flex:0 0 auto}.mark img{width:100%;height:100%}.title{font-size:16px;font-weight:900;white-space:nowrap}.sub{font-size:11px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:850px}.actions{display:flex;align-items:center;justify-content:flex-end;gap:7px;flex-wrap:nowrap;flex:0 0 auto}
+    aside{grid-row:2;background:var(--panel);border-right:1px solid var(--line);overflow:auto;z-index:20}.section{padding:12px;border-bottom:1px solid var(--line)}.section h2{margin:0 0 10px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:1fr 1fr;gap:8px}.card{border:1px solid var(--line);background:var(--soft);padding:10px;min-height:62px}.card.full{grid-column:1/-1;min-height:54px}.num{font-size:24px;font-weight:900;line-height:1}.card.full .num{font-size:15px;line-height:1.2}.cap{font-size:11px;color:var(--muted);margin-top:6px}.red{color:var(--red)}.green{color:var(--green)}.amber{color:var(--amber)}.blue{color:var(--blue)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}label{display:block;color:var(--muted);font-size:11px;margin-bottom:4px}.filter-gap{margin-top:9px}.health-line{display:flex;align-items:center;gap:7px}.health-dot{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 1px rgba(0,0,0,.2)}.health-dot.ok{background:var(--green)}.health-dot.failed{background:var(--red)}
+    .dam-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.dam-count{font-size:11px;color:var(--muted)}.dam-list{border:1px solid var(--line);max-height:410px;overflow:auto;background:var(--panel)}
+    .dam-row{display:grid;grid-template-columns:minmax(0,1fr) 60px;gap:8px;padding:9px 9px 8px;border-bottom:1px solid var(--line);cursor:pointer;position:relative}.dam-row:last-child{border-bottom:0}.dam-row:hover,.dam-row.active{background:rgba(176,0,32,.06)}.dam-row.active:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red)}
+    .dam-name{font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.dam-meta{font-size:10px;color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.dam-value{text-align:right;font-weight:900;font-size:15px}.dam-trend{font-size:10px;margin-top:3px}.operator-bar{display:inline-block;width:7px;height:7px;margin-right:5px}.operator-bar.seq{background:var(--seq)}.operator-bar.sun{background:var(--sun)}
+    main{grid-row:2;position:relative;min-width:0;background:var(--map-bg);overflow:hidden}#map{width:100%;height:100%;background:var(--map-bg)}.leaflet-container{font-family:var(--font);background:var(--map-bg)}.leaflet-control-layers,.leaflet-control-zoom a{border-radius:0!important}.leaflet-popup-content{margin:10px 12px;min-width:210px}.popup-title{font-size:14px;font-weight:900;margin-bottom:6px}.popup-grid{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:12px}.popup-grid span:nth-child(odd){color:#667085}.popup-open{display:block;margin-top:9px;width:100%;background:#b00020;color:#fff!important;border:0;padding:7px;text-align:center;text-decoration:none;font-weight:900}
+    .statusbar{position:absolute;left:14px;bottom:14px;z-index:700;background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);padding:8px 10px;font-size:12px;max-width:calc(100% - 28px)}.statusbar b{color:var(--red)}
+    .errorbox{position:absolute;left:12px;right:12px;top:12px;z-index:1200;background:#fff1f2;color:#7f1d1d;border:1px solid #fecdd3;padding:10px 12px;font-weight:800;box-shadow:var(--shadow)}.hidden{display:none!important}
+    .dam-marker{display:grid;place-items:center;width:32px;height:32px;border:3px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.42);font-size:9px;font-weight:900;color:#fff;background:var(--marker,#2563eb);position:relative}.dam-marker.seq:after,.dam-marker.sun:after{content:"";position:absolute;left:-3px;right:-3px;bottom:-6px;height:3px;background:var(--seq)}.dam-marker.sun:after{background:var(--sun)}.dam-marker.stale{opacity:.62}.dam-marker.selected{outline:3px solid var(--red);outline-offset:2px;z-index:2}.dam-marker.spilling{animation:pulseMarker 1.8s infinite}@keyframes pulseMarker{0%,100%{box-shadow:0 1px 5px rgba(0,0,0,.42),0 0 0 0 rgba(176,0,32,.42)}50%{box-shadow:0 1px 5px rgba(0,0,0,.42),0 0 0 9px rgba(176,0,32,0)}}
+    .detail{position:absolute;right:0;top:0;bottom:0;width:min(520px,48vw);z-index:900;background:var(--panel);border-left:1px solid var(--line);box-shadow:-4px 0 18px rgba(0,0,0,.16);transform:translateX(100%);transition:transform .18s ease;display:flex;flex-direction:column}.detail.open{transform:translateX(0)}.detail-head{padding:13px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.detail-title{font-size:20px;font-weight:900;line-height:1.1}.detail-sub{font-size:11px;color:var(--muted);margin-top:5px}.close{font-size:20px;line-height:1;padding:4px 8px}.detail-body{overflow:auto;padding:14px}.hero{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px}.metric{border:1px solid var(--line);background:var(--soft);padding:11px;min-height:76px}.metric.primary{border-top:4px solid var(--red)}.metric-val{font-size:25px;font-weight:900;line-height:1}.metric-val.smallish{font-size:18px}.metric-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:7px}.metric-note{font-size:10px;color:var(--muted);margin-top:4px}
+    .notice{margin-top:10px;border-left:4px solid var(--amber);background:rgba(179,107,0,.09);padding:9px 10px;line-height:1.4}.notice.rednotice{border-left-color:var(--red);background:rgba(176,0,32,.08)}
+    .panel{border:1px solid var(--line);margin-top:12px}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:9px;padding:9px 10px;background:var(--soft);border-bottom:1px solid var(--line)}.panel-head h3{font-size:12px;margin:0;text-transform:uppercase;letter-spacing:.06em}.panel-body{padding:10px}.chart-controls{display:flex;gap:6px;flex-wrap:wrap}.chart-controls button{padding:5px 8px;font-size:11px}.chart-controls button.active{background:var(--red);border-color:var(--red);color:#fff}.metric-select{width:auto;padding:5px 7px}.chart-wrap{height:245px;position:relative}.empty-chart{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);text-align:center;padding:20px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}.fact{padding:9px;border-bottom:1px solid var(--line)}.fact:nth-child(odd){border-right:1px solid var(--line)}.fact:nth-last-child(-n+2){border-bottom:0}.fact-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.fact-value{font-weight:800;margin-top:4px;line-height:1.35}
+    .gauge-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.gauge{border:1px solid var(--line);padding:9px;min-width:0}.gauge-name{font-weight:900}.gauge-meta{font-size:10px;color:var(--muted);line-height:1.4;margin-top:4px}.gauge-current{font-size:19px;font-weight:900;margin-top:7px}.gauge img{display:block;width:100%;max-height:160px;object-fit:contain;margin-top:8px;background:#fff;border:1px solid var(--line)}.confidence{display:inline-block;border:1px solid var(--line);padding:2px 4px;font-size:9px;text-transform:uppercase;font-weight:900;margin-top:5px}.confidence.verified{color:var(--green);border-color:var(--green)}.confidence.candidate{color:var(--amber);border-color:var(--amber)}
+    .source-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:8px 0}.source-row:last-child{border-bottom:0}.source-title{font-weight:900}.source-message{font-size:10px;color:var(--muted);margin-top:3px}.status-badge{border:1px solid;padding:3px 6px;font-size:10px;font-weight:900;text-transform:uppercase}.status-badge.ok{color:var(--green);border-color:var(--green)}.status-badge.partial,.status-badge.seed{color:var(--amber);border-color:var(--amber)}.status-badge.failed{color:var(--red);border-color:var(--red)}
+    .detail-footer{display:flex;gap:8px;margin-top:12px}.detail-footer a{flex:1;text-align:center;border:1px solid var(--line);padding:8px;text-decoration:none;font-weight:900;color:var(--text)}.detail-footer a.primary-link{background:var(--red);border-color:var(--red);color:#fff}
+    .health-modal{position:absolute;inset:0;z-index:1300;background:rgba(0,0,0,.45);display:grid;place-items:center;padding:20px}.health-card{width:min(620px,100%);max-height:85vh;overflow:auto;background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow)}.health-card-head{display:flex;justify-content:space-between;align-items:center;padding:12px;border-bottom:1px solid var(--line)}.health-card-head h2{margin:0;font-size:16px}.health-card-body{padding:12px}
+    @media(max-width:1000px){.app{grid-template-columns:320px 1fr}.detail{width:min(500px,65vw)}.sub{max-width:440px}.actions button:nth-child(2){display:none}}
+    @media(max-width:760px){html,body{overflow:auto}.app{display:block;height:auto}header{position:sticky;top:0}.brand{flex:1;overflow:hidden}.title{font-size:13px;overflow:hidden;text-overflow:ellipsis}.sub{display:none}.actions button{padding:7px 8px}.actions #fitQld{display:none}aside{height:auto;border-right:0}.dam-list{max-height:300px}main{height:72vh;min-height:560px}.detail{position:fixed;top:58px;width:100vw;left:0;right:0}.hero{grid-template-columns:1fr 1fr}.metric.primary{grid-column:1/-1}.gauge-grid{grid-template-columns:1fr}.statusbar{bottom:8px;left:8px}.facts{grid-template-columns:1fr}.fact:nth-child(odd){border-right:0}.fact:nth-last-child(-n+2){border-bottom:1px solid var(--line)}.fact:last-child{border-bottom:0}}
+    @media(max-width:480px){.actions #reload,.actions #fitDams{display:none}.section{padding:10px}.cards{grid-template-columns:repeat(2,1fr)}.detail-body{padding:10px}.chart-wrap{height:220px}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand"><div class="mark"><img src="favicon.svg" alt="Queensland Dam Levels logo"></div><div><div class="title">Queensland Dam Levels</div><div class="sub" id="subtitle">Loading current Seqwater and Sunwater data…</div></div></div>
+    <div class="actions"><button class="primary" id="fitDams">Fit dams</button><button id="fitQld">Fit Queensland</button><button id="healthBtn">Source health</button><button id="reload">Reload data</button><button id="theme">Dark mode</button></div>
+  </header>
+  <aside>
+    <section class="section"><h2>Current summary</h2><div class="cards">
+      <div class="card"><div class="num" id="countDams">–</div><div class="cap">Monitored dams</div></div>
+      <div class="card"><div class="num red" id="countSpilling">–</div><div class="cap">At or above 100%</div></div>
+      <div class="card"><div class="num amber" id="countLow">–</div><div class="cap">Below 50%</div></div>
+      <div class="card"><div class="num blue" id="countStale">–</div><div class="cap">Stale or missing</div></div>
+      <div class="card full"><div class="cap">Data refresh</div><div class="num health-line"><span class="health-dot" id="healthDot"></span><span id="lastRefresh">–</span></div></div>
+    </div></section>
+    <section class="section"><h2>Find a dam</h2>
+      <div class="grid2"><div><label>Operator</label><select id="operator"><option value="all">Both operators</option><option value="Seqwater">Seqwater</option><option value="Sunwater">Sunwater</option></select></div><div><label>Storage status</label><select id="statusFilter"><option value="all">All levels</option><option value="spilling">At/above 100%</option><option value="high">80–99.99%</option><option value="medium">50–79.99%</option><option value="low">Below 50%</option><option value="stale">Stale/missing</option></select></div></div>
+      <div class="filter-gap"><label>Search dam, region or scheme</label><input id="search" placeholder="Example: Wivenhoe, Burnett, Sunwater"></div>
+      <div class="filter-gap"><label>Sort</label><select id="sort"><option value="name">Dam name</option><option value="highest">Highest percentage</option><option value="lowest">Lowest percentage</option><option value="change">Largest 7-day change</option><option value="recent">Most recently observed</option></select></div>
+    </section>
+    <section class="section"><div class="dam-head"><h2 style="margin:0">Dam list</h2><span class="dam-count" id="filteredCount">–</span></div><div class="dam-list" id="damList"><div class="dam-row"><div>Loading…</div></div></div></section>
+    <section class="section"><h2>About the data</h2><div class="cap" style="line-height:1.5;margin:0">Published operator readings may be automated and unverified. Percentages above 100% are retained. Operational capacity can differ from nominal design capacity.</div></section>
+  </aside>
+  <main>
+    <div id="map"></div>
+    <div id="error" class="errorbox hidden"></div>
+    <div class="statusbar" id="mapStatus">Loading map…</div>
+    <section class="detail" id="detail" aria-label="Dam details">
+      <div class="detail-head"><div><div class="detail-title" id="detailTitle">Dam</div><div class="detail-sub" id="detailSub"></div></div><button class="close" id="closeDetail" aria-label="Close dam details">×</button></div>
+      <div class="detail-body">
+        <div class="hero">
+          <div class="metric primary"><div class="metric-val" id="detailPercent">–</div><div class="metric-label">Percentage full</div><div class="metric-note" id="detailTrend">–</div></div>
+          <div class="metric"><div class="metric-val smallish" id="detailVolume">–</div><div class="metric-label">Stored volume</div><div class="metric-note">Megalitres</div></div>
+          <div class="metric"><div class="metric-val smallish" id="detailCapacity">–</div><div class="metric-label">Current capacity basis</div><div class="metric-note">Megalitres</div></div>
+        </div>
+        <div id="detailNotice" class="notice hidden"></div>
+        <div class="panel"><div class="panel-head"><h3>Storage history</h3><select class="metric-select" id="chartMetric"><option value="percent_full">Percentage full</option><option value="volume_ml">Stored volume</option><option value="storage_level_m">Storage level</option><option value="outflow_cms">Outflow</option><option value="rainfall_mm">Rainfall</option><option value="river_level_m">River level</option></select></div><div class="panel-body"><div class="chart-controls" id="ranges"><button data-days="7">7 days</button><button data-days="30" class="active">30 days</button><button data-days="90">90 days</button><button data-days="365">1 year</button><button data-days="0">All</button></div><div class="chart-wrap"><canvas id="historyChart"></canvas><div class="empty-chart hidden" id="emptyChart">No historical observations are available for this metric.</div></div></div></div>
+        <div class="panel"><div class="panel-head"><h3>Dam information</h3></div><div class="panel-body"><div class="facts" id="facts"></div></div></div>
+        <div class="panel" id="gaugePanel"><div class="panel-head"><h3>River and dam gauges</h3></div><div class="panel-body"><div class="gauge-grid" id="gaugeGrid"></div><div class="cap" style="line-height:1.45">Verified mappings come from the supplied reports. Automatically selected nearby stations are labelled as candidates and may not be on the same hydrological path.</div></div></div>
+        <div class="detail-footer"><a href="#" id="operatorLink" target="_blank" rel="noopener" class="primary-link">Open operator source</a><a href="#" id="copyLink">Copy dam link</a></div>
+      </div>
+    </section>
+    <div class="health-modal hidden" id="healthModal"><div class="health-card"><div class="health-card-head"><h2>Data-source health</h2><button class="close" id="closeHealth">×</button></div><div class="health-card-body"><div id="healthSummary" class="notice"></div><div id="healthRows"></div></div></div></div>
+  </main>
+</div>
+<script>
+(() => {
+  'use strict';
+  const DATA='data/';
+  const AUTO_REFRESH=15*60*1000;
+  const QLD_BOUNDS=L.latLngBounds([[-29.5,137.5],[-9.2,154.1]]);
+  const $=id=>document.getElementById(id);
+  const state={registry:[],latest:new Map(),gauges:{},health:null,markers:new Map(),history:new Map(),selected:null,chart:null,range:30,metric:'percent_full',base:null};
+  const esc=v=>String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  const num=v=>v===null||v===undefined||v===''||!Number.isFinite(Number(v))?null:Number(v);
+  const fmtPct=v=>num(v)===null?'–':`${num(v).toFixed(num(v)>=100?1:1)}%`;
+  const fmtML=v=>num(v)===null?'–':new Intl.NumberFormat('en-AU',{maximumFractionDigits:0}).format(num(v));
+  const fmtMetric=(v,metric)=>{if(num(v)===null)return '–';if(metric==='percent_full')return `${num(v).toFixed(1)}%`;if(metric==='volume_ml')return `${fmtML(v)} ML`;if(metric==='storage_level_m'||metric==='river_level_m')return `${num(v).toFixed(2)} m`;if(metric==='outflow_cms')return `${num(v).toFixed(2)} m³/s`;if(metric==='rainfall_mm')return `${num(v).toFixed(1)} mm`;return String(v)};
+  const niceDate=v=>{if(!v)return 'Not available';const d=new Date(v);return isNaN(d)?String(v):d.toLocaleString('en-AU',{day:'numeric',month:'short',year:'numeric',hour:'numeric',minute:'2-digit'})};
+  const ageText=v=>{if(!v)return 'observation unavailable';const ms=Date.now()-new Date(v).getTime();if(!Number.isFinite(ms))return 'observation unavailable';const h=Math.max(0,Math.round(ms/36e5));return h<2?'observed recently':h<48?`observed ${h} hours ago`:`observed ${Math.round(h/24)} days ago`};
+  const trend=(v,days=7)=>{const n=num(v);if(n===null)return 'No comparison available';if(Math.abs(n)<.05)return `No material ${days}-day change`;return `${n>0?'▲':'▼'} ${Math.abs(n).toFixed(1)} percentage points in ${days} days`};
+  const markerColour=p=>p===null?'#64748b':p>=100?'#b00020':p>=80?'#008f83':p>=50?'#2563eb':p>=25?'#b36b00':'#e56600';
+  const statusLabel=(p,stale)=>stale?'Stale or missing':p===null?'No current value':p>=100?'At or above 100%':p>=80?'High storage':p>=50?'Moderate storage':'Low storage';
+  async function getJson(path){const sep=path.includes('?')?'&':'?';const r=await fetch(path+sep+'v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(`${path} returned ${r.status}`);return r.json()}
+
+  const map=L.map('map',{center:[-22.3,145.2],zoom:5,preferCanvas:true,zoomControl:true});
+  const bases={
+    light:L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19,crossOrigin:true}),
+    dark:L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap &copy; CARTO',maxZoom:20,subdomains:'abcd'})
+  };
+  state.base=bases.light.addTo(map);map.fitBounds(QLD_BOUNDS,{padding:[18,18]});setTimeout(()=>map.invalidateSize(true),200);
+  L.control.layers({'OpenStreetMap':bases.light,'Dark map':bases.dark},null,{position:'topright'}).addTo(map);
+  window.addEventListener('resize',()=>setTimeout(()=>map.invalidateSize(true),80));
+
+  function latestFor(d){return state.latest.get(d.id)||{dam_id:d.id,percent_full:null,is_stale:true,source:d.operator}}
+  function filtered(){
+    const op=$('operator').value,filter=$('statusFilter').value,q=$('search').value.trim().toLowerCase(),sort=$('sort').value;
+    let dams=state.registry.filter(d=>{
+      const x=latestFor(d),p=num(x.percent_full),stale=!!x.is_stale;
+      if(op!=='all'&&d.operator!==op)return false;
+      if(filter==='stale'&&!stale)return false;if(filter==='spilling'&&!(p!==null&&p>=100))return false;
+      if(filter==='high'&&!(p!==null&&p>=80&&p<100))return false;if(filter==='medium'&&!(p!==null&&p>=50&&p<80))return false;
+      if(filter==='low'&&!(p!==null&&p<50))return false;
+      if(q&&!`${d.name} ${d.source_name||''} ${d.operator} ${d.region||''} ${d.scheme||''} ${(d.aliases||[]).join(' ')}`.toLowerCase().includes(q))return false;
+      return true;
+    });
+    const stamp=x=>new Date(x.observed_at||0).getTime()||0;
+    dams.sort((a,b)=>{
+      const x=latestFor(a),y=latestFor(b),xp=num(x.percent_full),yp=num(y.percent_full);
+      if(sort==='highest')return (yp??-Infinity)-(xp??-Infinity)||a.name.localeCompare(b.name);
+      if(sort==='lowest')return (xp??Infinity)-(yp??Infinity)||a.name.localeCompare(b.name);
+      if(sort==='change')return Math.abs(num(y.change_7d)||0)-Math.abs(num(x.change_7d)||0)||a.name.localeCompare(b.name);
+      if(sort==='recent')return stamp(y)-stamp(x)||a.name.localeCompare(b.name);
+      return a.name.localeCompare(b.name);
+    });return dams;
+  }
+
+  function renderSummary(){
+    const values=state.registry.map(latestFor),pcts=values.map(x=>num(x.percent_full));
+    $('countDams').textContent=state.registry.length;$('countSpilling').textContent=pcts.filter(x=>x!==null&&x>=100).length;
+    $('countLow').textContent=pcts.filter(x=>x!==null&&x<50).length;$('countStale').textContent=values.filter(x=>x.is_stale||num(x.percent_full)===null).length;
+    const generated=state.health?.generated_at||'';$('lastRefresh').textContent=niceDate(generated);
+    const hs=state.health?.overall_status||'seed';$('healthDot').className=`health-dot ${hs==='ok'?'ok':hs==='failed'?'failed':''}`;
+    $('subtitle').textContent=`${state.registry.length} Seqwater and Sunwater dams · ${state.health?.message||'Data loaded'} · ${niceDate(generated)}`;
+  }
+  function renderList(){
+    const dams=filtered();$('filteredCount').textContent=`${dams.length} shown`;
+    $('damList').innerHTML=dams.map(d=>{const x=latestFor(d),p=num(x.percent_full),delta=num(x.change_7d);return `<div class="dam-row ${state.selected===d.id?'active':''}" data-id="${esc(d.id)}"><div><div class="dam-name"><span class="operator-bar ${d.operator==='Seqwater'?'seq':'sun'}"></span>${esc(d.name)}</div><div class="dam-meta">${esc(d.operator)}${d.region?` · ${esc(d.region)}`:''}${x.is_stale?' · STALE':''}</div></div><div><div class="dam-value" style="color:${markerColour(p)}">${fmtPct(p)}</div><div class="dam-trend ${delta!==null&&delta<0?'red':delta!==null&&delta>0?'green':''}">${delta===null?'–':`${delta>0?'+':''}${delta.toFixed(1)} pp`}</div></div></div>`}).join('')||'<div style="padding:12px;color:var(--muted)">No dams match these filters.</div>';
+    $('damList').querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>selectDam(el.dataset.id,true));
+    renderMarkers();
+  }
+  function markerHtml(d,x,selected){const p=num(x.percent_full);return `<div class="dam-marker ${d.operator==='Seqwater'?'seq':'sun'} ${x.is_stale?'stale':''} ${p!==null&&p>=100?'spilling':''} ${selected?'selected':''}" style="--marker:${markerColour(p)}">${p===null?'?':Math.round(p)}</div>`}
+  function popupHtml(d,x){const p=num(x.percent_full);return `<div class="popup-title">${esc(d.name)}</div><div class="popup-grid"><span>Operator</span><b>${esc(d.operator)}</b><span>Storage</span><b style="color:${markerColour(p)}">${fmtPct(p)}</b><span>Volume</span><b>${fmtML(x.volume_ml)}${num(x.volume_ml)!==null?' ML':''}</b><span>Observed</span><b>${esc(niceDate(x.observed_at))}</b><span>Status</span><b>${esc(statusLabel(p,x.is_stale))}</b></div><a class="popup-open" href="#dam=${encodeURIComponent(d.id)}" data-open="${esc(d.id)}">Open dam details</a>`}
+  function renderMarkers(){
+    const shown=new Set(filtered().map(d=>d.id));
+    state.registry.forEach(d=>{const x=latestFor(d),ll=[d.latitude,d.longitude],isShown=shown.has(d.id);let marker=state.markers.get(d.id);
+      const icon=L.divIcon({className:'',html:markerHtml(d,x,state.selected===d.id),iconSize:[32,35],iconAnchor:[16,18],popupAnchor:[0,-17]});
+      if(!marker){marker=L.marker(ll,{icon,title:d.name,riseOnHover:true}).bindPopup(popupHtml(d,x));marker.on('click',()=>{});state.markers.set(d.id,marker)}else{marker.setIcon(icon).setPopupContent(popupHtml(d,x))}
+      if(isShown&&!map.hasLayer(marker))marker.addTo(map);if(!isShown&&map.hasLayer(marker))map.removeLayer(marker);
+    });
+    map.off('popupopen',popupDelegate);map.on('popupopen',popupDelegate);
+    $('mapStatus').innerHTML=`<b>${shown.size}</b> dams shown · marker number is percentage full · click a marker for details`;
+  }
+  function popupDelegate(e){setTimeout(()=>{const a=e.popup.getElement()?.querySelector('[data-open]');if(a)a.onclick=ev=>{ev.preventDefault();selectDam(a.dataset.open,true)}},0)}
+
+  async function selectDam(id,move=false){
+    const d=state.registry.find(x=>x.id===id);if(!d)return;state.selected=id;location.hash=`dam=${encodeURIComponent(id)}`;
+    $('detail').classList.add('open');$('detailTitle').textContent=d.name;$('detailSub').textContent=`${d.operator}${d.region?` · ${d.region}`:''}`;
+    const x=latestFor(d),p=num(x.percent_full);$('detailPercent').textContent=fmtPct(p);$('detailPercent').style.color=markerColour(p);$('detailVolume').textContent=fmtML(x.volume_ml);$('detailCapacity').textContent=fmtML(x.full_supply_volume_ml);$('detailTrend').textContent=trend(x.change_7d,7);
+    const notices=[x.information,d.capacity_note,x.is_stale?`This reading is stale or unavailable. Last observation: ${niceDate(x.observed_at)}.`:''].filter(Boolean);$('detailNotice').classList.toggle('hidden',!notices.length);$('detailNotice').className=`notice ${x.is_stale?'rednotice':''} ${notices.length?'':'hidden'}`;$('detailNotice').innerHTML=notices.map(esc).join('<br>');
+    const facts=[['Current status',statusLabel(p,x.is_stale)],['Last observation',niceDate(x.observed_at)],['24-hour change',trend(x.change_24h,1)],['7-day change',trend(x.change_7d,7)],['Operator',d.operator],['Region',d.region||'Not recorded'],['Scheme',d.scheme||'Not recorded'],['Watercourse',d.watercourse||'Not recorded'],['Coordinates',`${Number(d.latitude).toFixed(5)}, ${Number(d.longitude).toFixed(5)}`],['Source quality',x.quality_status||'Not stated']];
+    $('facts').innerHTML=facts.map(([a,b])=>`<div class="fact"><div class="fact-label">${esc(a)}</div><div class="fact-value">${esc(b)}</div></div>`).join('');
+    $('operatorLink').href=d.official_url|| (d.operator==='Seqwater'?'https://www.seqwater.com.au/dam-levels':'https://www.sunwater.com.au/dams/');$('operatorLink').textContent=`Open ${d.operator} source`;
+    renderGauges(d);renderList();if(move){map.setView([d.latitude,d.longitude],Math.max(map.getZoom(),9));state.markers.get(id)?.openPopup()}
+    try{await loadHistory(id);renderChart()}catch(err){console.error(err);state.history.set(id,[]);renderChart()}
+  }
+  function closeDetail(){state.selected=null;$('detail').classList.remove('open');history.replaceState(null,'',location.pathname+location.search);renderList()}
+  function renderGauges(d){const gauges=state.gauges[d.id]||[];$('gaugePanel').classList.toggle('hidden',!gauges.length);$('gaugeGrid').innerHTML=gauges.map(g=>{const c=g.current||{};return `<div class="gauge"><div class="gauge-name">${esc(g.name)}</div><div class="gauge-meta">${esc(g.relationship||'Gauge')}${num(g.distance_km)!==null?` · ${Number(g.distance_km).toFixed(1)} km from dam`:''}</div><span class="confidence ${esc(g.confidence||'candidate')}">${esc(g.confidence||'candidate')}</span>${num(c.height_m)!==null?`<div class="gauge-current">${Number(c.height_m).toFixed(2)} m</div><div class="gauge-meta">${esc(c.tendency||'No tendency reported')} · ${esc(c.time_day||'Time unavailable')}</div>`:''}${g.image_url?`<a href="${esc(g.image_url)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(g.image_url)}" alt="${esc(g.name)} gauge chart" onerror="this.closest('a').style.display='none'"></a>`:''}${g.bulletin_url?`<div style="margin-top:7px"><a href="${esc(g.bulletin_url)}" target="_blank" rel="noopener">Open BOM bulletin</a></div>`:''}</div>`}).join('')}
+  async function loadHistory(id){if(state.history.has(id))return state.history.get(id);const payload=await getJson(`${DATA}history/${encodeURIComponent(id)}.json`);const obs=payload.observations||[];state.history.set(id,obs);return obs}
+  function metricLabel(metric){return {percent_full:'Percentage full',volume_ml:'Stored volume (ML)',storage_level_m:'Storage level (m)',outflow_cms:'Outflow (m³/s)',rainfall_mm:'Rainfall (mm)',river_level_m:'River level (m)'}[metric]||metric}
+  function downsample(rows,max=420){if(rows.length<=max)return rows;const step=(rows.length-1)/(max-1),out=[];for(let i=0;i<max;i++)out.push(rows[Math.round(i*step)]);return out}
+  function renderChart(){
+    const rows=(state.history.get(state.selected)||[]).filter(x=>num(x[state.metric])!==null&&x.observed_at).sort((a,b)=>new Date(a.observed_at)-new Date(b.observed_at));
+    let filtered=rows;if(state.range){const anchor=rows.length?new Date(rows[rows.length-1].observed_at).getTime():Date.now();const cutoff=anchor-state.range*864e5;filtered=rows.filter(x=>new Date(x.observed_at).getTime()>=cutoff)}filtered=downsample(filtered);
+    $('emptyChart').classList.toggle('hidden',filtered.length>1);const canvas=$('historyChart');canvas.classList.toggle('hidden',filtered.length<=1);if(state.chart){state.chart.destroy();state.chart=null}if(filtered.length<=1)return;
+    const dark=document.body.classList.contains('dark'),metric=state.metric;state.chart=new Chart(canvas,{type:'line',data:{labels:filtered.map(x=>new Date(x.observed_at).toLocaleDateString('en-AU',{day:'numeric',month:'short',year:state.range>90?'2-digit':undefined})),datasets:[{label:metricLabel(metric),data:filtered.map(x=>num(x[metric])),borderColor:'#b00020',backgroundColor:'rgba(176,0,32,.08)',borderWidth:2,pointRadius:filtered.length<80?2:0,pointHoverRadius:4,tension:.16,spanGaps:false,fill:true}]},options:{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmtMetric(c.parsed.y,metric)}}},scales:{x:{grid:{display:false},ticks:{color:dark?'#a8b1c2':'#667085',maxTicksLimit:8,maxRotation:0}},y:{grid:{color:dark?'rgba(168,177,194,.18)':'rgba(102,112,133,.18)'},ticks:{color:dark?'#a8b1c2':'#667085',callback:v=>metric==='percent_full'?`${v}%`:v},suggestedMin:metric==='percent_full'?0:undefined,suggestedMax:metric==='percent_full'?100:undefined}}}})
+  }
+
+  function renderHealth(){const h=state.health||{providers:{}};$('healthSummary').className=`notice ${h.overall_status==='failed'?'rednotice':''}`;$('healthSummary').textContent=`${h.message||'No health summary.'} Generated ${niceDate(h.generated_at)}.`;
+    $('healthRows').innerHTML=Object.entries(h.providers||{}).map(([key,v])=>`<div class="source-row"><div><div class="source-title">${esc(key.replaceAll('_',' '))}</div><div class="source-message">${esc(v.message||[v.records!==undefined?`${v.records} records`:null,v.dams!==undefined?`${v.dams} dams`:null,v.observations!==undefined?`${v.observations} observations`:null].filter(Boolean).join(' · ')||'No additional detail')}</div></div><span class="status-badge ${esc(v.status||'failed')}">${esc(v.status||'unknown')}</span></div>`).join('')}
+  async function load(){
+    try{$('error').classList.add('hidden');$('mapStatus').textContent=state.registry.length?'Refreshing data…':'Loading dam data…';const [dams,latest,gauges,health]=await Promise.all([getJson(DATA+'dams.json'),getJson(DATA+'latest.json'),getJson(DATA+'gauges.json'),getJson(DATA+'provider_health.json')]);state.registry=dams.dams||[];state.latest=new Map((latest.dams||[]).map(x=>[x.dam_id,x]));state.gauges=gauges.dams||{};state.health=health;state.history.clear();renderSummary();renderList();renderHealth();const hash=new URLSearchParams(location.hash.replace(/^#/,'')).get('dam');if(hash&&state.registry.some(d=>d.id===hash))selectDam(hash,false);setTimeout(()=>map.invalidateSize(true),60)}catch(err){console.error(err);const msg=location.protocol==='file:'?'Open this page through GitHub Pages or run `py -m http.server 8000`; browsers block JSON loading from file://.':`Data load failed: ${err.message}`;$('error').textContent=msg;$('error').classList.remove('hidden');$('mapStatus').textContent='Data load failed'}}
+  function applyTheme(){const dark=document.body.classList.contains('dark');localStorage.setItem('qldDamTheme',dark?'dark':'light');$('theme').textContent=dark?'Light mode':'Dark mode';if(dark&&map.hasLayer(bases.light)){map.removeLayer(bases.light);bases.dark.addTo(map);state.base=bases.dark}else if(!dark&&map.hasLayer(bases.dark)){map.removeLayer(bases.dark);bases.light.addTo(map);state.base=bases.light}if(state.selected)renderChart()}
+  if(localStorage.getItem('qldDamTheme')==='dark'){document.body.classList.add('dark');setTimeout(applyTheme,0)}
+  ['operator','statusFilter','sort'].forEach(id=>$(id).addEventListener('change',renderList));$('search').addEventListener('input',renderList);
+  $('fitDams').onclick=()=>{const layers=filtered().map(d=>state.markers.get(d.id)).filter(m=>m&&map.hasLayer(m));if(layers.length)map.fitBounds(L.featureGroup(layers).getBounds(),{padding:[55,55],maxZoom:9})};$('fitQld').onclick=()=>map.fitBounds(QLD_BOUNDS,{padding:[18,18]});$('reload').onclick=load;$('theme').onclick=()=>{document.body.classList.toggle('dark');applyTheme()};$('closeDetail').onclick=closeDetail;
+  $('healthBtn').onclick=()=>$('healthModal').classList.remove('hidden');$('closeHealth').onclick=()=>$('healthModal').classList.add('hidden');$('healthModal').onclick=e=>{if(e.target===$('healthModal'))$('healthModal').classList.add('hidden')};
+  $('chartMetric').onchange=e=>{state.metric=e.target.value;renderChart()};$('ranges').querySelectorAll('button').forEach(b=>b.onclick=()=>{$('ranges').querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.range=Number(b.dataset.days);renderChart()});
+  $('copyLink').onclick=async e=>{e.preventDefault();const url=`${location.origin}${location.pathname}#dam=${encodeURIComponent(state.selected||'')}`;try{await navigator.clipboard.writeText(url);e.target.textContent='Link copied';setTimeout(()=>e.target.textContent='Copy dam link',1500)}catch{prompt('Copy this link:',url)}};
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('healthModal').classList.contains('hidden'))$('healthModal').classList.add('hidden');else if(state.selected)closeDetail()}});
+  window.addEventListener('hashchange',()=>{const id=new URLSearchParams(location.hash.replace(/^#/,'')).get('dam');if(id&&id!==state.selected)selectDam(id,false)});
+  load();setInterval(load,AUTO_REFRESH);
+})();
+</script>
+</body>
+</html>
