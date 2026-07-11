@@ -121,7 +121,12 @@ def precise_reason(result, doc, unavailable):
     if result=='change_review_required': return 'Change review required. Reviewed rules are preserved until the replacement/current document is compared and approved.'
     if result=='document_conflict': return 'Document conflict — automatic Alert assessment disabled pending owner/regulator clarification.'
     if result=='input_unavailable': return 'Verified EAP rules are available, but official live reservoir elevation is unavailable.'
-    if result=='indeterminate' and unavailable: return 'Indeterminate — level component met, '+unavailable[0]+' unavailable.'
+
+    if result=='indeterminate' and unavailable:
+        first=unavailable[0]
+        if str(first).startswith('Datum unverified'):
+            return 'Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.'
+        return 'Indeterminate — a public trigger component is available, but '+first+' is unavailable.'
     if result=='not_met': return 'Below the first public elevation trigger.'
     if result=='met': return 'A complete public trigger pathway is met; formal activation remains not confirmed.'
     return 'Verified EAP rules are available, but required public inputs are incomplete.'
@@ -134,7 +139,10 @@ def assess_one(dam, latest, history, doc):
     unavailable=[]
     for r in assessed:
         for c in r.get('condition_results',[]):
-            if c['state'] in {'unknown','input_unavailable','datum_unverified','stale'}: unavailable.append(c.get('label') or c.get('metric'))
+            if c['state'] in {'unknown','input_unavailable','stale'}:
+                unavailable.append(c.get('label') or c.get('metric'))
+            elif c['state']=='datum_unverified':
+                unavailable.append('Datum unverified for '+str(c.get('label') or c.get('metric')))
     if doc.get('document_status')=='expired': res='document_expired'; highest=None; conf='rules_verified_document_expired'
     elif doc.get('document_status')=='change_review_required': res='change_review_required'; highest=None; conf='change_review_required'
     elif any(r['assessment']=='document_conflict' for r in assessed): res='document_conflict'; highest=None; conf='rules_verified_document_conflict'

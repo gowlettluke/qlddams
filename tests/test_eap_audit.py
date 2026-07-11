@@ -7,7 +7,7 @@ sys.path.insert(0, str(ROOT))
 from scripts.assess_eap_status import assess_one
 from scripts.update_eap_data import build_documents, run as update_run
 DOCS=build_documents()['dams']
-DAMS={d['id']:d for d in json.loads((ROOT/'data/dams.json').read_text())['dams']}
+DAMS={d['id']:d for d in json.loads((ROOT/'data/dams.json').read_text(encoding='utf-8'))['dams']}
 
 def latest(level=None, datum='AHD', percent=100):
     return {'dam_id':'x','percent_full':percent,'storage_level_m':level,'storage_level_datum':datum,'storage_level_observed_at':'2026-07-11T00:00:00+00:00','storage_level_quality':'official_exact'}
@@ -83,5 +83,6 @@ def test_reviewed_rules_survive_failed_pdf_refresh():
     before=len(DOCS['fairbairn-dam']['rules'])
     assert before>0
     assert update_run(False, {'fairbairn-dam'})==0
-    after=json.loads((ROOT/'data/eap_documents.json').read_text())['dams']['fairbairn-dam']
+    after=json.loads((ROOT/'data/eap_documents.json').read_text(encoding='utf-8'))['dams']['fairbairn-dam']
     assert len(after['rules'])==before and after['review_status'].startswith('rules_verified')
+

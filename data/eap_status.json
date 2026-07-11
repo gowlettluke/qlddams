@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T07:17:25+00:00",
+  "generated_at": "2026-07-11T07:25:47+00:00",
   "counts": {
     "input_unavailable": 25,
     "indeterminate": 16,
@@ -14,7 +14,7 @@
   "dams": [
     {
       "dam_id": "atkinson-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2028-07-01",
@@ -736,13 +736,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "baroon-pocket-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2028-07-01",
@@ -1464,13 +1464,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "bill-gunn-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "11",
       "expiry_date": "2030-07-01",
@@ -2192,13 +2192,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "bjelke-petersen-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-10-01",
@@ -2586,29 +2586,29 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 307.20 m",
-        "Storage elevation at or above EL 307.30 m",
-        "Storage elevation at or above EL 310.20 m",
-        "Storage elevation at or above EL 311.82 m",
-        "Storage elevation at or above EL 317.45 m",
+        "Datum unverified for Storage elevation at or above EL 307.20 m",
+        "Datum unverified for Storage elevation at or above EL 307.30 m",
+        "Datum unverified for Storage elevation at or above EL 310.20 m",
+        "Datum unverified for Storage elevation at or above EL 311.82 m",
+        "Datum unverified for Storage elevation at or above EL 317.45 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 307.40 m",
+        "Datum unverified for Storage at or below EL 307.40 m",
         "no forecast increase in elevation"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 307.20 m",
-        "Storage elevation at or above EL 307.30 m",
-        "Storage elevation at or above EL 310.20 m",
-        "Storage elevation at or above EL 311.82 m",
-        "Storage elevation at or above EL 317.45 m",
+        "Datum unverified for Storage elevation at or above EL 307.20 m",
+        "Datum unverified for Storage elevation at or above EL 307.30 m",
+        "Datum unverified for Storage elevation at or above EL 310.20 m",
+        "Datum unverified for Storage elevation at or above EL 311.82 m",
+        "Datum unverified for Storage elevation at or above EL 317.45 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 307.40 m",
+        "Datum unverified for Storage at or below EL 307.40 m",
         "no forecast increase in elevation"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 307.20 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "bjelke-petersen-dam",
         "dam_name": "Bjelke-Petersen Dam",
@@ -2840,13 +2840,13 @@
         ],
         "notes": "At the highest Stand Up stage, assess possible impacts to Paradise Dam; this is an operational/cascade consideration, not a separate public level trigger.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "boondooma-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "9.2",
       "expiry_date": "2028-04-01",
@@ -3234,29 +3234,29 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 280.30 m",
-        "Storage elevation at or above EL 280.40 m",
-        "Storage elevation at or above EL 282.50 m",
-        "Storage elevation at or above EL 286.56 m",
-        "Storage elevation at or above EL 296.70 m",
+        "Datum unverified for Storage elevation at or above EL 280.30 m",
+        "Datum unverified for Storage elevation at or above EL 280.40 m",
+        "Datum unverified for Storage elevation at or above EL 282.50 m",
+        "Datum unverified for Storage elevation at or above EL 286.56 m",
+        "Datum unverified for Storage elevation at or above EL 296.70 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 280.50 m",
+        "Datum unverified for Storage at or below EL 280.50 m",
         "no forecast increase in elevation"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 280.30 m",
-        "Storage elevation at or above EL 280.40 m",
-        "Storage elevation at or above EL 282.50 m",
-        "Storage elevation at or above EL 286.56 m",
-        "Storage elevation at or above EL 296.70 m",
+        "Datum unverified for Storage elevation at or above EL 280.30 m",
+        "Datum unverified for Storage elevation at or above EL 280.40 m",
+        "Datum unverified for Storage elevation at or above EL 282.50 m",
+        "Datum unverified for Storage elevation at or above EL 286.56 m",
+        "Datum unverified for Storage elevation at or above EL 296.70 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 280.50 m",
+        "Datum unverified for Storage at or below EL 280.50 m",
         "no forecast increase in elevation"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 280.30 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "boondooma-dam",
         "dam_name": "Boondooma Dam",
@@ -3486,13 +3486,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "borumba-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-06-01",
@@ -4214,13 +4214,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "burdekin-falls-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "9.4",
       "expiry_date": "2027-05-01",
@@ -4648,31 +4648,31 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 153.90 m",
-        "Storage elevation at or above EL 154.00 m",
-        "Storage elevation at or above EL 157.00 m",
-        "Storage elevation at or above EL 160.85 m",
-        "Storage elevation at or above EL 162.00 m",
-        "Storage elevation at or above EL 171.00 m",
+        "Datum unverified for Storage elevation at or above EL 153.90 m",
+        "Datum unverified for Storage elevation at or above EL 154.00 m",
+        "Datum unverified for Storage elevation at or above EL 157.00 m",
+        "Datum unverified for Storage elevation at or above EL 160.85 m",
+        "Datum unverified for Storage elevation at or above EL 162.00 m",
+        "Datum unverified for Storage elevation at or above EL 171.00 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 154.30 m",
+        "Datum unverified for Storage at or below EL 154.30 m",
         "no forecast increase in elevation"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 153.90 m",
-        "Storage elevation at or above EL 154.00 m",
-        "Storage elevation at or above EL 157.00 m",
-        "Storage elevation at or above EL 160.85 m",
-        "Storage elevation at or above EL 162.00 m",
-        "Storage elevation at or above EL 171.00 m",
+        "Datum unverified for Storage elevation at or above EL 153.90 m",
+        "Datum unverified for Storage elevation at or above EL 154.00 m",
+        "Datum unverified for Storage elevation at or above EL 157.00 m",
+        "Datum unverified for Storage elevation at or above EL 160.85 m",
+        "Datum unverified for Storage elevation at or above EL 162.00 m",
+        "Datum unverified for Storage elevation at or above EL 171.00 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 154.30 m",
+        "Datum unverified for Storage at or below EL 154.30 m",
         "no forecast increase in elevation"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 153.90 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "burdekin-falls-dam",
         "dam_name": "Burdekin Falls Dam",
@@ -4926,13 +4926,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "callide-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "change_review_required",
       "version": "9.0",
       "expiry_date": null,
@@ -6171,13 +6171,13 @@
           "Change review required",
           "Operator link appears newer; compare current PDF before changing reviewed thresholds"
         ],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "cania-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "10.0",
       "expiry_date": "2029-04-01",
@@ -6462,25 +6462,25 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 331.00 m",
-        "Storage elevation at or above EL 332.40 m",
-        "Storage elevation at or above EL 334.45 m",
-        "Storage elevation at or above EL 338.00 m",
+        "Datum unverified for Storage elevation at or above EL 331.00 m",
+        "Datum unverified for Storage elevation at or above EL 332.40 m",
+        "Datum unverified for Storage elevation at or above EL 334.45 m",
+        "Datum unverified for Storage elevation at or above EL 338.00 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage below EL 331.00 m"
+        "Datum unverified for Storage below EL 331.00 m"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 331.00 m",
-        "Storage elevation at or above EL 332.40 m",
-        "Storage elevation at or above EL 334.45 m",
-        "Storage elevation at or above EL 338.00 m",
+        "Datum unverified for Storage elevation at or above EL 331.00 m",
+        "Datum unverified for Storage elevation at or above EL 332.40 m",
+        "Datum unverified for Storage elevation at or above EL 334.45 m",
+        "Datum unverified for Storage elevation at or above EL 338.00 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage below EL 331.00 m"
+        "Datum unverified for Storage below EL 331.00 m"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 331.00 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "cania-dam",
         "dam_name": "Cania Dam",
@@ -6659,13 +6659,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "cedar-pocket-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "11.1",
       "expiry_date": "2029-07-01",
@@ -7451,13 +7451,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "clarendon-dam",
-      "assessed_at": "2026-07-11T07:17:23+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-06-01",
@@ -8179,13 +8179,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "coolmunda-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "9.1",
       "expiry_date": "2029-07-01",
@@ -8670,33 +8670,33 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 314.18 m",
+        "Datum unverified for Storage elevation at or above EL 314.18 m",
         "One or more gates are open",
-        "Storage elevation at or above EL 314.34 m",
-        "Storage elevation at or above EL 314.47 m",
-        "Storage elevation at or above EL 314.92 m",
-        "Storage elevation at or above EL 315.32 m",
+        "Datum unverified for Storage elevation at or above EL 314.34 m",
+        "Datum unverified for Storage elevation at or above EL 314.47 m",
+        "Datum unverified for Storage elevation at or above EL 314.92 m",
+        "Datum unverified for Storage elevation at or above EL 315.32 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage elevation at or above EL 316.58 m",
-        "Storage below EL 314.07 m",
+        "Datum unverified for Storage elevation at or above EL 316.58 m",
+        "Datum unverified for Storage below EL 314.07 m",
         "Gates are closed"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 314.18 m",
+        "Datum unverified for Storage elevation at or above EL 314.18 m",
         "One or more gates are open",
-        "Storage elevation at or above EL 314.34 m",
-        "Storage elevation at or above EL 314.47 m",
-        "Storage elevation at or above EL 314.92 m",
-        "Storage elevation at or above EL 315.32 m",
+        "Datum unverified for Storage elevation at or above EL 314.34 m",
+        "Datum unverified for Storage elevation at or above EL 314.47 m",
+        "Datum unverified for Storage elevation at or above EL 314.92 m",
+        "Datum unverified for Storage elevation at or above EL 315.32 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage elevation at or above EL 316.58 m",
-        "Storage below EL 314.07 m",
+        "Datum unverified for Storage elevation at or above EL 316.58 m",
+        "Datum unverified for Storage below EL 314.07 m",
         "Gates are closed"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 314.18 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "coolmunda-dam",
         "dam_name": "Coolmunda Dam",
@@ -8987,13 +8987,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "cooloolabin-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2028-05-01",
@@ -9781,13 +9781,13 @@
         ],
         "notes": "At Stand Up, activate the Wappa Dam EAP and assess possible cascade implications.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "e-j-beardmore-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "9.2",
       "expiry_date": "2026-08-01",
@@ -10175,31 +10175,31 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 207.02 m",
-        "Storage elevation at or above EL 207.12 m",
-        "Storage elevation at or above EL 207.87 m",
-        "Storage elevation at or above EL 208.32 m",
-        "Storage elevation at or above EL 208.65 m",
+        "Datum unverified for Storage elevation at or above EL 207.02 m",
+        "Datum unverified for Storage elevation at or above EL 207.12 m",
+        "Datum unverified for Storage elevation at or above EL 207.87 m",
+        "Datum unverified for Storage elevation at or above EL 208.32 m",
+        "Datum unverified for Storage elevation at or above EL 208.65 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 207.12 m",
+        "Datum unverified for Storage at or below EL 207.12 m",
         "at FSL and falling/no forecast increase"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 207.02 m",
-        "Storage elevation at or above EL 207.12 m",
-        "Storage elevation at or above EL 207.87 m",
-        "Storage elevation at or above EL 208.32 m",
-        "Storage elevation at or above EL 208.65 m",
+        "Datum unverified for Storage elevation at or above EL 207.02 m",
+        "Datum unverified for Storage elevation at or above EL 207.12 m",
+        "Datum unverified for Storage elevation at or above EL 207.87 m",
+        "Datum unverified for Storage elevation at or above EL 208.32 m",
+        "Datum unverified for Storage elevation at or above EL 208.65 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 207.12 m",
+        "Datum unverified for Storage at or below EL 207.12 m",
         "at FSL and falling/no forecast increase"
       ],
       "warnings": [
         "Near expiry: EAP expires 1 August 2026"
       ],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 207.02 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "e-j-beardmore-dam",
         "dam_name": "EJ Beardmore Dam",
@@ -10431,13 +10431,13 @@
         "warnings": [
           "Near expiry: EAP expires 1 August 2026"
         ],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "enoggera-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "10.3",
       "expiry_date": "2027-07-01",
@@ -11112,13 +11112,13 @@
         ],
         "notes": "Stand Up stages contain downstream-impact and failure-judgement conditions; storage level alone is not sufficient.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "eungella-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "9.0",
       "expiry_date": "2029-03-01",
@@ -11405,25 +11405,25 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 562.71 m",
-        "Storage elevation at or above EL 566.04 m",
-        "Storage elevation at or above EL 569.21 m",
+        "Datum unverified for Storage elevation at or above EL 562.71 m",
+        "Datum unverified for Storage elevation at or above EL 566.04 m",
+        "Datum unverified for Storage elevation at or above EL 569.21 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 563.00 m",
+        "Datum unverified for Storage at or below EL 563.00 m",
         "no forecast increase for 48 hours"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 562.71 m",
-        "Storage elevation at or above EL 566.04 m",
-        "Storage elevation at or above EL 569.21 m",
+        "Datum unverified for Storage elevation at or above EL 562.71 m",
+        "Datum unverified for Storage elevation at or above EL 566.04 m",
+        "Datum unverified for Storage elevation at or above EL 569.21 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 563.00 m",
+        "Datum unverified for Storage at or below EL 563.00 m",
         "no forecast increase for 48 hours"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 562.71 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "eungella-dam",
         "dam_name": "Eungella Dam",
@@ -11596,13 +11596,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "ewen-maddock-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "expired",
       "version": "11.5",
       "expiry_date": "2026-06-30",
@@ -12328,13 +12328,13 @@
         "warnings": [
           "EAP expired — replacement required"
         ],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "fairbairn-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:46+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2028-03-14",
@@ -12722,29 +12722,29 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 204.13 m",
-        "Storage elevation at or above EL 204.23 m",
-        "Storage elevation at or above EL 207.73 m",
-        "Storage elevation at or above EL 209.80 m",
-        "Storage elevation at or above EL 217.39 m",
+        "Datum unverified for Storage elevation at or above EL 204.13 m",
+        "Datum unverified for Storage elevation at or above EL 204.23 m",
+        "Datum unverified for Storage elevation at or above EL 207.73 m",
+        "Datum unverified for Storage elevation at or above EL 209.80 m",
+        "Datum unverified for Storage elevation at or above EL 217.39 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 204.73 m",
+        "Datum unverified for Storage at or below EL 204.73 m",
         "no forecast increase for 48 hours"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 204.13 m",
-        "Storage elevation at or above EL 204.23 m",
-        "Storage elevation at or above EL 207.73 m",
-        "Storage elevation at or above EL 209.80 m",
-        "Storage elevation at or above EL 217.39 m",
+        "Datum unverified for Storage elevation at or above EL 204.13 m",
+        "Datum unverified for Storage elevation at or above EL 204.23 m",
+        "Datum unverified for Storage elevation at or above EL 207.73 m",
+        "Datum unverified for Storage elevation at or above EL 209.80 m",
+        "Datum unverified for Storage elevation at or above EL 217.39 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 204.73 m",
+        "Datum unverified for Storage at or below EL 204.73 m",
         "no forecast increase for 48 hours"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 204.13 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "fairbairn-dam",
         "dam_name": "Fairbairn Dam",
@@ -12976,13 +12976,13 @@
         ],
         "notes": "The FODM may activate before the tabulated levels based on forecast rainfall and flood modelling. The uploaded official PDF is issue 11.2, September 2025, expiring 14 March 2028.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "fred-haigh-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "9.1",
       "expiry_date": "2029-05-01",
@@ -13370,29 +13370,29 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 75.46 m",
-        "Storage elevation at or above EL 75.56 m",
-        "Storage elevation at or above EL 77.06 m",
-        "Storage elevation at or above EL 82.42 m",
-        "Storage elevation at or above EL 85.94 m",
+        "Datum unverified for Storage elevation at or above EL 75.46 m",
+        "Datum unverified for Storage elevation at or above EL 75.56 m",
+        "Datum unverified for Storage elevation at or above EL 77.06 m",
+        "Datum unverified for Storage elevation at or above EL 82.42 m",
+        "Datum unverified for Storage elevation at or above EL 85.94 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 75.86 m",
+        "Datum unverified for Storage at or below EL 75.86 m",
         "no forecast increase for 48 hours"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 75.46 m",
-        "Storage elevation at or above EL 75.56 m",
-        "Storage elevation at or above EL 77.06 m",
-        "Storage elevation at or above EL 82.42 m",
-        "Storage elevation at or above EL 85.94 m",
+        "Datum unverified for Storage elevation at or above EL 75.46 m",
+        "Datum unverified for Storage elevation at or above EL 75.56 m",
+        "Datum unverified for Storage elevation at or above EL 77.06 m",
+        "Datum unverified for Storage elevation at or above EL 82.42 m",
+        "Datum unverified for Storage elevation at or above EL 85.94 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 75.86 m",
+        "Datum unverified for Storage at or below EL 75.86 m",
         "no forecast increase for 48 hours"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 75.46 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "fred-haigh-dam",
         "dam_name": "Fred Haigh Dam",
@@ -13622,13 +13622,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "glenlyon-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "document_conflict",
       "version": "8.1",
       "expiry_date": "2027-04-01",
@@ -14320,13 +14320,13 @@
         "warnings": [
           "Document conflict — automatic Alert assessment disabled"
         ],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "gold-creek-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2028-04-01",
@@ -15112,13 +15112,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "hinze-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2027-12-18",
@@ -15840,13 +15840,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "julius-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "8.3",
       "expiry_date": "2027-05-01",
@@ -16094,21 +16094,21 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 223.44 m",
-        "Storage elevation at or above EL 223.54 m",
-        "Storage elevation at or above EL 228.17 m",
-        "Storage at or below EL 223.54 m",
+        "Datum unverified for Storage elevation at or above EL 223.44 m",
+        "Datum unverified for Storage elevation at or above EL 223.54 m",
+        "Datum unverified for Storage elevation at or above EL 228.17 m",
+        "Datum unverified for Storage at or below EL 223.54 m",
         "no forecast increase for 48 hours"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 223.44 m",
-        "Storage elevation at or above EL 223.54 m",
-        "Storage elevation at or above EL 228.17 m",
-        "Storage at or below EL 223.54 m",
+        "Datum unverified for Storage elevation at or above EL 223.44 m",
+        "Datum unverified for Storage elevation at or above EL 223.54 m",
+        "Datum unverified for Storage elevation at or above EL 228.17 m",
+        "Datum unverified for Storage at or below EL 223.54 m",
         "no forecast increase for 48 hours"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 223.44 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "julius-dam",
         "dam_name": "Julius Dam",
@@ -16260,13 +16260,13 @@
         ],
         "notes": "The flood trigger table has one Stand Up level; do not manufacture additional Stand Up sub-stages.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "kinchant-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "7.2",
       "expiry_date": "2027-01-01",
@@ -16654,29 +16654,29 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 57.21 m",
-        "Storage elevation at or above EL 58.00 m",
-        "Storage elevation at or above EL 58.21 m",
-        "Storage elevation at or above EL 58.56 m",
-        "Storage elevation at or above EL 61.21 m",
+        "Datum unverified for Storage elevation at or above EL 57.21 m",
+        "Datum unverified for Storage elevation at or above EL 58.00 m",
+        "Datum unverified for Storage elevation at or above EL 58.21 m",
+        "Datum unverified for Storage elevation at or above EL 58.56 m",
+        "Datum unverified for Storage elevation at or above EL 61.21 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 57.21 m",
+        "Datum unverified for Storage at or below EL 57.21 m",
         "no forecast increase"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 57.21 m",
-        "Storage elevation at or above EL 58.00 m",
-        "Storage elevation at or above EL 58.21 m",
-        "Storage elevation at or above EL 58.56 m",
-        "Storage elevation at or above EL 61.21 m",
+        "Datum unverified for Storage elevation at or above EL 57.21 m",
+        "Datum unverified for Storage elevation at or above EL 58.00 m",
+        "Datum unverified for Storage elevation at or above EL 58.21 m",
+        "Datum unverified for Storage elevation at or above EL 58.56 m",
+        "Datum unverified for Storage elevation at or above EL 61.21 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 57.21 m",
+        "Datum unverified for Storage at or below EL 57.21 m",
         "no forecast increase"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 57.21 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "kinchant-dam",
         "dam_name": "Kinchant Dam",
@@ -16906,13 +16906,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "kroombit-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "11.1",
       "expiry_date": "2027-12-01",
@@ -17240,25 +17240,25 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 265.70 m",
-        "Storage elevation at or above EL 265.80 m",
-        "Storage elevation at or above EL 267.08 m",
-        "Storage elevation at or above EL 267.78 m",
-        "Storage elevation at or above EL 268.36 m",
-        "Storage at or below EL 266.00 m",
+        "Datum unverified for Storage elevation at or above EL 265.70 m",
+        "Datum unverified for Storage elevation at or above EL 265.80 m",
+        "Datum unverified for Storage elevation at or above EL 267.08 m",
+        "Datum unverified for Storage elevation at or above EL 267.78 m",
+        "Datum unverified for Storage elevation at or above EL 268.36 m",
+        "Datum unverified for Storage at or below EL 266.00 m",
         "no significant forecast increase for 48 hours"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 265.70 m",
-        "Storage elevation at or above EL 265.80 m",
-        "Storage elevation at or above EL 267.08 m",
-        "Storage elevation at or above EL 267.78 m",
-        "Storage elevation at or above EL 268.36 m",
-        "Storage at or below EL 266.00 m",
+        "Datum unverified for Storage elevation at or above EL 265.70 m",
+        "Datum unverified for Storage elevation at or above EL 265.80 m",
+        "Datum unverified for Storage elevation at or above EL 267.08 m",
+        "Datum unverified for Storage elevation at or above EL 267.78 m",
+        "Datum unverified for Storage elevation at or above EL 268.36 m",
+        "Datum unverified for Storage at or below EL 266.00 m",
         "no significant forecast increase for 48 hours"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 265.70 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "kroombit-dam",
         "dam_name": "Kroombit Dam",
@@ -17458,13 +17458,13 @@
         ],
         "notes": "A former 270.20 m flood stage is superseded by the separate overturning/sliding hazard section and must not be implemented as a current flood trigger.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "lake-macdonald-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "12.0",
       "expiry_date": "2029-05-01",
@@ -18137,13 +18137,13 @@
         "warnings": [
           "Construction/cofferdam-specific EAP; configuration review required after project changes"
         ],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "lake-manchester-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2028-07-01",
@@ -18865,13 +18865,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "leslie-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "8.1",
       "expiry_date": "2027-10-01",
@@ -19199,25 +19199,25 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 472.41 m",
-        "Storage elevation at or above EL 472.51 m",
-        "Storage elevation at or above EL 472.59 m",
-        "Storage elevation at or above EL 472.70 m",
-        "Storage elevation at or above EL 473.63 m",
-        "Storage at or below EL 472.51 m",
+        "Datum unverified for Storage elevation at or above EL 472.41 m",
+        "Datum unverified for Storage elevation at or above EL 472.51 m",
+        "Datum unverified for Storage elevation at or above EL 472.59 m",
+        "Datum unverified for Storage elevation at or above EL 472.70 m",
+        "Datum unverified for Storage elevation at or above EL 473.63 m",
+        "Datum unverified for Storage at or below EL 472.51 m",
         "no forecast increase for 48 hours"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 472.41 m",
-        "Storage elevation at or above EL 472.51 m",
-        "Storage elevation at or above EL 472.59 m",
-        "Storage elevation at or above EL 472.70 m",
-        "Storage elevation at or above EL 473.63 m",
-        "Storage at or below EL 472.51 m",
+        "Datum unverified for Storage elevation at or above EL 472.41 m",
+        "Datum unverified for Storage elevation at or above EL 472.51 m",
+        "Datum unverified for Storage elevation at or above EL 472.59 m",
+        "Datum unverified for Storage elevation at or above EL 472.70 m",
+        "Datum unverified for Storage elevation at or above EL 473.63 m",
+        "Datum unverified for Storage at or below EL 472.51 m",
         "no forecast increase for 48 hours"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 472.41 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "leslie-dam",
         "dam_name": "Leslie Dam",
@@ -19415,13 +19415,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "leslie-harrison-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-07-01",
@@ -20143,13 +20143,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "little-nerang-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "11.2",
       "expiry_date": "2027-12-18",
@@ -20873,13 +20873,13 @@
         ],
         "notes": "At Stand Up, activate the Hinze Dam EAP and assess possible cascade implications.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "maroon-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2028-06-01",
@@ -21601,13 +21601,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "moogerah-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2027-08-01",
@@ -22329,13 +22329,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "nindooinbah-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "not_listed",
       "version": null,
       "expiry_date": null,
@@ -22389,13 +22389,13 @@
         ],
         "notes": "No applicable Nindooinbah Dam EAP was found in the current Queensland referable-dam EAP directory. Do not reuse another dam’s rules.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "north-pine-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "13.0",
       "expiry_date": "2029-10-01",
@@ -23030,13 +23030,13 @@
         ],
         "notes": "Additional key levels: 41.11 m AHD Flood of Record, 41.12 m AHD winch floor, 41.66 m AHD electrical control gear. These are context levels, not separate activation rules unless the current EAP says otherwise.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "paradise-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "12.2",
       "expiry_date": "2029-06-01",
@@ -23303,18 +23303,18 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 61.70 m",
-        "Storage elevation at or above EL 61.80 m",
-        "Storage elevation at or above EL 64.30 m",
-        "Storage elevation at or above EL 71.40 m",
-        "Storage at or below EL 63.30 m"
+        "Datum unverified for Storage elevation at or above EL 61.70 m",
+        "Datum unverified for Storage elevation at or above EL 61.80 m",
+        "Datum unverified for Storage elevation at or above EL 64.30 m",
+        "Datum unverified for Storage elevation at or above EL 71.40 m",
+        "Datum unverified for Storage at or below EL 63.30 m"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 61.70 m",
-        "Storage elevation at or above EL 61.80 m",
-        "Storage elevation at or above EL 64.30 m",
-        "Storage elevation at or above EL 71.40 m",
-        "Storage at or below EL 63.30 m"
+        "Datum unverified for Storage elevation at or above EL 61.70 m",
+        "Datum unverified for Storage elevation at or above EL 61.80 m",
+        "Datum unverified for Storage elevation at or above EL 64.30 m",
+        "Datum unverified for Storage elevation at or above EL 71.40 m",
+        "Datum unverified for Storage at or below EL 63.30 m"
       ],
       "warnings": [],
       "reason": "Verified EAP rules are available, but official live reservoir elevation is unavailable.",
@@ -23484,13 +23484,13 @@
         ],
         "notes": "Flood levels above EL 73.30 m transfer to the separate overturning hazard section; do not invent an additional flood Stand Up stage.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "peter-faust-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "9.0",
       "expiry_date": "2029-03-08",
@@ -23838,27 +23838,27 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 85.60 m",
-        "Storage elevation at or above EL 87.08 m",
-        "Storage elevation at or above EL 88.80 m",
-        "Storage elevation at or above EL 94.23 m",
+        "Datum unverified for Storage elevation at or above EL 85.60 m",
+        "Datum unverified for Storage elevation at or above EL 87.08 m",
+        "Datum unverified for Storage elevation at or above EL 88.80 m",
+        "Datum unverified for Storage elevation at or above EL 94.23 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 85.70 m",
+        "Datum unverified for Storage at or below EL 85.70 m",
         "no forecast increase for five days"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 85.60 m",
-        "Storage elevation at or above EL 87.08 m",
-        "Storage elevation at or above EL 88.80 m",
-        "Storage elevation at or above EL 94.23 m",
+        "Datum unverified for Storage elevation at or above EL 85.60 m",
+        "Datum unverified for Storage elevation at or above EL 87.08 m",
+        "Datum unverified for Storage elevation at or above EL 88.80 m",
+        "Datum unverified for Storage elevation at or above EL 94.23 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 85.70 m",
+        "Datum unverified for Storage at or below EL 85.70 m",
         "no forecast increase for five days"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 85.60 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "peter-faust-dam",
         "dam_name": "Peter Faust Dam",
@@ -24064,13 +24064,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "poona-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "11.1",
       "expiry_date": "2028-05-01",
@@ -24794,13 +24794,13 @@
         ],
         "notes": "At Stand Up, activate the Wappa Dam EAP and assess possible cascade implications.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "sideling-creek-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "10.1",
       "expiry_date": "2027-07-01",
@@ -25522,13 +25522,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "somerset-dam",
-      "assessed_at": "2026-07-11T07:17:24+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "11.0",
       "expiry_date": "2028-04-01",
@@ -26370,13 +26370,13 @@
         "warnings": [
           "Dynamic OFSL must be resolved from an authoritative source; percent full is not a valid substitute"
         ],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "teemburra-dam",
-      "assessed_at": "2026-07-11T07:17:25+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "10.1",
       "expiry_date": "2029-07-01",
@@ -26682,27 +26682,27 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 290.00 m",
-        "Storage elevation at or above EL 291.32 m",
-        "Storage elevation at or above EL 292.70 m",
-        "Storage elevation at or above EL 294.70 m",
+        "Datum unverified for Storage elevation at or above EL 290.00 m",
+        "Datum unverified for Storage elevation at or above EL 291.32 m",
+        "Datum unverified for Storage elevation at or above EL 292.70 m",
+        "Datum unverified for Storage elevation at or above EL 294.70 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage below EL 290.20 m",
+        "Datum unverified for Storage below EL 290.20 m",
         "below 290.20 m and no forecast increase"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 290.00 m",
-        "Storage elevation at or above EL 291.32 m",
-        "Storage elevation at or above EL 292.70 m",
-        "Storage elevation at or above EL 294.70 m",
+        "Datum unverified for Storage elevation at or above EL 290.00 m",
+        "Datum unverified for Storage elevation at or above EL 291.32 m",
+        "Datum unverified for Storage elevation at or above EL 292.70 m",
+        "Datum unverified for Storage elevation at or above EL 294.70 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage below EL 290.20 m",
+        "Datum unverified for Storage below EL 290.20 m",
         "below 290.20 m and no forecast increase"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 290.00 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "teemburra-dam",
         "dam_name": "Teemburra Dam",
@@ -26890,13 +26890,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "tinaroo-falls-dam",
-      "assessed_at": "2026-07-11T07:17:25+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "10.2",
       "expiry_date": "2026-09-01",
@@ -27448,13 +27448,13 @@
         "warnings": [
           "Near expiry: EAP expires 1 September 2026"
         ],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "wappa-dam",
-      "assessed_at": "2026-07-11T07:17:25+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "11.1",
       "expiry_date": "2028-05-01",
@@ -28176,13 +28176,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "wivenhoe-dam",
-      "assessed_at": "2026-07-11T07:17:25+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "10.3",
       "expiry_date": "2027-05-01",
@@ -28851,13 +28851,13 @@
         ],
         "notes": "Additional key levels: 76.20 m AHD left fuse plug, 76.70 m AHD right fuse plug, 80.00 m AHD saddle-dam crests, 80.10 m AHD main embankment. Gate and sluice failures are separate non-public pathways.",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "wuruma-dam",
-      "assessed_at": "2026-07-11T07:17:25+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "8.2",
       "expiry_date": "2027-01-01",
@@ -29245,29 +29245,29 @@
         }
       ],
       "unavailable_required_inputs": [
-        "Storage elevation at or above EL 228.19 m",
-        "Storage elevation at or above EL 228.29 m",
-        "Storage elevation at or above EL 229.29 m",
-        "Storage elevation at or above EL 232.03 m",
-        "Storage elevation at or above EL 239.27 m",
+        "Datum unverified for Storage elevation at or above EL 228.19 m",
+        "Datum unverified for Storage elevation at or above EL 228.29 m",
+        "Datum unverified for Storage elevation at or above EL 229.29 m",
+        "Datum unverified for Storage elevation at or above EL 232.03 m",
+        "Datum unverified for Storage elevation at or above EL 239.27 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 228.39 m",
+        "Datum unverified for Storage at or below EL 228.39 m",
         "no forecast increase"
       ],
       "missing_conditions": [
-        "Storage elevation at or above EL 228.19 m",
-        "Storage elevation at or above EL 228.29 m",
-        "Storage elevation at or above EL 229.29 m",
-        "Storage elevation at or above EL 232.03 m",
-        "Storage elevation at or above EL 239.27 m",
+        "Datum unverified for Storage elevation at or above EL 228.19 m",
+        "Datum unverified for Storage elevation at or above EL 228.29 m",
+        "Datum unverified for Storage elevation at or above EL 229.29 m",
+        "Datum unverified for Storage elevation at or above EL 232.03 m",
+        "Datum unverified for Storage elevation at or above EL 239.27 m",
         "Published level is applied allowing for wave action",
         "DSTDM advises activation",
-        "Storage at or below EL 228.39 m",
+        "Datum unverified for Storage at or below EL 228.39 m",
         "no forecast increase"
       ],
       "warnings": [],
-      "reason": "Indeterminate — level component met, Storage elevation at or above EL 228.19 m unavailable.",
+      "reason": "Indeterminate — official live reservoir elevation is available, but its datum is unverified; EAP level comparison is blocked.",
       "eap": {
         "dam_id": "wuruma-dam",
         "dam_name": "Wuruma Dam",
@@ -29497,13 +29497,13 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     },
     {
       "dam_id": "wyaralong-dam",
-      "assessed_at": "2026-07-11T07:17:25+00:00",
+      "assessed_at": "2026-07-11T07:25:47+00:00",
       "document_status": "current",
       "version": "11.0",
       "expiry_date": "2029-07-01",
@@ -30140,7 +30140,7 @@
         "implementation_notes": [],
         "notes": "",
         "warnings": [],
-        "checked_at": "2026-07-11T07:17:22+00:00"
+        "checked_at": "2026-07-11T07:25:45+00:00"
       },
       "disclaimer": "Indicative public-data comparison with reviewed EAP flood rules only; formal activation is not confirmed."
     }
