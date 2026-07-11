@@ -38,3 +38,4 @@ jobs:
             git commit -m "Extract official EAP text for audit"
             git push origin HEAD:research/eap-trigger-audit-2026-07
           fi
+# audit-trigger-2
