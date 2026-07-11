@@ -1,27 +1,63 @@
 {
-  "generated_at": "2025-12-02T20:50:03+10:00",
-  "overall_status": "seed",
-  "message": "Seed data extracted from the supplied Power BI reports. Run the GitHub Actions workflow to replace it with live data.",
+  "generated_at": "2026-07-11T03:49:31+00:00",
+  "overall_status": "partial",
   "providers": {
     "seqwater_current": {
-      "status": "seed",
-      "records": 25
+      "status": "ok",
+      "records": 24,
+      "url": "https://www.seqwater.com.au/dam-levels"
     },
     "seqwater_historical": {
-      "status": "seed",
-      "dams": 25
+      "status": "failed",
+      "message": "HTTPSConnectionPool(host='www.seqwater.com.au', port=443): Max retries exceeded with url: /historic-dam-levels?ajax_form=1&_wrapper_format=drupal_ajax (Caused by ResponseError('too many 500 error responses'))",
+      "retained_previous": true
+    },
+    "qld_station_registry": {
+      "status": "ok",
+      "records": 831,
+      "url": "https://water-monitoring.information.qld.gov.au/wgen/sites.hd.anon.xml"
     },
     "sunwater_current": {
-      "status": "seed",
-      "records": 20
+      "status": "partial",
+      "records": 17,
+      "resolved_station_codes": 20,
+      "failures": [
+        {
+          "dam_id": "callide-dam",
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/storagecapacity/130347A/current"
+        },
+        {
+          "dam_id": "glenlyon-dam",
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/storagecapacity/416303A/current"
+        },
+        {
+          "dam_id": "tinaroo-falls-dam",
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/storagecapacity/110007A/current"
+        }
+      ],
+      "url": "https://www.sunwater.com.au/dams/"
     },
     "sunwater_historical": {
-      "status": "seed",
-      "dams": 1
+      "status": "partial",
+      "dams": 18,
+      "observations": 16787,
+      "failures": [
+        {
+          "dam_id": "glenlyon-dam",
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/416303A/data?startDate=2026-06-11T03%3A49%3A58Z&continuationToken=1"
+        },
+        {
+          "dam_id": "tinaroo-falls-dam",
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/110006A/data?startDate=2026-06-11T03%3A50%3A03Z&continuationToken=1"
+        }
+      ],
+      "url": "https://www.sunwater.com.au/water-data/historical-dam-capacity/"
     },
     "bom_gauges": {
-      "status": "seed",
-      "verified_mappings": 5
+      "status": "failed",
+      "message": "403 Client Error: Forbidden for url: https://www.bom.gov.au/qld/flood/rain_river.shtml",
+      "retained_previous": true
     }
-  }
+  },
+  "message": "One or more sources were incomplete; previous good data was retained where available."
 }
