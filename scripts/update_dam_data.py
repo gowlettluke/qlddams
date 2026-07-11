@@ -31,7 +31,7 @@ from typing import Any, Iterable
 from urllib.parse import urljoin, urlparse
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 from dateutil import parser as date_parser
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -51,6 +51,16 @@ SUN_API_ROOT = "https://data.sunwater.com.au/api"
 QLD_MONITORING_SITES = "https://water-monitoring.information.qld.gov.au/wgen/sites.hd.anon.xml"
 BOM_RIVER_INDEX = "https://www.bom.gov.au/qld/flood/rain_river.shtml"
 BOM_STATION_INDEX = "https://www.bom.gov.au/qld/flood/networks/section3.shtml"
+BOM_BULLETIN_FALLBACK_URLS = (
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60285.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60286.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60287.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60288.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60289.html",
+    "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html",
+)
+BOM_GAUGE_NETWORK = "https://hosting.wsapi.cloud.bom.gov.au/arcgis/rest/services/flood/National_Flood_Gauge_Network/MapServer"
+BOM_ALLOWED_HOSTS = {"www.bom.gov.au", "hosting.wsapi.cloud.bom.gov.au"}
 
 LOG = logging.getLogger("dam-collector")
 
@@ -530,100 +540,275 @@ def fetch_sunwater_history(session: requests.Session, station: str, days: int) -
     return records
 
 
+
+def bom_float(value: Any) -> float | None:
+    v = number(value)
+    if v is None or abs(v + 9999) < 0.001:
+        return None
+    return v
+
+
+def official_bom_url(value: str | None) -> str | None:
+    if not value:
+        return None
+    parsed = urlparse(value)
+    if parsed.scheme == "https" and parsed.netloc in BOM_ALLOWED_HOSTS:
+        return value
+    return None
+
+
+def parse_bom_issue_time(soup: BeautifulSoup) -> datetime | None:
+    text = clean_text(soup.get_text(" ", strip=True))
+    patterns = [
+        r"Issued at\s+(.{8,80}?\d{4})",
+        r"Latest River Heights.*?at\s+(.{8,80}?\d{4})",
+    ]
+    for pat in patterns:
+        m = re.search(pat, text, re.I)
+        if m:
+            try:
+                dt = date_parser.parse(m.group(1), fuzzy=True, dayfirst=True)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=BRISBANE)
+                return dt.astimezone(BRISBANE)
+            except Exception:
+                pass
+    return None
+
+
+_WEEKDAYS = {"mon": 0, "tue": 1, "wed": 2, "thu": 3, "fri": 4, "sat": 5, "sun": 6}
+
+
+def observation_time(time_day: str | None, issue_time: datetime | None) -> str | None:
+    if not time_day or not issue_time:
+        return None
+    m = re.search(r"(\d{1,2})(?:[:.](\d{2}))?\s*(am|pm)?\s*(mon|tue|wed|thu|fri|sat|sun)", time_day, re.I)
+    if not m:
+        return None
+    hour, minute = int(m.group(1)), int(m.group(2) or 0)
+    ampm = (m.group(3) or "").lower()
+    if ampm == "pm" and hour < 12: hour += 12
+    if ampm == "am" and hour == 12: hour = 0
+    target = _WEEKDAYS[m.group(4).lower()[:3]]
+    issue = issue_time.astimezone(BRISBANE)
+    days_back = (issue.weekday() - target) % 7
+    obs = (issue - timedelta(days=days_back)).replace(hour=hour, minute=minute, second=0, microsecond=0)
+    if obs > issue:
+        obs -= timedelta(days=7)
+    return obs.isoformat(timespec="seconds")
+
+
+def freshness(observed_at: str | None, height_m: float | None, reference: datetime | None = None) -> dict[str, Any]:
+    if not observed_at or height_m is None:
+        return {"age_hours": None, "is_stale": True, "freshness_status": "unavailable"}
+    try:
+        dt = date_parser.parse(observed_at)
+        if dt.tzinfo is None: dt = dt.replace(tzinfo=BRISBANE)
+        ref = reference or datetime.now(BRISBANE)
+        age = max(0.0, (ref.astimezone(BRISBANE) - dt.astimezone(BRISBANE)).total_seconds() / 3600)
+        return {"age_hours": round(age, 2), "is_stale": age > 24, "freshness_status": "stale" if age > 24 else "current"}
+    except Exception:
+        return {"age_hours": None, "is_stale": True, "freshness_status": "unavailable"}
+
+
+def parse_metadata_comment(row) -> dict[str, Any]:
+    comments = row.find_all(string=lambda text: isinstance(text, Comment) and clean_text(text).startswith("METADATA,"))
+    if not comments:
+        return {}
+    parts = [x.strip() for x in str(comments[0]).split(",")]
+    meta = {"bom_station_number": parts[1] if len(parts) > 1 and parts[1] else None}
+    if len(parts) > 4:
+        meta.update({"minor_flood_m": bom_float(parts[3]), "moderate_flood_m": bom_float(parts[4]), "major_flood_m": bom_float(parts[5] if len(parts) > 5 else None)})
+    for part in parts:
+        if re.fullmatch(r"IDQ\d+", part or ""):
+            meta["product_id"] = part
+    if len(parts) > 8: meta["station_type"] = parts[8] or None
+    if len(parts) > 9: meta["data_owner"] = parts[9] or None
+    return meta
+
+
 def parse_bom_bulletin_page(html: str, url: str) -> list[dict[str, Any]]:
     soup = BeautifulSoup(html, "html.parser")
+    issue = parse_bom_issue_time(soup)
     records: list[dict[str, Any]] = []
-    for row in soup.select("table.tabledata tr, .tabledata tr"):
-        cells = [clean_text(c.get_text(" ", strip=True)) for c in row.find_all(["td", "th"])]
-        if len(cells) < 4 or cells[0].lower() in {"station name", "station"}:
-            continue
-        height = number(cells[3])
-        if not cells[0] or height is None:
-            continue
-        records.append({"name": cells[0], "station_type": cells[1] if len(cells)>1 else None,
-                        "time_day": cells[2] if len(cells)>2 else None, "height_m": height,
-                        "gauge_datum": cells[4] if len(cells)>4 else None, "tendency": cells[5] if len(cells)>5 else None,
-                        "crossing_m": number(cells[6]) if len(cells)>6 else None,
-                        "flood_classification": cells[7] if len(cells)>7 else None, "bulletin_url": url})
+    for table in soup.select("table"):
+        header_cells = [clean_text(c.get_text(" ", strip=True)).lower() for c in table.find_all("th")]
+        header = {h: i for i, h in enumerate(header_cells)}
+        rows = table.find_all("tr")
+        for row in rows:
+            cells_tags = row.find_all("td")
+            if len(cells_tags) < 4:
+                continue
+            texts = [clean_text(c.get_text(" ", strip=True)) for c in cells_tags]
+            def idx(*names, fallback=None):
+                for name in names:
+                    for h, i in header.items():
+                        if name in h: return i
+                return fallback
+            name_i=idx("station", fallback=0); time_i=idx("time", fallback=1); height_i=idx("height", fallback=2)
+            tend_i=idx("tendency", fallback=3); cross_i=idx("cross", fallback=4); flood_i=idx("flood", fallback=5); recent_i=idx("recent", "data", fallback=6)
+            if max(name_i,time_i,height_i) >= len(texts):
+                continue
+            height = bom_float(texts[height_i])
+            name = texts[name_i]
+            if not name or height is None:
+                continue
+            meta = parse_metadata_comment(row)
+            recent = cells_tags[recent_i] if recent_i < len(cells_tags) else row
+            plot_url = table_url = image_url = None
+            for a in recent.find_all("a", href=True):
+                absu = official_bom_url(urljoin(url, a["href"]))
+                label = clean_text(a.get_text(" ", strip=True)).lower() + " " + a["href"].lower()
+                if absu and ("plot" in label or ".plt." in label): plot_url = absu
+                if absu and ("table" in label or ".tbl." in label): table_url = absu
+            for img in recent.find_all("img", src=True):
+                image_url = official_bom_url(urljoin(url, img["src"]))
+            observed = observation_time(texts[time_i], issue)
+            rec = {
+                "name": name, "bom_station_number": meta.get("bom_station_number"), "station_number": meta.get("bom_station_number"),
+                "height_m": height, "time_day": texts[time_i], "observed_at": observed,
+                "tendency": texts[tend_i] if tend_i < len(texts) else None, "crossing": texts[cross_i] if cross_i < len(texts) else None,
+                "flood_classification": texts[flood_i] if flood_i < len(texts) else None,
+                "plot_url": plot_url, "table_url": table_url, "image_url": image_url, "bulletin_url": official_bom_url(url) or url,
+                "bulletin_issue_time": issue.isoformat(timespec="seconds") if issue else None,
+                "minor_flood_m": meta.get("minor_flood_m"), "moderate_flood_m": meta.get("moderate_flood_m"), "major_flood_m": meta.get("major_flood_m"),
+                "product_id": meta.get("product_id"), "station_type": meta.get("station_type"), "data_owner": meta.get("data_owner"),
+            }
+            rec.update(freshness(observed, height, issue))
+            records.append(rec)
     return records
 
 
-def fetch_bom_bulletins(session: requests.Session) -> list[dict[str, Any]]:
-    response = session.get(BOM_RIVER_INDEX, timeout=50)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
-    urls: set[str] = set()
-    for anchor in soup.find_all("a", href=True):
-        href = anchor["href"]
-        if "wrap_fwo.pl" in href and "IDQ" in href:
-            urls.add(urljoin(BOM_RIVER_INDEX, href).split("#", 1)[0])
-    # Include the two verified report pages even if the index layout changes.
-    urls.update({
-        "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60286.html",
-        "https://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDQ60290.html",
-    })
-    records: list[dict[str, Any]] = []
-    for url in sorted(urls):
+def discover_bom_bulletin_urls(session: requests.Session) -> list[str]:
+    seeds = set(BOM_BULLETIN_FALLBACK_URLS)
+    try:
+        response = session.get(BOM_RIVER_INDEX, timeout=50); response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        for anchor in soup.find_all("a", href=True):
+            href = anchor["href"]
+            text = clean_text(anchor.get_text(" ", strip=True)).lower()
+            if ("wrap_fwo.pl" in href and "IDQ" in href) or ("latest river" in text and "IDQ" in href):
+                u = official_bom_url(urljoin(BOM_RIVER_INDEX, href).split("#",1)[0])
+                if u: seeds.add(u)
+    except Exception as exc:
+        LOG.warning("BOM bulletin index discovery failed: %s", exc)
+    return sorted(seeds)
+
+
+def fetch_bom_bulletins(session: requests.Session) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    urls = discover_bom_bulletin_urls(session)
+    records: list[dict[str, Any]] = []; ok = 0; failures=[]
+    for url in urls:
         try:
-            r = session.get(url, timeout=35); r.raise_for_status(); records.extend(parse_bom_bulletin_page(r.text, url))
+            r = session.get(url, timeout=35); r.raise_for_status(); records.extend(parse_bom_bulletin_page(r.text, url)); ok += 1
         except Exception as exc:
-            LOG.warning("BOM bulletin failed: %s: %s", url, exc)
-    return records
+            LOG.warning("BOM bulletin failed: %s: %s", url, exc); failures.append({"url": url, "message": str(exc)})
+    return records, {"attempted": len(urls), "succeeded": ok, "failures": failures[:20]}
 
 
-def match_current_gauge(name: str, bulletin_records: list[dict[str, Any]]) -> dict[str, Any] | None:
-    key = norm(name)
-    candidates = []
-    for record in bulletin_records:
-        rkey = norm(record["name"])
-        if not rkey:
+def fetch_bom_network_gauges(session: requests.Session) -> list[dict[str, Any]]:
+    meta = session.get(BOM_GAUGE_NETWORK, params={"f":"pjson"}, timeout=60); meta.raise_for_status()
+    payload = meta.json(); layer_id = None
+    required = {"bom_stn_num","name","state","basin","agency"}
+    for layer in payload.get("layers", []):
+        lid = layer.get("id")
+        try:
+            lr = session.get(f"{BOM_GAUGE_NETWORK}/{lid}", params={"f":"pjson"}, timeout=40); lr.raise_for_status(); lmeta=lr.json()
+            fields = {f.get("name", "").lower() for f in lmeta.get("fields", [])}
+            geom = str(lmeta.get("geometryType", "")).lower()
+            if required <= fields and "point" in geom:
+                layer_id = lid; break
+        except Exception:
             continue
-        score = 100 if rkey == key else 80 if key in rkey or rkey in key else 0
-        if score:
-            candidates.append((score - abs(len(rkey)-len(key)), record))
-    return max(candidates, default=(0, None), key=lambda x: x[0])[1]
+    if layer_id is None:
+        raise RuntimeError("Could not identify BOM National Flood Gauge Network point layer")
+    out=[]; offset=0; page=2000
+    while True:
+        params={"where":"1=1","outFields":"*","returnGeometry":"true","outSR":"4326","f":"json","resultOffset":offset,"resultRecordCount":page}
+        r=session.get(f"{BOM_GAUGE_NETWORK}/{layer_id}/query", params=params, timeout=80); r.raise_for_status(); data=r.json(); feats=data.get("features") or []
+        for feat in feats:
+            a={k.lower(): v for k,v in (feat.get("attributes") or {}).items()}; geom=feat.get("geometry") or {}
+            state=clean_text(a.get("state")).upper()
+            if state not in {"QLD", "QUEENSLAND"}: continue
+            lat=bom_float(a.get("lat")) or bom_float(geom.get("y")); lon=bom_float(a.get("long")) or bom_float(a.get("longitude")) or bom_float(geom.get("x"))
+            stn=clean_text(a.get("bom_stn_num")) or None
+            out.append({"id": stn or clean_text(a.get("awrc_stateid")) or str(a.get("objectid")), "bom_station_number": stn, "awrc_stateid": clean_text(a.get("awrc_stateid")) or None, "name": clean_text(a.get("name")), "latitude": lat, "longitude": lon, "state":"QLD", "basin": clean_text(a.get("basin")) or None, "agency": clean_text(a.get("agency")) or None, "location_types": clean_text(a.get("location_types")) or None, "forecast_site_classification": clean_text(a.get("forecast_site_classification")) or None, "objectid": a.get("objectid")})
+        if not data.get("exceededTransferLimit") or len(feats) < page: break
+        offset += len(feats)
+    if not out: raise RuntimeError("BOM network query returned no Queensland gauges")
+    return out
+
+
+def join_observations(network: list[dict[str, Any]], observations: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    by_stn={str(g.get("bom_station_number")): g for g in network if g.get("bom_station_number")}
+    by_awrc={str(g.get("awrc_stateid")): g for g in network if g.get("awrc_stateid")}
+    names=defaultdict(list)
+    for g in network: names[norm(g.get("name"))].append(g)
+    obs_for={}; unmatched=[]; methods={}
+    for obs in observations:
+        g=None; method="unmatched"; sid=str(obs.get("bom_station_number") or "").strip()
+        if sid and sid in by_stn: g=by_stn[sid]; method="station_number"
+        elif sid and sid in by_awrc: g=by_awrc[sid]; method="awrc_stateid"
+        else:
+            matches=names.get(norm(obs.get("name")), [])
+            if len(matches)==1: g=matches[0]; method="unique_name"
+        if g:
+            key=g.get("id");
+            if key not in obs_for or (obs.get("observed_at") or "") > (obs_for[key].get("observed_at") or ""):
+                obs_for[key]=obs; methods[key]=method
+        else:
+            unmatched.append(obs)
+    enriched=[]
+    for g in network:
+        out=copy.deepcopy(g); obs=obs_for.get(g.get("id")); out["join_method"] = methods.get(g.get("id"), "unmatched")
+        if obs:
+            for k in ("bulletin_url","plot_url","table_url","image_url"):
+                out[k]=obs.get(k)
+            out["current"]={k: obs.get(k) for k in ("height_m","observed_at","time_day","tendency","crossing","flood_classification","minor_flood_m","moderate_flood_m","major_flood_m","age_hours","is_stale","freshness_status")}
+        else:
+            out.update({"bulletin_url":None,"plot_url":None,"table_url":None,"image_url":None,"current":{"height_m":None,"observed_at":None,"time_day":None,"tendency":None,"crossing":None,"flood_classification":None,"minor_flood_m":None,"moderate_flood_m":None,"major_flood_m":None,"age_hours":None,"is_stale":True,"freshness_status":"unavailable"}})
+        enriched.append(out)
+    return enriched, {"unmatched": unmatched}
 
 
 def build_gauges(registry: Registry, sites: list[dict[str, Any]], bulletin_records: list[dict[str, Any]],
-                 overrides: dict[str, list[dict[str, Any]]]) -> dict[str, list[dict[str, Any]]]:
+                 overrides: dict[str, list[dict[str, Any]]], network_gauges: list[dict[str, Any]] | None = None) -> dict[str, Any]:
+    network = network_gauges or []
+    enriched, join_stats = join_observations(network, bulletin_records) if network else ([], {"unmatched": bulletin_records})
+    by_id={str(g.get("id")): g for g in enriched}; by_stn={str(g.get("bom_station_number")): g for g in enriched if g.get("bom_station_number")}
     output: dict[str, list[dict[str, Any]]] = {}
     for dam in registry.dams:
-        chosen = [copy.deepcopy(x) for x in overrides.get(dam["id"], [])]
-        existing_names = {norm(x.get("name")) for x in chosen}
-        # Exact dam/headwater/tailwater sites are high confidence. Otherwise add
-        # only one nearby candidate and label it explicitly as proximity-based.
-        ranked: list[tuple[float, float, dict[str, Any]]] = []
-        for site in sites:
-            if site.get("latitude") is None or site.get("longitude") is None:
-                continue
-            distance = haversine_km(dam["latitude"], dam["longitude"], site["latitude"], site["longitude"])
-            if distance > 60:
-                continue
-            score = station_score(dam, site)
-            ranked.append((score, distance, site))
-        ranked.sort(key=lambda x: (-x[0], x[1]))
-        high = [(score, dist, site) for score, dist, site in ranked if score >= 75][:3]
-        candidates = high or ranked[:1]
-        for score, distance, site in candidates:
-            if norm(site["name"]) in existing_names:
-                continue
-            confidence = "high" if score >= 90 else "candidate"
-            relationship = "dam or associated gauge" if score >= 75 else "nearby gauge — relationship not verified"
-            chosen.append({
-                "id": str(site["station"]), "name": site["name"], "relationship": relationship,
-                "confidence": confidence, "distance_km": round(distance, 1), "latitude": site.get("latitude"),
-                "longitude": site.get("longitude"), "image_url": None, "bulletin_url": None,
-            })
-            existing_names.add(norm(site["name"]))
-        for gauge in chosen:
-            current = match_current_gauge(gauge.get("name", ""), bulletin_records)
-            if current:
-                gauge["current"] = {k:v for k,v in current.items() if k != "name"}
-                gauge["bulletin_url"] = gauge.get("bulletin_url") or current.get("bulletin_url")
-        if chosen:
-            output[dam["id"]] = chosen
-    return output
-
+        chosen=[]; existing=set()
+        for raw in overrides.get(dam["id"], []):
+            rel={k:v for k,v in raw.items() if k not in {"current"}}
+            gid=str(raw.get("bom_station_number") or raw.get("station_number") or raw.get("id") or "")
+            src=by_stn.get(gid) or by_id.get(gid)
+            if src:
+                item=copy.deepcopy(src); item.update(rel); item["relationship"] = raw.get("relationship") or item.get("relationship") or "verified gauge"; item["confidence"] = raw.get("confidence", "verified"); item["location_match_status"]="matched"
+            else:
+                item=copy.deepcopy(rel); item.setdefault("bom_station_number", gid or None); item.setdefault("current", {"height_m":None,"observed_at":None,"freshness_status":"unavailable","is_stale":True}); item["location_match_status"]="location_unmatched"
+            chosen.append(item); existing.add(str(item.get("id") or item.get("bom_station_number") or norm(item.get("name"))))
+        ranked=[]
+        for g in enriched:
+            if g.get("latitude") is None or g.get("longitude") is None: continue
+            dist=haversine_km(dam["latitude"], dam["longitude"], g["latitude"], g["longitude"])
+            if dist <= 60: ranked.append((station_score(dam, {"name": g.get("name"), "latitude": g.get("latitude"), "longitude": g.get("longitude")}), dist, g))
+        ranked.sort(key=lambda x:(-x[0], x[1]))
+        for score, dist, g in ([(x[0],x[1],x[2]) for x in ranked if x[0] >= 75][:3] or ranked[:1]):
+            key=str(g.get("id") or g.get("bom_station_number") or norm(g.get("name")))
+            if key in existing: continue
+            item=copy.deepcopy(g); item.update({"relationship":"nearby BOM river gauge candidate — relationship not verified", "confidence":"candidate", "distance_km":round(dist,1)})
+            chosen.append(item); existing.add(key)
+        if chosen: output[dam["id"]]=chosen
+    stats={
+        "qld_network_gauges": len(enriched),
+        "gauges_with_recent_observation": sum(1 for g in enriched if (g.get("current") or {}).get("freshness_status") == "current"),
+        "gauges_with_stale_observation": sum(1 for g in enriched if (g.get("current") or {}).get("freshness_status") == "stale"),
+        "gauges_without_observation": sum(1 for g in enriched if (g.get("current") or {}).get("freshness_status") == "unavailable"),
+        "unmatched_bulletin_observations": len(join_stats.get("unmatched", [])),
+        "dam_mappings": sum(len(v) for v in output.values()),
+    }
+    return {"generated_at": now_iso(), "source":{"provider":"Australian Bureau of Meteorology", "network_url": BOM_GAUGE_NETWORK, "river_index_url": BOM_RIVER_INDEX}, "stats": stats, "gauges": enriched, "dams": output, "diagnostics":{"unmatched_bulletin_observations": join_stats.get("unmatched", [])[:50]}}
 
 def merge_history(dam_id: str, new_records: Iterable[dict[str, Any]], max_days: int = 3650, compact_sunwater: bool = False) -> list[dict[str, Any]]:
     path = HISTORY / f"{dam_id}.json"
@@ -816,19 +1001,33 @@ def run(history_days: int) -> int:
     hist_status = "ok" if hist_ok == 20 else "partial" if hist_ok else "failed"
     health["providers"]["sunwater_historical"] = health_record(hist_status, dams=hist_ok, observations=hist_count, failures=hist_failed[:20], url=SUN_HISTORY_PAGE)
 
-    # Gauges: verified overrides + station candidates + current BOM bulletin data.
+    # Gauges: official BOM network locations are the base layer. Bulletin
+    # failures (including www.bom.gov.au 403s) must not suppress map markers.
     overrides = read_json(CONFIG / "gauges_overrides.json", {})
     bulletins: list[dict[str, Any]] = []
+    bulletin_stats: dict[str, Any] = {"attempted": len(BOM_BULLETIN_FALLBACK_URLS), "succeeded": 0, "failures": []}
     try:
-        bulletins = fetch_bom_bulletins(session)
-        gauge_map = build_gauges(registry, sites, bulletins, overrides)
-        write_json(DATA / "gauges.json", {"generated_at": started, "dams": gauge_map})
-        verified = sum(1 for values in gauge_map.values() for x in values if x.get("confidence") == "verified")
-        candidates = sum(1 for values in gauge_map.values() for x in values if x.get("confidence") != "verified")
-        health["providers"]["bom_gauges"] = health_record("ok", bulletin_records=len(bulletins), verified_mappings=verified, automatic_candidates=candidates, url=BOM_RIVER_INDEX)
+        network_gauges = fetch_bom_network_gauges(session)
     except Exception as exc:
-        LOG.exception("BOM gauges failed")
-        health["providers"]["bom_gauges"] = health_record("failed", message=str(exc), retained_previous=True)
+        LOG.exception("BOM gauge network failed")
+        health["providers"]["bom_gauges"] = health_record("failed", message=str(exc), retained_previous=True, url=BOM_GAUGE_NETWORK)
+    else:
+        try:
+            bulletins, bulletin_stats = fetch_bom_bulletins(session)
+        except Exception as exc:
+            # Defensive: fetch_bom_bulletins normally records per-page failures,
+            # but keep statewide network markers visible if the bulletin index or
+            # all bulletin pages are blocked/unavailable.
+            LOG.warning("BOM bulletins unavailable; publishing gauge locations without observations: %s", exc)
+            bulletin_stats = {"attempted": len(BOM_BULLETIN_FALLBACK_URLS), "succeeded": 0, "failures": [{"url": BOM_RIVER_INDEX, "message": str(exc)}]}
+        gauge_payload = build_gauges(registry, sites, bulletins, overrides, network_gauges)
+        gauge_payload["generated_at"] = started
+        gauge_payload["source"].update({"bulletin_pages_attempted": bulletin_stats["attempted"], "bulletin_pages_succeeded": bulletin_stats["succeeded"]})
+        write_json(DATA / "gauges.json", gauge_payload)
+        verified = sum(1 for values in gauge_payload["dams"].values() for x in values if x.get("confidence") == "verified")
+        candidates = sum(1 for values in gauge_payload["dams"].values() for x in values if x.get("confidence") != "verified")
+        status = "ok" if bulletin_stats["attempted"] and bulletin_stats["succeeded"] == bulletin_stats["attempted"] else "partial"
+        health["providers"]["bom_gauges"] = health_record(status, **gauge_payload["stats"], bulletin_records=len(bulletins), verified_mappings=verified, automatic_candidates=candidates, failures=bulletin_stats.get("failures", []), url=BOM_RIVER_INDEX)
 
     # Ensure every configured dam has a latest row and calculate derived fields.
     output = []
