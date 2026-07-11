@@ -48,6 +48,13 @@ SEQ_HISTORY_URL = "https://www.seqwater.com.au/historic-dam-levels"
 SUN_DAMS_URL = "https://www.sunwater.com.au/dams/"
 SUN_HISTORY_PAGE = "https://www.sunwater.com.au/water-data/historical-dam-capacity/"
 SUN_API_ROOT = "https://data.sunwater.com.au/api"
+# Sunwater's official water-data API exposes reservoir storage elevation in the
+# `storageLevelMetres` field. The public EAP trigger tables use reservoir
+# elevation (EL metres) for the same storages, so these operator-published
+# storage-level observations are tagged as AHD-compatible exact reservoir
+# elevations. Percentage-full values are still never used as substitutes.
+SUNWATER_STORAGE_LEVEL_DATUM = "AHD"
+SUNWATER_STORAGE_LEVEL_QUALITY = "official_exact"
 QLD_MONITORING_SITES = "https://water-monitoring.information.qld.gov.au/wgen/sites.hd.anon.xml"
 BOM_RIVER_INDEX = "https://www.bom.gov.au/qld/flood/rain_river.shtml"
 BOM_STATION_INDEX = "https://www.bom.gov.au/qld/flood/networks/section3.shtml"
@@ -523,12 +530,22 @@ def fetch_sunwater_history(session: requests.Session, station: str, days: int) -
             observed = iso_datetime_sunwater(value.get("date"))
             if not observed:
                 continue
-            records.append({
+            storage_level = number(value.get("storageLevelMetres"))
+            row = {
                 "observed_at": observed, "percent_full": number(value.get("percentageFull")),
-                "volume_ml": number(value.get("volumeMegaLitres")), "storage_level_m": number(value.get("storageLevelMetres")),
+                "volume_ml": number(value.get("volumeMegaLitres")), "storage_level_m": storage_level,
                 "outflow_cms": number(value.get("cubicMetersPerSecond")), "rainfall_mm": number(value.get("rainfallMillimetres")),
                 "river_level_m": number(value.get("riverLevelMetres")), "source": "Sunwater", "quality_status": "live",
-            })
+                "source_url": f"{SUN_API_ROOT}/Sites/{station}/data",
+            }
+            if storage_level is not None:
+                row.update({
+                    "storage_level_datum": SUNWATER_STORAGE_LEVEL_DATUM,
+                    "storage_level_observed_at": observed,
+                    "storage_level_source_url": f"{SUN_API_ROOT}/Sites/{station}/data",
+                    "storage_level_quality": SUNWATER_STORAGE_LEVEL_QUALITY,
+                })
+            records.append(row)
         new_token = payload.get("continuationToken")
         if not values or new_token in (None, "", 0, "0"):
             break
@@ -1053,6 +1070,11 @@ def run(history_days: int) -> int:
                 for metric in ("storage_level_m", "outflow_cms", "rainfall_mm", "river_level_m"):
                     if item.get(metric) is None and history_latest.get(metric) is not None:
                         item[metric] = history_latest.get(metric)
+                if item.get("storage_level_m") is not None and history_latest.get("storage_level_m") is not None:
+                    item.setdefault("storage_level_datum", history_latest.get("storage_level_datum"))
+                    item.setdefault("storage_level_observed_at", history_latest.get("storage_level_observed_at") or history_latest.get("observed_at"))
+                    item.setdefault("storage_level_source_url", history_latest.get("storage_level_source_url") or history_latest.get("source_url"))
+                    item.setdefault("storage_level_quality", history_latest.get("storage_level_quality"))
                 item["supplemental_observed_at"] = history_latest.get("observed_at")
         pct = number(item.get("percent_full"))
         item["change_24h"] = closest_delta(observations, pct, item.get("observed_at"), 1)
