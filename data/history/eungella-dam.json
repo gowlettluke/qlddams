@@ -1894,17 +1894,6 @@
       "quality_status": "live"
     },
     {
-      "observed_at": "2026-07-05T19:00:00+10:00",
-      "percent_full": 100.04,
-      "volume_ml": 112518.356,
-      "storage_level_m": 562.715,
-      "outflow_cms": 0.11,
-      "rainfall_mm": 0.0,
-      "river_level_m": 0.0,
-      "source": "Sunwater",
-      "quality_status": "live"
-    },
-    {
       "observed_at": "2026-07-05T20:00:00+10:00",
       "percent_full": 100.01,
       "volume_ml": 112492.941,

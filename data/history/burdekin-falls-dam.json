@@ -1916,17 +1916,6 @@
       "quality_status": "live"
     },
     {
-      "observed_at": "2026-07-05T19:15:00+10:00",
-      "percent_full": 96.78,
-      "volume_ml": 1800141.86,
-      "storage_level_m": 153.721,
-      "outflow_cms": 0.0,
-      "rainfall_mm": 0.0,
-      "river_level_m": 0.0,
-      "source": "Sunwater",
-      "quality_status": "live"
-    },
-    {
       "observed_at": "2026-07-05T20:00:00+10:00",
       "percent_full": 96.79,
       "volume_ml": 1800353.728,
@@ -5384,6 +5373,38 @@
       "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
       "storage_level_datum": "AHD",
       "storage_level_observed_at": "2026-07-12T19:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-12T19:55:00+10:00",
+      "percent_full": 96.46,
+      "volume_ml": 1794217.483,
+      "storage_level_m": 153.693,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-12T19:55:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-12T20:00:00+10:00",
+      "percent_full": 96.52,
+      "volume_ml": 1795274.281,
+      "storage_level_m": 153.698,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-12T20:00:00+10:00",
       "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
       "storage_level_quality": "official_exact"
     }
