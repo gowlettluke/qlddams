@@ -1927,17 +1927,6 @@
       "quality_status": "live"
     },
     {
-      "observed_at": "2026-07-05T23:00:00+10:00",
-      "percent_full": 96.82,
-      "volume_ml": 1800777.525,
-      "storage_level_m": 153.724,
-      "outflow_cms": 0.0,
-      "rainfall_mm": 0.0,
-      "river_level_m": 0.0,
-      "source": "Sunwater",
-      "quality_status": "live"
-    },
-    {
       "observed_at": "2026-07-06T00:00:00+10:00",
       "percent_full": 96.85,
       "volume_ml": 1801413.367,
@@ -5425,6 +5414,38 @@
       "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
       "storage_level_datum": "AHD",
       "storage_level_observed_at": "2026-07-12T23:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-13T00:00:00+10:00",
+      "percent_full": 96.42,
+      "volume_ml": 1793372.396,
+      "storage_level_m": 153.689,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-13T00:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-13T01:00:00+10:00",
+      "percent_full": 96.41,
+      "volume_ml": 1793161.173,
+      "storage_level_m": 153.688,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-13T01:00:00+10:00",
       "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/120016A/data",
       "storage_level_quality": "official_exact"
     }
