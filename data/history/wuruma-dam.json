@@ -1927,17 +1927,6 @@
       "quality_status": "live"
     },
     {
-      "observed_at": "2026-07-06T04:00:00+10:00",
-      "percent_full": 97.58,
-      "volume_ml": 161403.313,
-      "storage_level_m": 228.045,
-      "outflow_cms": 0.0,
-      "rainfall_mm": 0.0,
-      "river_level_m": 0.0,
-      "source": "Sunwater",
-      "quality_status": "live"
-    },
-    {
       "observed_at": "2026-07-06T05:00:00+10:00",
       "percent_full": 97.59,
       "volume_ml": 161419.525,
@@ -4296,6 +4285,22 @@
       "source_url": "https://data.sunwater.com.au/api/Sites/136113A/data",
       "storage_level_datum": "AHD",
       "storage_level_observed_at": "2026-07-13T04:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/136113A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-13T05:00:00+10:00",
+      "percent_full": 97.42,
+      "volume_ml": 161144.081,
+      "storage_level_m": 228.029,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/136113A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-13T05:00:00+10:00",
       "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/136113A/data",
       "storage_level_quality": "official_exact"
     }
