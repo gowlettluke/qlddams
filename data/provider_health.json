@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T06:46:40+00:00",
+  "generated_at": "2026-07-12T09:15:07+00:00",
   "overall_status": "partial",
   "providers": {
     "seqwater_current": {
@@ -41,15 +41,15 @@
     "sunwater_historical": {
       "status": "partial",
       "dams": 18,
-      "observations": 1612,
+      "observations": 1609,
       "failures": [
         {
           "dam_id": "glenlyon-dam",
-          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/416303A/data?startDate=2026-06-12T06%3A47%3A03Z&continuationToken=1"
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/416303A/data?startDate=2026-06-12T09%3A15%3A29Z&continuationToken=1"
         },
         {
           "dam_id": "tinaroo-falls-dam",
-          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/110006A/data?startDate=2026-06-12T06%3A47%3A06Z&continuationToken=1"
+          "message": "404 Client Error: Not Found for url: https://data.sunwater.com.au/api/Sites/110006A/data?startDate=2026-06-12T09%3A15%3A33Z&continuationToken=1"
         }
       ],
       "url": "https://www.sunwater.com.au/water-data/historical-dam-capacity/"
