@@ -4114,6 +4114,54 @@
       "storage_level_observed_at": "2026-07-12T10:00:00+10:00",
       "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/135009A/data",
       "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-12T11:00:00+10:00",
+      "percent_full": 96.79,
+      "volume_ml": 544006.079,
+      "storage_level_m": 75.219,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/135009A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-12T11:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/135009A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-12T12:00:00+10:00",
+      "percent_full": 96.83,
+      "volume_ml": 544215.11,
+      "storage_level_m": 75.223,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/135009A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-12T12:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/135009A/data",
+      "storage_level_quality": "official_exact"
+    },
+    {
+      "observed_at": "2026-07-12T13:00:00+10:00",
+      "percent_full": 96.83,
+      "volume_ml": 544215.11,
+      "storage_level_m": 75.223,
+      "outflow_cms": 0.0,
+      "rainfall_mm": 0.0,
+      "river_level_m": 0.0,
+      "source": "Sunwater",
+      "quality_status": "live",
+      "source_url": "https://data.sunwater.com.au/api/Sites/135009A/data",
+      "storage_level_datum": "AHD",
+      "storage_level_observed_at": "2026-07-12T13:00:00+10:00",
+      "storage_level_source_url": "https://data.sunwater.com.au/api/Sites/135009A/data",
+      "storage_level_quality": "official_exact"
     }
   ]
 }
